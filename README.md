@@ -1,2 +1,2 @@
-# LearnwithPoornimaKTBS-notes
+# LearnwithPoornimanotes
 Educational website
