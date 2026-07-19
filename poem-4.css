@@ -1,0 +1,775 @@
+/*=========================
+        HEADER
+==========================*/
+
+.lesson-header{
+    background:linear-gradient(135deg,#0d47a1,#1976d2,#42a5f5);
+    color:white;
+    text-align:center;
+    padding:25px;
+    border-radius:12px;
+    margin:20px auto;
+    box-shadow:0 6px 15px rgba(0,0,0,.25);
+}
+
+.logo-section{
+    margin-bottom:15px;
+}
+
+.logo{
+    width:100px;
+    height:100px;
+    object-fit:contain;
+    background:white;
+    border-radius:50%;
+    padding:8px;
+    box-shadow:0 4px 10px rgba(0,0,0,.3);
+}
+
+.title-section h1{
+    font-size:2.2rem;
+    color:#ffeb3b;
+    margin:10px 0;
+    font-weight:700;
+}
+
+.title-section h2{
+    font-size:1.6rem;
+    margin:8px 0;
+    color:#ffffff;
+}
+
+.title-section h3{
+    font-size:1.3rem;
+    margin:8px 0;
+    color:#ffe082;
+}
+
+.lesson-title{
+    font-size:2rem;
+    margin-top:18px;
+}
+
+.lesson-title span{
+    color:#ffeb3b;
+    font-size:2.3rem;
+    font-weight:bold;
+}
+
+.author{
+    margin-top:15px;
+    color:#fff59d;
+    font-style:italic;
+}
+
+.title-section h4{
+    margin-top:8px;
+    color:#ffffff;
+    font-size:1.2rem;
+    letter-spacing:1px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .logo{
+        width:80px;
+        height:80px;
+    }
+
+    .title-section h1{
+        font-size:1.6rem;
+    }
+
+    .title-section h2{
+        font-size:1.2rem;
+    }
+
+    .lesson-title{
+        font-size:1.5rem;
+    }
+
+    .lesson-title span{
+        font-size:1.8rem;
+    }
+
+}
+/*=========================
+        POEM SECTION
+==========================*/
+
+.poem-container{
+    max-width:1000px;
+    margin:40px auto;
+    padding:20px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2rem;
+    color:#0d47a1;
+    margin-bottom:25px;
+}
+
+.poem-box{
+    background:#fffdf7;
+    border-left:8px solid #1976d2;
+    border-radius:12px;
+    padding:30px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.stanza{
+    margin-bottom:35px;
+    padding-bottom:20px;
+    border-bottom:2px dashed #d6d6d6;
+}
+
+.stanza:last-child{
+    border-bottom:none;
+}
+
+.stanza p{
+    font-size:1.2rem;
+    line-height:2;
+    color:#333;
+    margin:4px 0;
+    font-family:"Georgia",serif;
+}
+
+.stanza p:hover{
+    color:#0d47a1;
+    transition:.3s;
+}
+
+@media(max-width:768px){
+
+    .poem-box{
+        padding:18px;
+    }
+
+    .stanza p{
+        font-size:1rem;
+        line-height:1.8;
+    }
+
+    .section-title{
+        font-size:1.6rem;
+    }
+
+}
+/*=========================
+      YOUTUBE VIDEO
+==========================*/
+
+/*=========================
+      YOUTUBE SECTION
+==========================*/
+
+.video-section{
+    width:100%;
+    max-width:1000px;
+    margin:50px auto;
+    text-align:center;
+}
+
+.video-section h2{
+    text-align:center;
+    font-size:2rem;
+    color:#0d47a1;
+    margin-bottom:25px;
+}
+
+.youtube-btn{
+    display:inline-block;
+    background:#ff0000;
+    color:#ffffff;
+    padding:16px 36px;
+    font-size:22px;
+    font-weight:bold;
+    text-decoration:none;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.youtube-btn:hover{
+    background:#cc0000;
+    transform:scale(1.05);
+}
+/*=========================
+        GLOSSARY
+==========================*/
+
+.glossary-section{
+    max-width:1100px;
+    margin:50px auto;
+    padding:20px;
+}
+
+.glossary-title{
+    text-align:center;
+    font-size:2rem;
+    color:#0d47a1;
+    margin-bottom:25px;
+}
+
+.glossary-table{
+    width:100%;
+    border-collapse:collapse;
+    background:#ffffff;
+    box-shadow:0 5px 18px rgba(0,0,0,.15);
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.glossary-table th{
+    background:#1565c0;
+    color:#fff;
+    padding:15px;
+    font-size:20px;
+}
+
+.glossary-table td{
+    padding:14px 16px;
+    border:1px solid #ddd;
+    font-size:18px;
+    line-height:1.7;
+    vertical-align:top;
+}
+
+.glossary-table tr:nth-child(even){
+    background:#f5f9ff;
+}
+
+.glossary-table tr:hover{
+    background:#e3f2fd;
+}
+
+.glossary-table td:first-child{
+    width:28%;
+    font-weight:bold;
+    color:#0d47a1;
+}
+
+@media (max-width:768px){
+
+    .glossary-title{
+        font-size:1.6rem;
+    }
+
+    .glossary-table th,
+    .glossary-table td{
+        font-size:15px;
+        padding:10px;
+    }
+
+}
+/*=================================
+      COMPREHENSION QUESTIONS
+==================================*/
+
+.qa-section{
+    max-width:1100px;
+    margin:50px auto;
+    padding:20px;
+}
+
+.qa-title{
+    text-align:center;
+    font-size:36px;
+    color:#0d47a1;
+    margin-bottom:15px;
+}
+
+.sub-title{
+    font-size:24px;
+    color:#1565c0;
+    margin-bottom:25px;
+}
+
+.question-box{
+
+    background:#ffffff;
+    border-left:8px solid #1976d2;
+    border-radius:12px;
+    padding:25px;
+    margin-bottom:30px;
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+
+}
+
+.question-box h4{
+
+    color:#0d47a1;
+    font-size:24px;
+    margin-bottom:15px;
+    line-height:1.5;
+
+}
+
+.answer-box{
+
+    background:#f5f9ff;
+    border-left:6px solid #43a047;
+    padding:18px;
+    border-radius:8px;
+    font-size:19px;
+    line-height:1.9;
+
+}
+
+.answer-box strong{
+
+    color:#2e7d32;
+    font-size:20px;
+
+}
+
+.answer-box ul{
+
+    margin-top:10px;
+    padding-left:25px;
+
+}
+
+.answer-box li{
+
+    margin-bottom:8px;
+
+}
+
+.answer-box em{
+
+    color:#c62828;
+    font-style:italic;
+
+}
+
+@media(max-width:768px){
+
+.qa-title{
+    font-size:28px;
+}
+
+.sub-title{
+    font-size:20px;
+}
+
+.question-box h4{
+    font-size:20px;
+}
+
+.answer-box{
+    font-size:17px;
+}
+
+}
+/*=========================
+      KEYWORDS
+=========================*/
+
+.keywords{
+
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+margin-top:15px;
+
+}
+
+.keywords span{
+
+background:#1976d2;
+color:#fff;
+padding:10px 18px;
+border-radius:30px;
+font-size:18px;
+font-weight:bold;
+
+}
+
+/*=========================
+      END BOX
+=========================*/
+
+.chapter-end{
+
+margin:50px auto;
+padding:20px;
+text-align:center;
+font-size:28px;
+font-weight:bold;
+color:#0d47a1;
+background:#fff8e1;
+border:3px solid #ffc107;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,.15);
+
+}
+/*==================================
+          CLOSE STUDY
+==================================*/
+
+.close-study{
+
+    max-width:1100px;
+    margin:60px auto;
+    padding:20px;
+
+}
+
+.section-heading{
+
+    text-align:center;
+    font-size:34px;
+    color:#0d47a1;
+    margin-bottom:15px;
+
+}
+
+.instruction{
+
+    text-align:center;
+    font-size:20px;
+    color:#444;
+    margin-bottom:35px;
+    line-height:1.8;
+
+}
+
+.close-study .question-box{
+
+    background:#ffffff;
+    border-left:8px solid #ff9800;
+    border-radius:12px;
+    padding:25px;
+    margin-bottom:35px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+.close-study h3{
+
+    color:#d84315;
+    line-height:1.6;
+    margin-bottom:20px;
+
+}
+
+.sub-question{
+
+    margin-top:20px;
+
+}
+
+.sub-question p{
+
+    font-size:20px;
+    font-weight:bold;
+    color:#1565c0;
+    margin-bottom:10px;
+
+}
+
+.close-study .answer-box{
+
+    background:#f8fbff;
+    border-left:5px solid #43a047;
+    padding:18px;
+    border-radius:8px;
+    line-height:1.9;
+    font-size:18px;
+    color:#333;
+
+}
+
+.close-study strong{
+
+    color:#0d47a1;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.section-heading{
+
+    font-size:28px;
+
+}
+
+.instruction{
+
+    font-size:17px;
+
+}
+
+.close-study h3{
+
+    font-size:20px;
+
+}
+
+.sub-question p{
+
+    font-size:18px;
+
+}
+
+.close-study .answer-box{
+
+    font-size:16px;
+
+}
+
+}
+/*=================================
+      PARAGRAPH WRITING
+==================================*/
+
+.paragraph-writing{
+
+    max-width:1100px;
+    margin:60px auto;
+    padding:20px;
+
+}
+
+.paragraph-title{
+
+    text-align:center;
+    color:#0d47a1;
+    font-size:36px;
+    margin-bottom:20px;
+
+}
+
+.paragraph-intro{
+
+    text-align:center;
+    font-size:20px;
+    line-height:1.8;
+    color:#444;
+    margin-bottom:35px;
+
+}
+
+.paragraph-card{
+
+    background:#ffffff;
+    border-left:8px solid #8e24aa;
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:35px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+.paragraph-card h3{
+
+    color:#6a1b9a;
+    font-size:24px;
+    margin-bottom:20px;
+    line-height:1.6;
+
+}
+
+.paragraph-card h4{
+
+    color:#1565c0;
+    margin-top:20px;
+    margin-bottom:12px;
+    font-size:21px;
+
+}
+
+.paragraph-card ul{
+
+    padding-left:30px;
+    line-height:2;
+
+}
+
+.paragraph-card li{
+
+    margin-bottom:12px;
+    font-size:18px;
+
+}
+
+.paragraph-answer{
+
+    background:#f3f8ff;
+    border-left:6px solid #43a047;
+    padding:20px;
+    border-radius:8px;
+    margin-top:15px;
+
+}
+
+.paragraph-answer p{
+
+    font-size:19px;
+    line-height:2;
+    text-align:justify;
+
+}
+
+@media(max-width:768px){
+
+.paragraph-title{
+
+    font-size:28px;
+
+}
+
+.paragraph-intro{
+
+    font-size:17px;
+
+}
+
+.paragraph-card h3{
+
+    font-size:20px;
+
+}
+
+.paragraph-card li{
+
+    font-size:16px;
+
+}
+
+.paragraph-answer p{
+
+    font-size:17px;
+
+}
+
+}
+/*====================================
+        HOME | BACK | PRINT | TOP
+====================================*/
+
+.page-buttons{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:18px;
+    margin:60px auto 40px;
+    padding:20px;
+
+}
+
+.btn{
+
+    padding:14px 30px;
+    border:none;
+    border-radius:10px;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+
+    color:#fff;
+
+}
+
+/* Home */
+
+.home-btn{
+
+    background:#2e7d32;
+
+}
+
+.home-btn:hover{
+
+    background:#1b5e20;
+    transform:translateY(-3px);
+
+}
+
+/* Back */
+
+.back-btn{
+
+    background:#1565c0;
+
+}
+
+.back-btn:hover{
+
+    background:#0d47a1;
+    transform:translateY(-3px);
+
+}
+
+/* Print */
+
+.print-btn{
+
+    background:#ef6c00;
+
+}
+
+.print-btn:hover{
+
+    background:#e65100;
+    transform:translateY(-3px);
+
+}
+
+/* Top */
+
+.top-btn{
+
+    background:#8e24aa;
+    display:none;
+
+}
+
+.top-btn:hover{
+
+    background:#6a1b9a;
+    transform:translateY(-3px);
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.page-buttons{
+
+    flex-direction:column;
+
+}
+
+.btn{
+
+    width:220px;
+    text-align:center;
+    font-size:17px;
+
+}
+
+}
+
+/* Hide buttons while printing */
+
+@media print{
+
+.page-buttons{
+
+    display:none;
+
+}
+
+}
