@@ -1,0 +1,2947 @@
+/*=========================
+    LESSON HEADER
+==========================*/
+
+.lesson-header{
+    width:95%;
+    max-width:1200px;
+    margin:25px auto;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    gap:25px;
+
+    background:linear-gradient(135deg,#0d47a1,#1565c0,#1e88e5);
+
+    border-radius:18px;
+    padding:20px;
+
+    color:#fff;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+}
+
+.logo-section img{
+
+    width:130px;
+    height:130px;
+
+    object-fit:contain;
+
+    background:#fff;
+    border-radius:50%;
+    padding:8px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.3);
+}
+
+.lesson-title{
+    flex:1;
+}
+
+.lesson-title h1{
+
+    font-size:40px;
+    margin-bottom:10px;
+
+    color:#FFD54F;
+
+    font-weight:700;
+}
+
+.lesson-title h2{
+
+    font-size:30px;
+
+    margin:5px 0;
+
+    color:#ffffff;
+}
+
+.lesson-title h3{
+
+    font-size:26px;
+
+    margin:5px 0;
+
+    color:#FFEB3B;
+}
+
+.lesson-title h4{
+
+    font-size:24px;
+
+    margin-top:12px;
+
+    color:#A5D6A7;
+}
+
+.lesson-title h5{
+
+    font-size:34px;
+
+    margin-top:10px;
+
+    color:#ffffff;
+
+    line-height:1.4;
+
+    font-weight:bold;
+}
+
+/*=========================
+     MOBILE VIEW
+==========================*/
+
+@media(max-width:768px){
+
+.lesson-header{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+.logo-section img{
+
+    width:100px;
+
+    height:100px;
+}
+
+.lesson-title h1{
+
+    font-size:28px;
+}
+
+.lesson-title h2{
+
+    font-size:22px;
+}
+
+.lesson-title h3{
+
+    font-size:20px;
+}
+
+.lesson-title h4{
+
+    font-size:18px;
+}
+
+.lesson-title h5{
+
+    font-size:24px;
+}
+
+}
+/*=========================
+      BUTTON SECTION
+==========================*/
+
+.button-container{
+    width:95%;
+    max-width:1200px;
+    margin:40px auto 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    text-decoration:none;
+    border:none;
+    padding:12px 28px;
+    border-radius:8px;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    color:#fff;
+    transition:0.3s;
+    box-shadow:0 4px 10px rgba(0,0,0,0.25);
+}
+
+.home-btn{
+    background:#2196F3;
+}
+
+.home-btn:hover{
+    background:#1565C0;
+}
+
+.print-btn{
+    background:#43A047;
+}
+
+.print-btn:hover{
+    background:#2E7D32;
+}
+
+.back-btn{
+    background:#FB8C00;
+}
+
+.back-btn:hover{
+    background:#EF6C00;
+}
+
+.top-btn{
+    background:#8E24AA;
+}
+
+.top-btn:hover{
+    background:#6A1B9A;
+}
+
+@media (max-width:768px){
+
+.button-container{
+    flex-direction:column;
+    gap:15px;
+}
+
+.btn{
+    width:220px;
+    text-align:center;
+}
+
+}
+/*=========================
+      GLOSSARY TABLE
+=========================*/
+
+/*=========================
+      GLOSSARY
+=========================*/
+
+.lesson-box{
+    width:95%;
+    max-width:1400px;
+    margin:40px auto;
+}
+
+.section-title{
+    text-align:center;
+    font-size:42px;
+    color:#0D47A1;
+    margin-bottom:25px;
+    font-weight:700;
+}
+
+.table-container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.glossary-table{
+    width:100%;
+    max-width:1400px;
+    border-collapse:collapse;
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+.glossary-table th{
+    background:#1565C0;
+    color:#fff;
+    font-size:24px;
+    padding:18px;
+    text-align:center;
+}
+
+.glossary-table td{
+    border:1px solid #ddd;
+    padding:18px;
+    font-size:20px;
+    line-height:1.8;
+    vertical-align:top;
+}
+
+.glossary-table td:first-child{
+    width:28%;
+    font-weight:bold;
+    color:#0D47A1;
+}
+
+.glossary-table tr:nth-child(even){
+    background:#F5F9FF;
+}
+
+.glossary-table tr:hover{
+    background:#E8F2FF;
+}
+
+@media(max-width:768px){
+
+.section-title{
+    font-size:30px;
+}
+
+.glossary-table th{
+    font-size:18px;
+}
+
+.glossary-table td{
+    font-size:16px;
+    padding:12px;
+}
+
+}
+/*=========================
+ COMPREHENSION QUESTIONS
+=========================*/
+
+.sub-heading{
+    text-align:center;
+    color:#0D47A1;
+    font-size:28px;
+    margin-bottom:30px;
+}
+
+.qa-container{
+    width:100%;
+}
+
+.question-answer{
+    background:#ffffff;
+    border-left:8px solid #1565C0;
+    margin-bottom:25px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+.question-answer h4{
+    color:#0D47A1;
+    font-size:22px;
+    margin-bottom:12px;
+}
+
+.question-answer p{
+    font-size:19px;
+    line-height:1.9;
+    text-align:justify;
+    color:#333;
+}
+
+.question-answer:hover{
+    transform:translateY(-3px);
+    transition:0.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+@media(max-width:768px){
+
+.sub-heading{
+    font-size:22px;
+}
+
+.question-answer h4{
+    font-size:18px;
+}
+
+.question-answer p{
+    font-size:16px;
+}
+
+}
+/*=========================
+        CLOSE STUDY
+==========================*/
+
+.instruction{
+    text-align:center;
+    font-size:20px;
+    color:#444;
+    margin-bottom:30px;
+    line-height:1.8;
+}
+
+.extract-box{
+    background:#ffffff;
+    border-left:8px solid #1565C0;
+    border-radius:12px;
+    padding:25px;
+    margin-bottom:35px;
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+}
+
+.extract-box h3{
+    color:#1565C0;
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.extract-box blockquote{
+    background:#E3F2FD;
+    border-left:6px solid #0D47A1;
+    padding:18px 25px;
+    font-size:24px;
+    font-style:italic;
+    color:#0D47A1;
+    border-radius:8px;
+    margin-bottom:25px;
+}
+
+.qa-item{
+    background:#F8FBFF;
+    border:1px solid #D6EAF8;
+    border-radius:8px;
+    padding:18px;
+    margin-bottom:18px;
+}
+
+.qa-item h4{
+    color:#0D47A1;
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.qa-item p{
+    font-size:19px;
+    line-height:1.8;
+    text-align:justify;
+    color:#333;
+}
+
+.extract-box:hover{
+    transform:translateY(-4px);
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.instruction{
+    font-size:17px;
+}
+
+.extract-box h3{
+    font-size:22px;
+}
+
+.extract-box blockquote{
+    font-size:18px;
+}
+
+.qa-item h4{
+    font-size:18px;
+}
+
+.qa-item p{
+    font-size:16px;
+}
+
+}
+/*=========================
+    PARAGRAPH WRITING
+=========================*/
+
+.paragraph-box{
+
+    background:#ffffff;
+
+    border-left:8px solid #1565C0;
+
+    border-radius:12px;
+
+    padding:25px;
+
+    margin-bottom:35px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+
+    transition:.3s;
+}
+
+.paragraph-box:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.paragraph-box h3{
+
+    color:#0D47A1;
+
+    font-size:26px;
+
+    margin-bottom:18px;
+
+    line-height:1.6;
+}
+
+.paragraph-box p{
+
+    font-size:20px;
+
+    line-height:2;
+
+    text-align:justify;
+
+    color:#333;
+}
+
+@media(max-width:768px){
+
+.paragraph-box{
+
+    padding:18px;
+}
+
+.paragraph-box h3{
+
+    font-size:20px;
+}
+
+.paragraph-box p{
+
+    font-size:16px;
+
+    line-height:1.8;
+}
+
+}
+/*=========================
+   VOCABULARY EXERCISES
+=========================*/
+
+.vocabulary-container{
+
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+    margin-top:30px;
+
+}
+
+.vocab-card{
+
+    background:#ffffff;
+
+    border-left:8px solid #1565C0;
+
+    border-radius:12px;
+
+    padding:22px 28px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+.vocab-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.vocab-card h4{
+
+    color:#0D47A1;
+
+    font-size:24px;
+
+    margin-bottom:15px;
+
+    line-height:1.7;
+
+}
+
+.vocab-card p{
+
+    font-size:20px;
+
+    color:#333;
+
+    line-height:1.8;
+
+}
+
+.vocab-card strong{
+
+    color:#2E7D32;
+
+    font-size:21px;
+
+}
+
+@media(max-width:768px){
+
+.vocab-card{
+
+    padding:18px;
+
+}
+
+.vocab-card h4{
+
+    font-size:19px;
+
+}
+
+.vocab-card p{
+
+    font-size:17px;
+
+}
+
+.vocab-card strong{
+
+    font-size:18px;
+
+}
+
+}
+/*=========================
+ VOCABULARY EXERCISE - B
+=========================*/
+
+.exercise-container{
+
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+    margin-top:30px;
+
+}
+
+.exercise-card{
+
+    background:#ffffff;
+
+    border-left:8px solid #1976D2;
+
+    padding:22px 28px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+
+    transition:0.3s;
+
+}
+
+.exercise-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+
+}
+
+.exercise-card h4{
+
+    font-size:23px;
+
+    color:#0D47A1;
+
+    line-height:1.8;
+
+    margin-bottom:15px;
+
+}
+
+.exercise-card p{
+
+    font-size:20px;
+
+    color:#333;
+
+    line-height:1.8;
+
+}
+
+.exercise-card strong{
+
+    color:#2E7D32;
+
+}
+
+.exercise-card span{
+
+    color:#C62828;
+
+    font-weight:700;
+
+    font-size:21px;
+
+}
+
+@media(max-width:768px){
+
+.exercise-card{
+
+    padding:18px;
+
+}
+
+.exercise-card h4{
+
+    font-size:18px;
+
+}
+
+.exercise-card p{
+
+    font-size:17px;
+
+}
+
+.exercise-card span{
+
+    font-size:18px;
+
+}
+
+}
+/*=========================
+   LANGUAGE ACTIVITIES
+==========================*/
+
+.letter-box{
+
+    background:#fffef8;
+
+    border-left:8px solid #FF9800;
+
+    border-radius:12px;
+
+    padding:35px;
+
+    margin-top:30px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+
+}
+
+.letter-text{
+
+    font-size:20px;
+
+    line-height:2;
+
+    color:#333;
+
+    text-align:justify;
+
+    margin-bottom:18px;
+
+}
+
+.letter-sign{
+
+    font-size:22px;
+
+    color:#0D47A1;
+
+    font-weight:bold;
+
+    margin-top:20px;
+
+}
+
+.letter-box strong{
+
+    color:#1565C0;
+
+}
+
+.letter-box:hover{
+
+    transform:translateY(-4px);
+
+    transition:.3s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+@media(max-width:768px){
+
+.letter-box{
+
+    padding:20px;
+
+}
+
+.letter-text{
+
+    font-size:17px;
+
+    line-height:1.9;
+
+}
+
+.letter-sign{
+
+    font-size:19px;
+
+}
+
+}
+/*=========================
+      FREQUENCY WORDS
+=========================*/
+
+.frequency-container{
+
+    width:100%;
+
+    margin-top:30px;
+
+    text-align:center;
+
+}
+
+.frequency-image{
+
+    width:320px;
+
+    max-width:100%;
+
+    border-radius:12px;
+
+    border:4px solid #1565C0;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.20);
+
+    margin-bottom:35px;
+
+}
+
+.frequency-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:#fff;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+}
+
+.frequency-table th{
+
+    background:#1565C0;
+
+    color:#fff;
+
+    padding:16px;
+
+    font-size:22px;
+
+}
+
+.frequency-table td{
+
+    border:1px solid #ddd;
+
+    padding:16px;
+
+    font-size:20px;
+
+}
+
+.frequency-table tr:nth-child(even){
+
+    background:#F4F9FF;
+
+}
+
+.frequency-table tr:hover{
+
+    background:#E3F2FD;
+
+}
+
+.frequency-table td:first-child{
+
+    font-weight:bold;
+
+    color:#0D47A1;
+
+    width:35%;
+
+}
+
+@media(max-width:768px){
+
+.frequency-image{
+
+    width:240px;
+
+}
+
+.frequency-table th{
+
+    font-size:18px;
+
+}
+
+.frequency-table td{
+
+    font-size:16px;
+
+    padding:12px;
+
+}
+
+}
+/*=========================
+ FREQUENCY WORDS - PART 2
+==========================*/
+
+.fill-container{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:25px;
+
+    margin-top:30px;
+
+}
+
+.fill-card{
+
+    background:#ffffff;
+
+    border-left:8px solid #1565C0;
+
+    border-radius:12px;
+
+    padding:25px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+.fill-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.fill-card h4{
+
+    color:#0D47A1;
+
+    font-size:23px;
+
+    line-height:1.8;
+
+    margin-bottom:18px;
+
+}
+
+.fill-card p{
+
+    font-size:20px;
+
+    color:#333;
+
+    line-height:1.9;
+
+    text-align:justify;
+
+}
+
+.fill-card strong{
+
+    color:#2E7D32;
+
+}
+
+.fill-card span{
+
+    color:#D32F2F;
+
+    font-weight:bold;
+
+    font-size:21px;
+
+}
+
+@media(max-width:768px){
+
+.fill-card{
+
+    padding:18px;
+
+}
+
+.fill-card h4{
+
+    font-size:18px;
+
+}
+
+.fill-card p{
+
+    font-size:16px;
+
+}
+
+.fill-card span{
+
+    font-size:17px;
+
+}
+
+}
+/*=========================
+      COLLOCATIONS
+=========================*/
+
+.collocation-table{
+
+    width:100%;
+
+    overflow-x:auto;
+
+    margin-top:30px;
+
+}
+
+.collocation-table table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:#fff;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+}
+
+.collocation-table th{
+
+    background:#1565C0;
+
+    color:#fff;
+
+    font-size:24px;
+
+    padding:18px;
+
+    text-align:center;
+
+}
+
+.collocation-table td{
+
+    border:1px solid #ddd;
+
+    padding:20px;
+
+    vertical-align:top;
+
+    font-size:19px;
+
+    line-height:2;
+
+}
+
+.collocation-table tr:nth-child(even){
+
+    background:#F5F9FF;
+
+}
+
+.collocation-table td:hover{
+
+    background:#E3F2FD;
+
+}
+
+.collocation-table td:first-child{
+
+    border-left:6px solid #1565C0;
+
+}
+
+@media(max-width:768px){
+
+.collocation-table th{
+
+    font-size:18px;
+
+}
+
+.collocation-table td{
+
+    font-size:16px;
+
+    padding:15px;
+
+}
+
+}
+/*=========================
+ COLLOCATIONS EXERCISE-2
+=========================*/
+
+.exercise-container{
+
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+    margin-top:30px;
+
+}
+
+.exercise-card{
+
+    background:#ffffff;
+    border-left:8px solid #1565C0;
+    border-radius:12px;
+    padding:22px 28px;
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+    transition:.3s;
+
+}
+
+.exercise-card:hover{
+
+    transform:translateY(-4px);
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.exercise-card h4{
+
+    color:#0D47A1;
+    font-size:22px;
+    line-height:1.8;
+    margin-bottom:15px;
+
+}
+
+.exercise-card p{
+
+    font-size:20px;
+    color:#333;
+    line-height:1.8;
+
+}
+
+.exercise-card strong{
+
+    color:#2E7D32;
+
+}
+
+.exercise-card span{
+
+    color:#C62828;
+    font-weight:bold;
+    font-size:21px;
+
+}
+
+.blue{
+    color:#1565C0;
+    font-weight:bold;
+}
+
+.green{
+    color:#2E7D32;
+    font-weight:bold;
+}
+
+.orange{
+    color:#F57C00;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+
+.exercise-card{
+
+    padding:18px;
+
+}
+
+.exercise-card h4{
+
+    font-size:18px;
+
+}
+
+.exercise-card p{
+
+    font-size:16px;
+
+}
+
+.exercise-card span{
+
+    font-size:17px;
+
+}
+
+}
+/*=========================
+        DIARY ENTRY
+==========================*/
+
+.diary-box{
+
+    background:#FFFDE7;
+
+    border-left:8px solid #F9A825;
+
+    border-radius:12px;
+
+    padding:35px;
+
+    margin-top:30px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+.diary-box:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.diary-date{
+
+    text-align:right;
+
+    font-size:22px;
+
+    color:#0D47A1;
+
+    margin-bottom:25px;
+
+}
+
+.diary-box p{
+
+    font-size:20px;
+
+    line-height:2;
+
+    color:#333;
+
+    text-align:justify;
+
+    text-indent:45px;
+
+    margin-bottom:18px;
+
+}
+
+.diary-sign{
+
+    text-align:right;
+
+    font-size:24px;
+
+    color:#1565C0;
+
+    font-style:italic;
+
+    margin-top:20px;
+
+}
+
+@media(max-width:768px){
+
+.diary-box{
+
+    padding:20px;
+
+}
+
+.diary-date{
+
+    font-size:18px;
+
+}
+
+.diary-box p{
+
+    font-size:16px;
+
+    line-height:1.9;
+
+    text-indent:25px;
+
+}
+
+.diary-sign{
+
+    font-size:18px;
+
+}
+
+}
+/*=========================
+    LIFE IN SARAJEVO
+==========================*/
+
+.diary-box{
+
+    background:#FFFDF5;
+
+    border-left:8px solid #FB8C00;
+
+    border-radius:12px;
+
+    padding:30px;
+
+    margin:30px 0;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+
+    transition:0.3s;
+
+}
+
+.diary-box:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.diary-date{
+
+    text-align:right;
+
+    color:#1565C0;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.diary-box p{
+
+    font-size:20px;
+
+    line-height:2;
+
+    text-align:justify;
+
+    text-indent:40px;
+
+    color:#333;
+
+    margin-bottom:18px;
+
+}
+
+@media(max-width:768px){
+
+.diary-box{
+
+    padding:20px;
+
+}
+
+.diary-date{
+
+    font-size:18px;
+
+}
+
+.diary-box p{
+
+    font-size:16px;
+
+    line-height:1.9;
+
+    text-indent:20px;
+
+}
+
+}
+/*=========================
+     PARAGRAPH WRITING
+==========================*/
+
+.info-box{
+
+    background:#E3F2FD;
+
+    border-left:8px solid #1565C0;
+
+    border-radius:12px;
+
+    padding:25px 30px;
+
+    margin:25px 0;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+
+}
+
+.info-list{
+
+    margin:0;
+
+    padding-left:30px;
+
+}
+
+.info-list li{
+
+    font-size:20px;
+
+    line-height:2;
+
+    color:#333;
+
+    margin-bottom:10px;
+
+}
+
+.paragraph-answer{
+
+    background:#FFFDE7;
+
+    border-left:8px solid #2E7D32;
+
+    border-radius:12px;
+
+    padding:30px;
+
+    margin-top:30px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+.paragraph-answer:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.paragraph-answer h3{
+
+    color:#1565C0;
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+    font-size:28px;
+
+}
+
+.paragraph-answer p{
+
+    font-size:20px;
+
+    line-height:2;
+
+    text-align:justify;
+
+    text-indent:45px;
+
+    color:#333;
+
+}
+
+@media(max-width:768px){
+
+.info-box{
+
+    padding:20px;
+
+}
+
+.info-list li{
+
+    font-size:16px;
+
+    line-height:1.8;
+
+}
+
+.paragraph-answer{
+
+    padding:20px;
+
+}
+
+.paragraph-answer h3{
+
+    font-size:22px;
+
+}
+
+.paragraph-answer p{
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    text-indent:25px;
+
+}
+
+}
+/*=========================
+     SPEAKING ACTIVITY
+==========================*/
+
+.speaking-topics{
+
+    background:#E8F5E9;
+
+    border-left:8px solid #2E7D32;
+
+    border-radius:12px;
+
+    padding:25px 30px;
+
+    margin:25px 0;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+
+}
+
+.speaking-topics ul{
+
+    margin:0;
+
+    padding-left:30px;
+
+}
+
+.speaking-topics li{
+
+    font-size:20px;
+
+    line-height:2;
+
+    color:#333;
+
+    margin-bottom:12px;
+
+}
+
+.speaking-answer{
+
+    margin-top:35px;
+
+}
+
+.speaking-answer h3{
+
+    text-align:center;
+
+    color:#1565C0;
+
+    font-size:30px;
+
+    margin-bottom:30px;
+
+}
+
+.speech-card{
+
+    background:#FFFDF5;
+
+    border-left:8px solid #FB8C00;
+
+    border-radius:12px;
+
+    padding:25px 30px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+.speech-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.speech-card h4{
+
+    color:#1565C0;
+
+    font-size:24px;
+
+    margin-bottom:15px;
+
+}
+
+.speech-card p{
+
+    font-size:20px;
+
+    line-height:2;
+
+    text-align:justify;
+
+    color:#333;
+
+    text-indent:40px;
+
+}
+
+@media(max-width:768px){
+
+.speaking-topics{
+
+    padding:20px;
+
+}
+
+.speaking-topics li{
+
+    font-size:16px;
+
+    line-height:1.8;
+
+}
+
+.speaking-answer h3{
+
+    font-size:24px;
+
+}
+
+.speech-card{
+
+    padding:20px;
+
+}
+
+.speech-card h4{
+
+    font-size:20px;
+
+}
+
+.speech-card p{
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    text-indent:20px;
+
+}
+
+}
+/*=========================
+   REPORTING : ORAL
+==========================*/
+
+.debate-table{
+
+    width:100%;
+
+    overflow-x:auto;
+
+    margin:30px 0;
+
+}
+
+.debate-table table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:#ffffff;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+}
+
+.debate-table th{
+
+    background:#1565C0;
+
+    color:#fff;
+
+    padding:18px;
+
+    font-size:24px;
+
+    text-align:center;
+
+}
+
+.debate-table td{
+
+    padding:25px;
+
+    border:1px solid #ddd;
+
+    font-size:19px;
+
+    line-height:1.9;
+
+    vertical-align:top;
+
+}
+
+.debate-table tr:nth-child(even){
+
+    background:#F7FBFF;
+
+}
+
+.report-card{
+
+    background:#FFFDE7;
+
+    border-left:8px solid #2E7D32;
+
+    border-radius:12px;
+
+    padding:30px;
+
+    margin-top:35px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+.report-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.report-card h3{
+
+    text-align:center;
+
+    color:#1565C0;
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+}
+
+.report-card p{
+
+    font-size:20px;
+
+    line-height:2;
+
+    text-align:justify;
+
+    text-indent:40px;
+
+    color:#333;
+
+    margin-bottom:18px;
+
+}
+
+@media(max-width:768px){
+
+.debate-table th{
+
+    font-size:18px;
+
+}
+
+.debate-table td{
+
+    font-size:16px;
+
+    padding:18px;
+
+}
+
+.report-card{
+
+    padding:20px;
+
+}
+
+.report-card h3{
+
+    font-size:24px;
+
+}
+
+.report-card p{
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    text-indent:20px;
+
+}
+
+}
+/*=========================
+      INTERVIEW
+==========================*/
+
+.interview-card{
+
+    background:#FFFDF8;
+
+    border-left:8px solid #1565C0;
+
+    border-radius:12px;
+
+    padding:30px;
+
+    margin-top:30px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+.interview-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.interview-card h3{
+
+    text-align:center;
+
+    color:#1565C0;
+
+    font-size:30px;
+
+    margin-bottom:30px;
+
+}
+
+.dialogue{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.dialogue p{
+
+    font-size:20px;
+
+    line-height:2;
+
+    color:#333;
+
+    background:#ffffff;
+
+    padding:18px 22px;
+
+    border-radius:10px;
+
+    border-left:5px solid #42A5F5;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+
+}
+
+.dialogue p strong{
+
+    color:#0D47A1;
+
+}
+
+.dialogue p:nth-child(odd){
+
+    border-left:5px solid #2E7D32;
+
+    background:#F9FFF9;
+
+}
+
+.dialogue p:nth-child(even){
+
+    border-left:5px solid #FB8C00;
+
+    background:#FFFDF5;
+
+}
+
+@media(max-width:768px){
+
+.interview-card{
+
+    padding:20px;
+
+}
+
+.interview-card h3{
+
+    font-size:24px;
+
+}
+
+.dialogue{
+
+    gap:14px;
+
+}
+
+.dialogue p{
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    padding:15px;
+
+}
+
+}
+/*=========================
+   PRONUNCIATION ACTIVITY
+==========================*/
+
+.word-box{
+
+    background:#FFF8E1;
+
+    border-left:8px solid #FB8C00;
+
+    border-radius:12px;
+
+    padding:25px 30px;
+
+    margin:25px 0;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+
+}
+
+.word-box p{
+
+    font-size:20px;
+
+    line-height:2;
+
+    text-align:justify;
+
+    color:#333;
+
+}
+
+.pronunciation-table{
+
+    width:100%;
+
+    overflow-x:auto;
+
+    margin-top:30px;
+
+}
+
+.pronunciation-table table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:#fff;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+
+}
+
+.pronunciation-table th{
+
+    background:#1565C0;
+
+    color:#fff;
+
+    padding:18px;
+
+    font-size:24px;
+
+    text-align:center;
+
+}
+
+.pronunciation-table td{
+
+    border:1px solid #ddd;
+
+    padding:22px;
+
+    font-size:20px;
+
+    line-height:2;
+
+    vertical-align:top;
+
+}
+
+.pronunciation-table tr:nth-child(even){
+
+    background:#F5F9FF;
+
+}
+
+.pronunciation-table td:hover{
+
+    background:#E3F2FD;
+
+}
+
+/*=========================
+      PROJECT WORK
+==========================*/
+
+.project-box{
+
+    background:#E8F5E9;
+
+    border-left:8px solid #2E7D32;
+
+    border-radius:12px;
+
+    padding:30px;
+
+    margin-top:25px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+.project-box:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.project-box h3{
+
+    text-align:center;
+
+    color:#1565C0;
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+}
+
+.project-box p{
+
+    font-size:20px;
+
+    line-height:2;
+
+    text-align:justify;
+
+    text-indent:40px;
+
+    color:#333;
+
+}
+
+@media(max-width:768px){
+
+.word-box{
+
+    padding:20px;
+
+}
+
+.word-box p{
+
+    font-size:16px;
+
+    line-height:1.8;
+
+}
+
+.pronunciation-table th{
+
+    font-size:18px;
+
+}
+
+.pronunciation-table td{
+
+    font-size:16px;
+
+    padding:16px;
+
+}
+
+.project-box{
+
+    padding:20px;
+
+}
+
+.project-box h3{
+
+    font-size:24px;
+
+}
+
+.project-box p{
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    text-indent:20px;
+
+}
+
+}
+/*=========================
+       PROJECT WORK
+=========================*/
+
+.project-card{
+
+    background:#ffffff;
+
+    border-left:8px solid #1565C0;
+
+    border-radius:12px;
+
+    padding:30px;
+
+    margin:35px 0;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.project-card h3{
+
+    text-align:center;
+
+    color:#1565C0;
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+}
+
+.project-answer{
+
+    background:#F5F9FF;
+
+    border-radius:10px;
+
+    padding:25px;
+
+    margin-top:20px;
+
+}
+
+.project-answer h4{
+
+    color:#0D47A1;
+
+    font-size:24px;
+
+    margin-bottom:15px;
+
+}
+
+.project-answer ul{
+
+    padding-left:28px;
+
+}
+
+.project-answer li{
+
+    font-size:20px;
+
+    line-height:2;
+
+    margin-bottom:10px;
+
+    color:#333;
+
+}
+
+/*=========================
+      7-DAY DIARY
+=========================*/
+
+.diary-week{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+    margin-top:30px;
+
+}
+
+.day-card{
+
+    background:#FFFDE7;
+
+    border-left:8px solid #F9A825;
+
+    border-radius:12px;
+
+    padding:22px 28px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+}
+
+.day-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 22px rgba(0,0,0,.22);
+
+}
+
+.day-card h4{
+
+    color:#1565C0;
+
+    font-size:24px;
+
+    margin-bottom:12px;
+
+}
+
+.day-card p{
+
+    font-size:20px;
+
+    line-height:2;
+
+    text-align:justify;
+
+    color:#333;
+
+}
+
+@media(max-width:768px){
+
+.project-card{
+
+    padding:20px;
+
+}
+
+.project-card h3{
+
+    font-size:24px;
+
+}
+
+.project-answer h4{
+
+    font-size:20px;
+
+}
+
+.project-answer li{
+
+    font-size:16px;
+
+    line-height:1.8;
+
+}
+
+.day-card{
+
+    padding:18px;
+
+}
+
+.day-card h4{
+
+    font-size:20px;
+
+}
+
+.day-card p{
+
+    font-size:16px;
+
+    line-height:1.8;
+
+}
+
+}
+/*=========================
+     GRAMMAR REVISITED
+=========================*/
+
+.grammar-container{
+
+    display:flex;
+    flex-direction:column;
+    gap:28px;
+    margin-top:30px;
+
+}
+
+.grammar-card{
+
+    background:#ffffff;
+
+    border-left:8px solid #1565C0;
+
+    border-radius:12px;
+
+    padding:28px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+.grammar-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.grammar-card h4{
+
+    color:#0D47A1;
+
+    font-size:24px;
+
+    margin-bottom:18px;
+
+}
+
+.grammar-card p{
+
+    font-size:20px;
+
+    line-height:1.9;
+
+    color:#333;
+
+    margin-bottom:10px;
+
+}
+
+.answer-box{
+
+    background:#E8F5E9;
+
+    border-left:6px solid #2E7D32;
+
+    padding:18px;
+
+    margin-top:18px;
+
+    border-radius:8px;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+}
+
+.answer-box b{
+
+    color:#1B5E20;
+
+}
+
+.answer-box span{
+
+    color:#C62828;
+
+    font-weight:bold;
+
+}
+
+.modal-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+}
+
+.modal-table th{
+
+    background:#1565C0;
+
+    color:#fff;
+
+    padding:16px;
+
+    font-size:20px;
+
+}
+
+.modal-table td{
+
+    border:1px solid #ddd;
+
+    padding:16px;
+
+    font-size:19px;
+
+}
+
+.modal-table tr:nth-child(even){
+
+    background:#F5F9FF;
+
+}
+
+@media(max-width:768px){
+
+.grammar-card{
+
+    padding:18px;
+
+}
+
+.grammar-card h4{
+
+    font-size:20px;
+
+}
+
+.grammar-card p{
+
+    font-size:16px;
+
+}
+
+.answer-box{
+
+    font-size:16px;
+
+}
+
+.modal-table th{
+
+    font-size:16px;
+
+}
+
+.modal-table td{
+
+    font-size:15px;
+
+    padding:12px;
+
+}
+
+}
+/*=========================
+  GRAMMAR REVISITED - X
+=========================*/
+
+.question-box{
+
+    background:#F5F9FF;
+
+    border-left:6px solid #1565C0;
+
+    border-radius:10px;
+
+    padding:20px;
+
+    margin:20px 0;
+
+}
+
+.question-box p{
+
+    font-size:20px;
+
+    line-height:2;
+
+    color:#333;
+
+    margin-bottom:8px;
+
+}
+
+.answer-box{
+
+    background:#E8F5E9;
+
+    border-left:6px solid #2E7D32;
+
+    border-radius:10px;
+
+    padding:20px;
+
+    margin:25px 0;
+
+}
+
+.answer-box h4{
+
+    color:#1565C0;
+
+    margin-bottom:15px;
+
+    font-size:24px;
+
+}
+
+.answer-box p,
+
+.answer-box li{
+
+    font-size:20px;
+
+    line-height:2;
+
+}
+
+.answer-box span{
+
+    color:#C62828;
+
+    font-weight:bold;
+
+}
+
+.grammar-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:25px;
+
+    background:#ffffff;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+}
+
+.grammar-table th{
+
+    background:#1565C0;
+
+    color:#fff;
+
+    padding:18px;
+
+    font-size:20px;
+
+    text-align:center;
+
+}
+
+.grammar-table td{
+
+    border:1px solid #ddd;
+
+    padding:18px;
+
+    font-size:19px;
+
+    line-height:1.8;
+
+}
+
+.grammar-table tr:nth-child(even){
+
+    background:#F7FBFF;
+
+}
+
+.grammar-table span{
+
+    color:#C62828;
+
+    font-weight:bold;
+
+}
+
+@media(max-width:768px){
+
+.question-box p{
+
+    font-size:16px;
+
+}
+
+.answer-box p,
+
+.answer-box li{
+
+    font-size:16px;
+
+}
+
+.answer-box h4{
+
+    font-size:20px;
+
+}
+
+.grammar-table th{
+
+    font-size:16px;
+
+}
+
+.grammar-table td{
+
+    font-size:15px;
+
+    padding:12px;
+
+}
+
+}
+/*=========================
+     FUN WITH LANGUAGE
+=========================*/
+
+.family-container{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+    margin-top:30px;
+
+}
+
+.family-card{
+
+    background:#ffffff;
+
+    border-left:8px solid #1565C0;
+
+    border-radius:12px;
+
+    padding:28px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+.family-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.family-card h4{
+
+    color:#0D47A1;
+
+    font-size:23px;
+
+    line-height:1.8;
+
+    margin-bottom:18px;
+
+}
+
+.family-card .answer-box{
+
+    background:#E8F5E9;
+
+    border-left:6px solid #2E7D32;
+
+    border-radius:10px;
+
+    padding:18px;
+
+}
+
+.family-card .answer-box strong{
+
+    color:#1B5E20;
+
+    font-size:20px;
+
+}
+
+.family-card .answer-box span{
+
+    color:#C62828;
+
+    font-size:21px;
+
+    font-weight:bold;
+
+    display:block;
+
+    margin:10px 0;
+
+}
+
+.family-card .answer-box p{
+
+    font-size:19px;
+
+    color:#333;
+
+    line-height:1.9;
+
+    text-align:justify;
+
+    margin:0;
+
+}
+
+@media(max-width:768px){
+
+.family-card{
+
+    padding:18px;
+
+}
+
+.family-card h4{
+
+    font-size:18px;
+
+}
+
+.family-card .answer-box strong{
+
+    font-size:16px;
+
+}
+
+.family-card .answer-box span{
+
+    font-size:17px;
+
+}
+
+.family-card .answer-box p{
+
+    font-size:15px;
+
+    line-height:1.8;
+
+}
+
+}
+/*=========================
+    LANGUAGE RIDDLES
+=========================*/
+
+.riddle-container{
+
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+    margin-top:30px;
+
+}
+
+.riddle-card{
+
+    background:#ffffff;
+    border-left:8px solid #1565C0;
+    border-radius:12px;
+    padding:28px;
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+    transition:.3s;
+
+}
+
+.riddle-card:hover{
+
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.riddle-card h4{
+
+    color:#0D47A1;
+    font-size:23px;
+    line-height:1.8;
+    margin-bottom:18px;
+
+}
+
+.riddle-card .answer-box{
+
+    background:#E8F5E9;
+    border-left:6px solid #2E7D32;
+    border-radius:10px;
+    padding:18px;
+
+}
+
+.riddle-card .answer-box strong{
+
+    color:#1B5E20;
+    font-size:20px;
+
+}
+
+.riddle-card .answer-box span{
+
+    display:block;
+    color:#C62828;
+    font-size:21px;
+    font-weight:bold;
+    margin:10px 0;
+
+}
+
+.riddle-card .answer-box p{
+
+    margin:0;
+    font-size:19px;
+    line-height:1.8;
+    color:#333;
+    text-align:justify;
+
+}
+
+@media(max-width:768px){
+
+.riddle-card{
+
+    padding:18px;
+
+}
+
+.riddle-card h4{
+
+    font-size:18px;
+
+}
+
+.riddle-card .answer-box strong{
+
+    font-size:16px;
+
+}
+
+.riddle-card .answer-box span{
+
+    font-size:17px;
+
+}
+
+.riddle-card .answer-box p{
+
+    font-size:15px;
+
+}
+
+}
