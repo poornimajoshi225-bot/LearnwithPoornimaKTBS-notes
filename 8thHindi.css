@@ -1,0 +1,430 @@
+/* ==============================
+   General Reset
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   Header
+================================= */
+
+.header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 18px 6%;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo-icon {
+    width: 62px;
+    height: 62px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: white;
+    color: #6a11cb;
+
+    border-radius: 50%;
+
+    font-size: 22px;
+    font-weight: 800;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo-text h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.logo-text p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+
+/* ==============================
+   Navigation
+================================= */
+
+.navbar {
+    background: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 35px;
+
+    padding: 13px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+
+    font-weight: 600;
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #6a11cb;
+}
+
+
+/* ==============================
+   Hero Section
+================================= */
+
+.hero {
+    text-align: center;
+
+    padding: 55px 20px 40px;
+
+    background:
+        linear-gradient(
+            rgba(255, 255, 255, 0.92),
+            rgba(255, 255, 255, 0.92)
+        );
+}
+
+.hero h2 {
+    font-size: 38px;
+    color: #4b1fa3;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+}
+
+.hero strong {
+    color: #6a11cb;
+}
+
+
+/* ==============================
+   Language Section
+================================= */
+
+.language-section {
+    max-width: 1200px;
+
+    margin: 20px auto 70px;
+
+    padding: 0 20px;
+}
+
+.language-section > h2 {
+    text-align: center;
+
+    font-size: 30px;
+
+    color: #333;
+
+    margin-bottom: 35px;
+
+    position: relative;
+}
+
+.language-section > h2::after {
+    content: "";
+
+    display: block;
+
+    width: 80px;
+    height: 4px;
+
+    background: #6a11cb;
+
+    margin: 10px auto;
+
+    border-radius: 5px;
+}
+
+
+/* ==============================
+   Language Cards
+================================= */
+
+.language-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.language-card {
+    background: white;
+
+    padding: 30px 25px;
+
+    text-align: center;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.10);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+    border-top: 6px solid #6a11cb;
+}
+
+.language-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 14px 35px rgba(0, 0, 0, 0.16);
+}
+
+
+/* ==============================
+   Card Icons
+================================= */
+
+.card-icon {
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #eee;
+
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.first-language {
+    border-top-color: #e63946;
+}
+
+.first-language .card-icon {
+    background: #ffe5e8;
+    color: #e63946;
+}
+
+.second-language {
+    border-top-color: #00897b;
+}
+
+.second-language .card-icon {
+    background: #dff7f3;
+    color: #00897b;
+}
+
+.third-language {
+    border-top-color: #f57c00;
+}
+
+.third-language .card-icon {
+    background: #fff0df;
+    color: #f57c00;
+}
+
+
+/* ==============================
+   Card Heading
+================================= */
+
+.language-card h3 {
+    font-size: 21px;
+
+    margin-bottom: 15px;
+
+    color: #292929;
+}
+
+
+/* ==============================
+   Card Paragraph
+================================= */
+
+.language-card p {
+    color: #666;
+
+    font-size: 15px;
+
+    min-height: 75px;
+
+    margin-bottom: 20px;
+}
+
+
+/* ==============================
+   Learn Button
+================================= */
+
+.learn-btn {
+    display: inline-block;
+
+    padding: 10px 24px;
+
+    background: #6a11cb;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.learn-btn:hover {
+    background: #4b1fa3;
+
+    transform: scale(1.05);
+}
+
+
+/* ==============================
+   Footer
+================================= */
+
+.footer {
+    background: #202124;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px 20px;
+}
+
+.footer h3 {
+    font-size: 23px;
+
+    margin-bottom: 8px;
+}
+
+.footer p {
+    color: #ccc;
+
+    font-size: 14px;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+
+    color: #999;
+
+    font-size: 13px;
+}
+
+
+/* ==============================
+   Responsive Design
+================================= */
+
+@media (max-width: 900px) {
+
+    .language-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .logo-text h1 {
+        font-size: 22px;
+    }
+
+    .logo-icon {
+        width: 52px;
+        height: 52px;
+        font-size: 18px;
+    }
+
+    .navbar {
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .language-container {
+        grid-template-columns: 1fr;
+    }
+
+    .language-card {
+        padding: 25px 20px;
+    }
+
+}
+/* logo*/
+.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:20px;
+
+}
+
+.logo img{
+
+width:90px;
+
+height:90px;
+
+border-radius:50%;
+
+background:white;
+
+padding:5px;
+
+}
