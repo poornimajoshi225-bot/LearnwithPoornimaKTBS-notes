@@ -1,0 +1,1921 @@
+/* ================================
+   GENERAL SETTINGS
+================================ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Noto Sans Devanagari", "Mangal", Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+    line-height: 1.8;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.lesson-header {
+    background: linear-gradient(135deg, #4b0082, #7b2cbf);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ================================
+   LOGO
+================================ */
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: white;
+    padding: 5px;
+}
+
+.site-title h1 {
+    font-size: 30px;
+    margin-bottom: 2px;
+}
+
+.site-title p {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+
+/* ================================
+   LESSON INFORMATION
+================================ */
+
+.lesson-info {
+    margin-top: 10px;
+}
+
+.lesson-info h2 {
+    font-size: 22px;
+    margin-bottom: 3px;
+}
+
+.lesson-info h3 {
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+.lesson-info h4 {
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+.lesson-info h5 {
+    font-size: 28px;
+    color: #ffe082;
+    margin-bottom: 2px;
+}
+
+.lesson-info p {
+    font-size: 17px;
+}
+
+
+/* ================================
+   MAIN CONTENT
+================================ */
+
+.content {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+
+/* ================================
+   LESSON TITLE
+================================ */
+
+.lesson-title {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    border-left: 6px solid #7b2cbf;
+}
+
+.lesson-title h1 {
+    color: #4b0082;
+    font-size: 30px;
+}
+
+.author {
+    color: #555;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+
+/* ================================
+   LESSON CONTENT
+================================ */
+
+.lesson-content {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.lesson-content h2 {
+    color: #4b0082;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 27px;
+}
+
+.lesson-content p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.lesson-content h3 {
+    color: #6a1b9a;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* ================================
+   BOTTOM BUTTONS
+================================ */
+
+.bottom-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 35px auto;
+    padding: 15px;
+}
+
+.bottom-buttons button,
+.bottom-buttons a {
+    border: none;
+    padding: 11px 22px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* Print */
+
+.print-btn {
+    background: #1565c0;
+    color: white;
+}
+
+.print-btn:hover {
+    background: #0d47a1;
+    transform: translateY(-2px);
+}
+
+
+/* Back */
+
+.back-btn {
+    background: #616161;
+    color: white;
+}
+
+.back-btn:hover {
+    background: #424242;
+    transform: translateY(-2px);
+}
+
+
+/* Top */
+
+.top-btn {
+    background: #ef6c00;
+    color: white;
+}
+
+.top-btn:hover {
+    background: #e65100;
+    transform: translateY(-2px);
+}
+
+
+/* Home */
+
+.home-btn {
+    background: #2e7d32;
+    color: white;
+}
+
+.home-btn:hover {
+    background: #1b5e20;
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    background: #311b92;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+
+/* ================================
+   MOBILE RESPONSIVE
+================================ */
+
+@media (max-width: 600px) {
+
+    .lesson-header {
+        padding: 15px 10px;
+    }
+
+    .logo-section {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .logo {
+        width: 65px;
+        height: 65px;
+    }
+
+    .site-title h1 {
+        font-size: 25px;
+    }
+
+    .lesson-info h3 {
+        font-size: 17px;
+    }
+
+    .lesson-info h5 {
+        font-size: 24px;
+    }
+
+    .content {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .lesson-title h1 {
+        font-size: 24px;
+    }
+
+    .lesson-content {
+        padding: 20px 15px;
+    }
+
+    .lesson-content p {
+        font-size: 17px;
+    }
+
+    .bottom-buttons {
+        gap: 8px;
+    }
+
+    .bottom-buttons button,
+    .bottom-buttons a {
+        padding: 9px 14px;
+        font-size: 14px;
+    }
+}
+
+
+/* ================================
+   PRINT SETTINGS
+================================ */
+
+@media print {
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    .lesson-header {
+        background: white;
+        color: black;
+        box-shadow: none;
+    }
+
+    .lesson-info h5 {
+        color: black;
+    }
+
+    .bottom-buttons,
+    footer {
+        display: none;
+    }
+
+    .lesson-content,
+    .lesson-title {
+        box-shadow: none;
+        border: none;
+    }
+
+}
+/* =================================
+   शब्दार्थ SECTION
+================================= */
+
+.shabdarth-section {
+    background: white;
+    margin: 25px 0;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    border-left: 6px solid #7b2cbf;
+}
+
+.shabdarth-section h2 {
+    text-align: center;
+    color: #4b0082;
+    font-size: 28px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0d4f5;
+}
+
+.shabdarth-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.shabdarth-item {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    align-items: center;
+    background: #f8f5fc;
+    border-radius: 8px;
+    padding: 12px 15px;
+    border: 1px solid #e5d9f2;
+    transition: 0.3s;
+}
+
+.shabdarth-item:hover {
+    background: #f0e8fa;
+    transform: translateX(4px);
+}
+
+.word {
+    color: #4b0082;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.meaning {
+    color: #333;
+    font-size: 18px;
+}
+
+
+/* =================================
+   MOBILE VIEW
+================================= */
+
+@media (max-width: 600px) {
+
+    .shabdarth-section {
+        padding: 18px 12px;
+    }
+
+    .shabdarth-section h2 {
+        font-size: 24px;
+    }
+
+    .shabdarth-item {
+        grid-template-columns: 1fr;
+        gap: 3px;
+        padding: 11px 12px;
+    }
+
+    .word {
+        font-size: 18px;
+    }
+
+    .meaning {
+        font-size: 17px;
+        padding-left: 5px;
+    }
+
+}
+
+
+/* =================================
+   PRINT
+================================= */
+
+@media print {
+
+    .shabdarth-section {
+        box-shadow: none;
+        border-left: 3px solid #000;
+    }
+
+    .shabdarth-item {
+        background: white;
+        border: 1px solid #999;
+    }
+
+    .shabdarth-item:hover {
+        transform: none;
+    }
+
+}
+/* =================================
+   अभ्यास SECTION
+================================= */
+
+.abhyas-section {
+    background: white;
+    margin: 30px 0;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    border-left: 6px solid #7b2cbf;
+}
+
+
+/* =================================
+   अभ्यास HEADING
+================================= */
+
+.abhyas-heading {
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e0d4f5;
+}
+
+.abhyas-heading h2 {
+    color: #4b0082;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.abhyas-heading h3 {
+    color: #6a1b9a;
+    font-size: 24px;
+}
+
+
+/* =================================
+   QUESTION CARD
+================================= */
+
+.question-card {
+    background: #f8f5fc;
+    margin-bottom: 18px;
+    padding: 18px 20px;
+    border-radius: 10px;
+    border: 1px solid #e3d7f1;
+    transition: 0.3s;
+}
+
+.question-card:hover {
+    background: #f1e9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Question heading */
+
+.question-card h4 {
+    color: #4b0082;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* Question */
+
+.question {
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+
+/* Answer box */
+
+.answer {
+    background: white;
+    border-left: 5px solid #7b2cbf;
+    padding: 12px 15px;
+    border-radius: 6px;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.answer strong {
+    color: #6a1b9a;
+}
+
+
+/* =================================
+   MOBILE VIEW
+================================= */
+
+@media (max-width: 600px) {
+
+    .abhyas-section {
+        padding: 18px 12px;
+        margin: 20px 0;
+    }
+
+    .abhyas-heading h2 {
+        font-size: 27px;
+    }
+
+    .abhyas-heading h3 {
+        font-size: 21px;
+    }
+
+    .question-card {
+        padding: 15px 12px;
+    }
+
+    .question-card h4 {
+        font-size: 18px;
+    }
+
+    .question {
+        font-size: 17px;
+    }
+
+    .answer {
+        font-size: 17px;
+        padding: 10px 12px;
+    }
+
+}
+
+
+/* =================================
+   PRINT SETTINGS
+================================= */
+
+@media print {
+
+    .abhyas-section {
+        box-shadow: none;
+        border-left: 3px solid black;
+    }
+
+    .question-card {
+        background: white;
+        border: 1px solid #999;
+        break-inside: avoid;
+    }
+
+    .question-card:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .answer {
+        border-left: 3px solid black;
+    }
+
+}
+/* =================================
+   II. लिखित SECTION
+================================= */
+
+.likhit-section {
+    margin-top: 30px;
+}
+
+.likhit-section .question-card {
+    margin-bottom: 20px;
+}
+
+.likhit-section .question-card h4 {
+    color: #4b0082;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.likhit-section .answer {
+    line-height: 1.9;
+}
+
+
+/* =================================
+   MOBILE - II. लिखित
+================================= */
+
+@media (max-width: 600px) {
+
+    .likhit-section .question-card h4 {
+        font-size: 18px;
+    }
+
+    .likhit-section .answer {
+        font-size: 17px;
+        line-height: 1.8;
+    }
+
+}
+
+
+/* =================================
+   PRINT - II. लिखित
+================================= */
+
+@media print {
+
+    .likhit-section .question-card {
+        break-inside: avoid;
+    }
+
+}
+/* =================================
+   आ) तीन-चार वाक्य में उत्तर
+================================= */
+
+.teen-char-section {
+    margin-top: 30px;
+}
+
+.teen-char-section .abhyas-heading {
+    background: #f8f5fc;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.teen-char-section .abhyas-heading h2 {
+    color: #4b0082;
+    font-size: 27px;
+    margin: 0;
+}
+
+.teen-char-section .question-card {
+    margin-bottom: 20px;
+}
+
+.teen-char-section .question-card h4 {
+    color: #4b0082;
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.teen-char-section .answer {
+    background: white;
+    border-left: 5px solid #7b2cbf;
+    padding: 15px 18px;
+    border-radius: 6px;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+.teen-char-section .answer strong {
+    color: #6a1b9a;
+}
+
+
+/* =================================
+   MOBILE VIEW
+================================= */
+
+@media (max-width: 600px) {
+
+    .teen-char-section {
+        padding: 18px 12px;
+    }
+
+    .teen-char-section .abhyas-heading h2 {
+        font-size: 22px;
+        line-height: 1.5;
+    }
+
+    .teen-char-section .question-card {
+        padding: 14px 12px;
+    }
+
+    .teen-char-section .question-card h4 {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .teen-char-section .answer {
+        font-size: 17px;
+        line-height: 1.8;
+        padding: 12px;
+        text-align: left;
+    }
+
+}
+
+
+/* =================================
+   PRINT VIEW
+================================= */
+
+@media print {
+
+    .teen-char-section {
+        box-shadow: none;
+    }
+
+    .teen-char-section .question-card {
+        background: white;
+        border: 1px solid #999;
+        break-inside: avoid;
+    }
+
+    .teen-char-section .answer {
+        background: white;
+        border-left: 3px solid black;
+    }
+
+}
+/* =================================
+   ब) चार-पाँच वाक्य में उत्तर
+================================= */
+
+.char-panch-section {
+    margin-top: 30px;
+}
+
+.char-panch-section .abhyas-heading {
+    background: #f8f5fc;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.char-panch-section .abhyas-heading h2 {
+    color: #4b0082;
+    font-size: 27px;
+    text-align: center;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.char-panch-section .question-card {
+    margin-bottom: 22px;
+}
+
+.char-panch-section .question-card h4 {
+    color: #4b0082;
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.char-panch-section .answer {
+    background: white;
+    border-left: 5px solid #7b2cbf;
+    padding: 15px 18px;
+    border-radius: 6px;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+.char-panch-section .answer strong {
+    color: #6a1b9a;
+}
+
+
+/* =================================
+   MOBILE VIEW
+================================= */
+
+@media (max-width: 600px) {
+
+    .char-panch-section {
+        padding: 18px 12px;
+    }
+
+    .char-panch-section .abhyas-heading h2 {
+        font-size: 22px;
+        line-height: 1.5;
+    }
+
+    .char-panch-section .question-card {
+        padding: 14px 12px;
+    }
+
+    .char-panch-section .question-card h4 {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .char-panch-section .answer {
+        font-size: 17px;
+        line-height: 1.8;
+        padding: 12px;
+        text-align: left;
+    }
+
+}
+
+
+/* =================================
+   PRINT VIEW
+================================= */
+
+@media print {
+
+    .char-panch-section .question-card {
+        background: white;
+        border: 1px solid #999;
+        break-inside: avoid;
+    }
+
+    .char-panch-section .answer {
+        background: white;
+        border-left: 3px solid black;
+    }
+
+}
+/* =================================
+   III. किसने किससे कहा
+================================= */
+
+.kisne-kisse-section {
+    margin-top: 30px;
+}
+
+.kisne-kisse-section .abhyas-heading {
+    background: #f8f5fc;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.kisne-kisse-section .abhyas-heading h2 {
+    color: #4b0082;
+    font-size: 27px;
+    text-align: center;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.kisne-kisse-section .question-card {
+    margin-bottom: 20px;
+}
+
+.kisne-kisse-section .question-card h4 {
+    color: #4b0082;
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.kisne-kisse-section .answer {
+    background: white;
+    border-left: 5px solid #7b2cbf;
+    padding: 14px 18px;
+    border-radius: 6px;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.kisne-kisse-section .answer strong {
+    color: #6a1b9a;
+}
+
+
+/* =================================
+   MOBILE VIEW
+================================= */
+
+@media (max-width: 600px) {
+
+    .kisne-kisse-section {
+        padding: 18px 12px;
+    }
+
+    .kisne-kisse-section .abhyas-heading h2 {
+        font-size: 22px;
+    }
+
+    .kisne-kisse-section .question-card {
+        padding: 14px 12px;
+    }
+
+    .kisne-kisse-section .question-card h4 {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .kisne-kisse-section .answer {
+        font-size: 17px;
+        line-height: 1.8;
+        padding: 12px;
+    }
+
+}
+
+
+/* =================================
+   PRINT VIEW
+================================= */
+
+@media print {
+
+    .kisne-kisse-section .question-card {
+        background: white;
+        border: 1px solid #999;
+        break-inside: avoid;
+    }
+
+    .kisne-kisse-section .answer {
+        background: white;
+        border-left: 3px solid black;
+    }
+
+}
+/* =================================
+   IV. सार्थक वाक्य बनाइए
+================================= */
+
+.sarthak-vakya-section {
+    margin-top: 30px;
+}
+
+.sarthak-vakya-section .abhyas-heading {
+    background: #f8f5fc;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.sarthak-vakya-section .abhyas-heading h2 {
+    color: #4b0082;
+    font-size: 27px;
+    text-align: center;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.sarthak-vakya-section .question-card {
+    margin-bottom: 20px;
+}
+
+.sarthak-vakya-section .question-card h4 {
+    color: #4b0082;
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.sarthak-vakya-section .answer {
+    background: white;
+    border-left: 5px solid #7b2cbf;
+    padding: 14px 18px;
+    border-radius: 6px;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.sarthak-vakya-section .answer strong {
+    color: #6a1b9a;
+}
+
+
+/* =================================
+   MOBILE VIEW
+================================= */
+
+@media (max-width: 600px) {
+
+    .sarthak-vakya-section {
+        padding: 18px 12px;
+    }
+
+    .sarthak-vakya-section .abhyas-heading h2 {
+        font-size: 22px;
+    }
+
+    .sarthak-vakya-section .question-card {
+        padding: 14px 12px;
+    }
+
+    .sarthak-vakya-section .question-card h4 {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .sarthak-vakya-section .answer {
+        font-size: 17px;
+        line-height: 1.8;
+        padding: 12px;
+    }
+
+}
+
+
+/* =================================
+   PRINT VIEW
+================================= */
+
+@media print {
+
+    .sarthak-vakya-section .question-card {
+        background: white;
+        border: 1px solid #999;
+        break-inside: avoid;
+    }
+
+    .sarthak-vakya-section .answer {
+        background: white;
+        border-left: 3px solid black;
+    }
+
+}
+/* =================================
+   V. सर्वनामों के वचन बदलिए
+================================= */
+
+.sarvanam-vachan-section {
+    margin-top: 30px;
+}
+
+.sarvanam-vachan-section .abhyas-heading {
+    background: #f8f5fc;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.sarvanam-vachan-section .abhyas-heading h2 {
+    color: #4b0082;
+    font-size: 27px;
+    text-align: center;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.sarvanam-vachan-section .question-card {
+    margin-bottom: 20px;
+}
+
+.sarvanam-vachan-section .question-card h4 {
+    color: #4b0082;
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.sarvanam-vachan-section .answer {
+    background: white;
+    border-left: 5px solid #7b2cbf;
+    padding: 14px 18px;
+    border-radius: 6px;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.sarvanam-vachan-section .answer strong {
+    color: #6a1b9a;
+}
+
+
+/* =================================
+   MOBILE VIEW
+================================= */
+
+@media (max-width: 600px) {
+
+    .sarvanam-vachan-section {
+        padding: 18px 12px;
+    }
+
+    .sarvanam-vachan-section .abhyas-heading h2 {
+        font-size: 21px;
+        line-height: 1.5;
+    }
+
+    .sarvanam-vachan-section .question-card {
+        padding: 14px 12px;
+    }
+
+    .sarvanam-vachan-section .question-card h4 {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .sarvanam-vachan-section .answer {
+        font-size: 17px;
+        line-height: 1.8;
+        padding: 12px;
+    }
+
+}
+
+
+/* =================================
+   PRINT VIEW
+================================= */
+
+@media print {
+
+    .sarvanam-vachan-section .question-card {
+        background: white;
+        border: 1px solid #999;
+        break-inside: avoid;
+    }
+
+    .sarvanam-vachan-section .answer {
+        background: white;
+        border-left: 3px solid black;
+    }
+
+}
+/* =================================
+   VI. कोई या कुछ
+================================= */
+
+.koi-kuch-section {
+    margin-top: 30px;
+}
+
+.koi-kuch-section .abhyas-heading {
+    background: #f8f5fc;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.koi-kuch-section .abhyas-heading h2 {
+    color: #4b0082;
+    font-size: 26px;
+    text-align: center;
+    margin: 0;
+    line-height: 1.7;
+}
+
+.koi-kuch-section .question-card {
+    margin-bottom: 20px;
+}
+
+.koi-kuch-section .question-card h4 {
+    color: #4b0082;
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.koi-kuch-section .answer {
+    background: white;
+    border-left: 5px solid #7b2cbf;
+    padding: 14px 18px;
+    border-radius: 6px;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.koi-kuch-section .answer strong {
+    color: #6a1b9a;
+}
+
+.koi-kuch-section .answer b {
+    color: #d84315;
+    font-weight: bold;
+}
+
+
+/* =================================
+   MOBILE VIEW
+================================= */
+
+@media (max-width: 600px) {
+
+    .koi-kuch-section {
+        padding: 18px 12px;
+    }
+
+    .koi-kuch-section .abhyas-heading h2 {
+        font-size: 21px;
+        line-height: 1.6;
+    }
+
+    .koi-kuch-section .question-card {
+        padding: 14px 12px;
+    }
+
+    .koi-kuch-section .question-card h4 {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .koi-kuch-section .answer {
+        font-size: 17px;
+        line-height: 1.8;
+        padding: 12px;
+    }
+
+}
+
+
+/* =================================
+   PRINT VIEW
+================================= */
+
+@media print {
+
+    .koi-kuch-section .question-card {
+        background: white;
+        border: 1px solid #999;
+        break-inside: avoid;
+    }
+
+    .koi-kuch-section .answer {
+        background: white;
+        border-left: 3px solid black;
+    }
+
+    .koi-kuch-section .answer b {
+        color: black;
+    }
+
+}
+/* =================================
+   VII. प्रेरणार्थक क्रिया रूप
+================================= */
+
+.preranaarthak-section {
+    margin-top: 30px;
+}
+
+.preranaarthak-section .abhyas-heading {
+    background: #f8f5fc;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.preranaarthak-section .abhyas-heading h2 {
+    color: #4b0082;
+    font-size: 27px;
+    text-align: center;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+/* =================================
+   TABLE WRAPPER
+================================= */
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+/* =================================
+   प्रेरणार्थक TABLE
+================================= */
+
+.preranaarthak-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Table Header */
+
+.preranaarthak-table thead th {
+    background: #4b0082;
+    color: white;
+    padding: 15px;
+    font-size: 19px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+
+/* Table Cells */
+
+.preranaarthak-table tbody td {
+    padding: 14px 15px;
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+
+/* First column */
+
+.preranaarthak-table tbody td:first-child {
+    font-weight: bold;
+    color: #4b0082;
+}
+
+
+/* Alternate rows */
+
+.preranaarthak-table tbody tr:nth-child(even) {
+    background: #f8f5fc;
+}
+
+
+/* Hover */
+
+.preranaarthak-table tbody tr:hover {
+    background: #f0e8fa;
+}
+
+
+/* =================================
+   MOBILE VIEW
+================================= */
+
+@media (max-width: 600px) {
+
+    .preranaarthak-section {
+        padding: 18px 12px;
+    }
+
+    .preranaarthak-section .abhyas-heading h2 {
+        font-size: 22px;
+        line-height: 1.5;
+    }
+
+    .preranaarthak-table {
+        min-width: 600px;
+    }
+
+    .preranaarthak-table thead th {
+        font-size: 17px;
+        padding: 12px 10px;
+    }
+
+    .preranaarthak-table tbody td {
+        font-size: 17px;
+        padding: 12px 10px;
+    }
+
+}
+
+
+/* =================================
+   PRINT VIEW
+================================= */
+
+@media print {
+
+    .preranaarthak-table {
+        box-shadow: none;
+    }
+
+    .preranaarthak-table thead th {
+        background: white;
+        color: black;
+        border: 1px solid black;
+    }
+
+    .preranaarthak-table tbody td {
+        border: 1px solid black;
+        color: black;
+    }
+
+}
+/* =================================
+   VIII. आवश्यक स्थान पर नुक्ता
+================================= */
+
+.nukta-section {
+    margin-top: 30px;
+}
+
+.nukta-section .abhyas-heading {
+    background: #f8f5fc;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.nukta-section .abhyas-heading h2 {
+    color: #4b0082;
+    font-size: 27px;
+    text-align: center;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+/* =================================
+   NUKTA LIST
+================================= */
+
+.nukta-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nukta-item {
+    display: grid;
+    grid-template-columns: 45px 1fr 50px 1fr;
+    align-items: center;
+    gap: 10px;
+
+    background: #f8f5fc;
+    border: 1px solid #e3d7f1;
+    border-radius: 8px;
+
+    padding: 12px 15px;
+
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nukta-item:hover {
+    background: #f0e8fa;
+    transform: translateX(4px);
+}
+
+
+/* Number */
+
+.nukta-number {
+    font-weight: bold;
+    color: #4b0082;
+}
+
+
+/* Original word */
+
+.nukta-original {
+    color: #333;
+    font-weight: 600;
+}
+
+
+/* Arrow */
+
+.arrow {
+    text-align: center;
+    color: #7b2cbf;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+/* Correct answer */
+
+.nukta-answer {
+    color: #6a1b9a;
+    font-weight: bold;
+    background: white;
+    padding: 7px 12px;
+    border-radius: 5px;
+}
+
+
+/* =================================
+   MOBILE VIEW
+================================= */
+
+@media (max-width: 600px) {
+
+    .nukta-section {
+        padding: 18px 12px;
+    }
+
+    .nukta-section .abhyas-heading h2 {
+        font-size: 21px;
+        line-height: 1.5;
+    }
+
+    .nukta-item {
+        grid-template-columns: 35px 1fr;
+        gap: 5px 8px;
+        padding: 12px;
+        font-size: 17px;
+    }
+
+    .nukta-number {
+        grid-row: span 2;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .nukta-answer {
+        grid-column: 2;
+        padding: 6px 10px;
+    }
+
+    .nukta-answer::before {
+        content: "शुद्ध रूप: ";
+        color: #555;
+        font-weight: normal;
+    }
+
+}
+
+
+/* =================================
+   PRINT VIEW
+================================= */
+
+@media print {
+
+    .nukta-item {
+        background: white;
+        border: 1px solid #999;
+        break-inside: avoid;
+    }
+
+    .nukta-answer {
+        background: white;
+        color: black;
+    }
+
+    .arrow {
+        color: black;
+    }
+
+    .nukta-item:hover {
+        transform: none;
+    }
+
+}
+/* =================================
+   IX. अन्य लिंग रूप
+================================= */
+
+.ling-roop-section {
+    margin-top: 30px;
+}
+
+.ling-roop-section .abhyas-heading {
+    background: #f8f5fc;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.ling-roop-section .abhyas-heading h2 {
+    color: #4b0082;
+    font-size: 27px;
+    text-align: center;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+/* =================================
+   TABLE WRAPPER
+================================= */
+
+.ling-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+/* =================================
+   LING TABLE
+================================= */
+
+.ling-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Table Header */
+
+.ling-table thead th {
+    background: #4b0082;
+    color: white;
+    padding: 15px;
+    font-size: 19px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+
+/* Table Cells */
+
+.ling-table tbody td {
+    padding: 14px 15px;
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+
+/* Serial Number */
+
+.ling-table tbody td:first-child {
+    font-weight: bold;
+    color: #4b0082;
+    width: 90px;
+}
+
+
+/* Original Word */
+
+.ling-table tbody td:nth-child(2) {
+    font-weight: bold;
+}
+
+
+/* Answer */
+
+.ling-table tbody td:nth-child(3) {
+    color: #6a1b9a;
+    font-weight: bold;
+}
+
+
+/* Alternate Rows */
+
+.ling-table tbody tr:nth-child(even) {
+    background: #f8f5fc;
+}
+
+
+/* Hover */
+
+.ling-table tbody tr:hover {
+    background: #f0e8fa;
+}
+
+
+/* =================================
+   MOBILE VIEW
+================================= */
+
+@media (max-width: 600px) {
+
+    .ling-roop-section {
+        padding: 18px 12px;
+    }
+
+    .ling-roop-section .abhyas-heading h2 {
+        font-size: 22px;
+        line-height: 1.5;
+    }
+
+    .ling-table {
+        min-width: 550px;
+    }
+
+    .ling-table thead th {
+        font-size: 17px;
+        padding: 12px 10px;
+    }
+
+    .ling-table tbody td {
+        font-size: 17px;
+        padding: 12px 10px;
+    }
+
+}
+
+
+/* =================================
+   PRINT VIEW
+================================= */
+
+@media print {
+
+    .ling-table {
+        box-shadow: none;
+    }
+
+    .ling-table thead th {
+        background: white;
+        color: black;
+        border: 1px solid black;
+    }
+
+    .ling-table tbody td {
+        border: 1px solid black;
+        color: black;
+    }
+
+    .ling-table tbody tr:hover {
+        background: white;
+    }
+
+}
+/* =================================
+   योग्यता - विस्तार
+================================= */
+
+.yogyata-vistar-section {
+    margin-top: 30px;
+}
+
+
+/* =================================
+   विस्तार CARD
+================================= */
+
+.vistar-card {
+    background: #f8f5fc;
+    border: 1px solid #e3d7f1;
+    border-left: 6px solid #7b2cbf;
+    border-radius: 10px;
+    padding: 22px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+}
+
+.vistar-card h3 {
+    color: #4b0082;
+    font-size: 21px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+
+/* =================================
+   सपने का उत्तर
+================================= */
+
+.vistar-answer {
+    background: white;
+    padding: 16px 18px;
+    border-radius: 7px;
+    border-left: 4px solid #7b2cbf;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+
+/* =================================
+   दस वाक्य
+================================= */
+
+.ten-sentences {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sentence {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 10px;
+
+    background: white;
+    padding: 12px 15px;
+    border-radius: 7px;
+
+    color: #333;
+    font-size: 18px;
+    line-height: 1.8;
+
+    border: 1px solid #e3d7f1;
+
+    transition: 0.3s;
+}
+
+.sentence:hover {
+    background: #f0e8fa;
+    transform: translateX(4px);
+}
+
+
+/* Sentence Number */
+
+.sentence-number {
+    color: #6a1b9a;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+
+/* =================================
+   MOBILE VIEW
+================================= */
+
+@media (max-width: 600px) {
+
+    .yogyata-vistar-section {
+        padding: 18px 12px;
+    }
+
+    .vistar-card {
+        padding: 15px 12px;
+    }
+
+    .vistar-card h3 {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .vistar-answer {
+        font-size: 17px;
+        line-height: 1.8;
+        padding: 12px;
+        text-align: left;
+    }
+
+    .sentence {
+        grid-template-columns: 32px 1fr;
+        gap: 7px;
+        padding: 11px 10px;
+        font-size: 17px;
+        line-height: 1.8;
+    }
+
+    .sentence-number {
+        font-size: 17px;
+    }
+
+}
+
+
+/* =================================
+   PRINT VIEW
+================================= */
+
+@media print {
+
+    .vistar-card {
+        background: white;
+        box-shadow: none;
+        border: 1px solid #999;
+        border-left: 3px solid black;
+        break-inside: avoid;
+    }
+
+    .vistar-answer,
+    .sentence {
+        background: white;
+        border: 1px solid #999;
+    }
+
+    .sentence:hover {
+        transform: none;
+    }
+
+}
