@@ -1,0 +1,3830 @@
+/* =========================================================
+   Learn With Poornima
+   8th Class Hindi First Language Part 1
+   8thHindi.css
+   ========================================================= */
+
+
+/* ---------- General Reset ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Noto Sans Devanagari", "Mangal", Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+    line-height: 1.8;
+}
+
+
+/* ---------- Header ---------- */
+
+.site-header {
+    background: linear-gradient(135deg, #673ab7, #3f51b5);
+    color: white;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+
+/* ---------- Logo ---------- */
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: white;
+    color: #673ab7;
+    padding: 12px 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.logo-icon {
+    font-size: 35px;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* ---------- Header Content ---------- */
+
+.header-content h1 {
+    font-size: 34px;
+    margin-bottom: 5px;
+}
+
+.header-content p {
+    font-size: 17px;
+    opacity: 0.95;
+}
+
+
+/* ---------- Navigation Bar ---------- */
+
+.navbar {
+    background: #222;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar > ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 22px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.navbar > ul > li > a:hover {
+    background: #673ab7;
+}
+
+
+/* ---------- Dropdown Menu ---------- */
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 260px;
+    background: #333;
+    list-style: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    padding: 13px 18px;
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+    background: #673ab7;
+}
+
+
+/* ---------- Submenu ---------- */
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 280px;
+    background: #333;
+    list-style: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.dropdown-submenu:hover .submenu {
+    display: block;
+}
+
+
+/* ---------- Main Container ---------- */
+
+.container {
+    width: 92%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+
+/* ---------- Lesson Header ---------- */
+
+.lesson-header {
+    text-align: center;
+    background: white;
+    padding: 35px 20px;
+    border-radius: 18px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border-top: 6px solid #673ab7;
+}
+
+.class-name {
+    color: #673ab7;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.lesson-header h2 {
+    color: #555;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.lesson-header h1 {
+    color: #3f51b5;
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.lesson-subtitle {
+    color: #777;
+    font-size: 16px;
+}
+
+
+/* ---------- Lesson Card ---------- */
+
+.lesson-card {
+    background: linear-gradient(135deg, #ede7f6, #e8eaf6);
+    padding: 28px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    border-left: 6px solid #673ab7;
+}
+
+.lesson-card h2 {
+    color: #4527a0;
+    margin-bottom: 12px;
+}
+
+.lesson-card p {
+    font-size: 17px;
+}
+
+
+/* ---------- Content Cards ---------- */
+
+.content-card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    border-left: 5px solid #3f51b5;
+}
+
+.content-card h2 {
+    color: #3f51b5;
+    font-size: 25px;
+    margin-bottom: 18px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 8px;
+}
+
+.content-card p {
+    font-size: 17px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.content-card ul {
+    padding-left: 25px;
+}
+
+.content-card li {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+
+/* ---------- Topic List ---------- */
+
+.topic-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.topic-list a {
+    text-decoration: none;
+    color: #333;
+    background: #f3f0ff;
+    border: 1px solid #d8cff5;
+    padding: 15px 18px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.topic-list a:hover {
+    background: #673ab7;
+    color: white;
+    transform: translateY(-3px);
+}
+
+
+
+
+
+
+
+
+/* ---------- Lesson Navigation ---------- */
+
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin: 35px 0;
+}
+
+.nav-button {
+    display: inline-block;
+    background: #673ab7;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.nav-button:hover {
+    background: #4527a0;
+    transform: translateY(-2px);
+}
+
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: 40px;
+}
+
+.site-footer h3 {
+    color: #d1c4e9;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.site-footer p {
+    font-size: 15px;
+    margin: 5px 0;
+    color: #ddd;
+}
+
+
+/* =========================================================
+   Responsive Design
+   ========================================================= */
+
+
+/* ---------- Tablets ---------- */
+
+@media (max-width: 768px) {
+
+    .site-header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 15px;
+    }
+
+    .header-content h1 {
+        font-size: 28px;
+    }
+
+    .navbar > ul {
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+
+    .lesson-header h1 {
+        font-size: 30px;
+    }
+
+    .topic-list {
+        grid-template-columns: 1fr;
+    }
+
+    .content-card {
+        padding: 22px;
+    }
+
+    .lesson-navigation {
+        flex-direction: column;
+    }
+
+    .nav-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* ---------- Mobile Phones ---------- */
+
+@media (max-width: 500px) {
+
+    .site-header {
+        min-height: auto;
+    }
+
+    .logo {
+        padding: 10px 14px;
+    }
+
+    .logo-icon {
+        font-size: 28px;
+    }
+
+    .logo-text {
+        font-size: 17px;
+    }
+
+    .header-content h1 {
+        font-size: 24px;
+    }
+
+    .header-content p {
+        font-size: 14px;
+    }
+
+    .navbar > ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar a {
+        width: 100%;
+    }
+
+    .dropdown-menu,
+    .submenu {
+        position: static;
+        width: 100%;
+    }
+
+    .dropdown:hover .dropdown-menu,
+    .dropdown-submenu:hover .submenu {
+        display: block;
+    }
+
+    .container {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .lesson-header {
+        padding: 25px 15px;
+    }
+
+    .lesson-header h2 {
+        font-size: 21px;
+    }
+
+    .lesson-header h1 {
+        font-size: 27px;
+    }
+
+    .class-name {
+        font-size: 16px;
+    }
+
+    .lesson-card,
+    .content-card {
+        padding: 18px;
+    }
+
+    .content-card h2 {
+        font-size: 21px;
+    }
+
+    .content-card p,
+    .content-card li {
+        font-size: 16px;
+    }
+
+    table th,
+    table td {
+        padding: 10px 8px;
+        font-size: 14px;
+    }
+
+    .question h3 {
+        font-size: 17px;
+    }
+}
+/* =========================================================
+   LEARN WITH POORNIMA
+   8th Class Hindi First Language Part 1
+   ========================================================= */
+
+
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Noto Sans Devanagari", "Mangal", Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+    line-height: 1.8;
+}
+
+
+/* ================= HEADER ================= */
+
+.site-header {
+    background: linear-gradient(135deg, #673ab7, #3f51b5);
+    color: white;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+
+/* ================= LOGO ================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: white;
+    color: #673ab7;
+    padding: 12px 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.logo-icon {
+    font-size: 35px;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* ================= HEADER TEXT ================= */
+
+.header-content h1 {
+    font-size: 34px;
+    margin-bottom: 5px;
+}
+
+.header-content p {
+    font-size: 17px;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    background: #222;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar > ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 22px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.navbar > ul > li > a:hover {
+    background: #673ab7;
+}
+
+
+/* ================= DROPDOWN ================= */
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 270px;
+    background: #333;
+    list-style: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    padding: 13px 18px;
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+    background: #673ab7;
+}
+
+
+/* ================= SUBMENU ================= */
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 290px;
+    background: #333;
+    list-style: none;
+}
+
+.dropdown-submenu:hover .submenu {
+    display: block;
+}
+
+
+/* =========================================================
+   QUICK BUTTONS
+   Back | Home | Print | Top
+   ========================================================= */
+
+.quick-buttons {
+    position: fixed;
+    right: 20px;
+    bottom: 25px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.quick-btn {
+    min-width: 100px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.quick-btn:hover {
+    transform: translateX(-4px);
+    opacity: 0.9;
+}
+
+.back-btn {
+    background: #607d8b;
+}
+
+.home-btn {
+    background: #009688;
+}
+
+.print-btn {
+    background: #ff9800;
+}
+
+.top-btn {
+    background: #673ab7;
+}
+
+
+/* ================= MAIN CONTAINER ================= */
+
+.container {
+    width: 92%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+
+/* ================= LESSON HEADER ================= */
+
+.lesson-header {
+    text-align: center;
+    background: white;
+    padding: 35px 20px;
+    border-radius: 18px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border-top: 6px solid #673ab7;
+}
+
+.class-name {
+    color: #673ab7;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.lesson-header h2 {
+    color: #555;
+    font-size: 25px;
+}
+
+.lesson-header h1 {
+    color: #3f51b5;
+    font-size: 36px;
+}
+
+.lesson-subtitle {
+    color: #777;
+    font-size: 16px;
+}
+
+
+/* ================= LESSON CARD ================= */
+
+.lesson-card {
+    background: linear-gradient(135deg, #ede7f6, #e8eaf6);
+    padding: 28px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    border-left: 6px solid #673ab7;
+}
+
+.lesson-card h2 {
+    color: #4527a0;
+    margin-bottom: 12px;
+}
+
+.lesson-card p {
+    font-size: 17px;
+}
+
+
+/* ================= CONTENT CARDS ================= */
+
+.content-card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    border-left: 5px solid #3f51b5;
+}
+
+.content-card h2 {
+    color: #3f51b5;
+    font-size: 25px;
+    margin-bottom: 18px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 8px;
+}
+
+.content-card p {
+    font-size: 17px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.content-card ul {
+    padding-left: 25px;
+}
+
+.content-card li {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+
+/* ================= TOPIC LIST ================= */
+
+.topic-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.topic-list a {
+    text-decoration: none;
+    color: #333;
+    background: #f3f0ff;
+    border: 1px solid #d8cff5;
+    padding: 15px 18px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.topic-list a:hover {
+    background: #673ab7;
+    color: white;
+    transform: translateY(-3px);
+}
+
+
+
+
+
+
+
+
+/* ================= LESSON NAVIGATION ================= */
+
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 35px 0;
+}
+
+.nav-button {
+    display: inline-block;
+    background: #673ab7;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    background: #4527a0;
+    transform: translateY(-2px);
+}
+
+
+/* ================= BOTTOM BUTTONS ================= */
+
+.bottom-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.bottom-btn {
+    border: none;
+    background: #673ab7;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bottom-btn:hover {
+    background: #4527a0;
+}
+
+
+/* ================= FOOTER ================= */
+
+.site-footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: 40px;
+}
+
+.site-footer h3 {
+    color: #d1c4e9;
+    font-size: 24px;
+}
+
+.site-footer p {
+    font-size: 15px;
+    color: #ddd;
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .site-header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 15px;
+    }
+
+    .header-content h1 {
+        font-size: 28px;
+    }
+
+    .navbar > ul {
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+
+    .lesson-header h1 {
+        font-size: 30px;
+    }
+
+    .topic-list {
+        grid-template-columns: 1fr;
+    }
+
+    .content-card {
+        padding: 22px;
+    }
+
+    .lesson-navigation {
+        flex-direction: column;
+    }
+
+    .nav-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .quick-buttons {
+        right: 10px;
+        bottom: 15px;
+    }
+
+    .quick-btn {
+        min-width: 85px;
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 500px) {
+
+    .logo {
+        padding: 10px 14px;
+    }
+
+    .logo-icon {
+        font-size: 28px;
+    }
+
+    .logo-text {
+        font-size: 17px;
+    }
+
+    .header-content h1 {
+        font-size: 24px;
+    }
+
+    .navbar > ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar a {
+        width: 100%;
+    }
+
+    .dropdown-menu,
+    .submenu {
+        position: static;
+        width: 100%;
+    }
+
+    .container {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .lesson-header {
+        padding: 25px 15px;
+    }
+
+    .lesson-header h2 {
+        font-size: 21px;
+    }
+
+    .lesson-header h1 {
+        font-size: 27px;
+    }
+
+    .content-card {
+        padding: 18px;
+    }
+
+    .content-card h2 {
+        font-size: 21px;
+    }
+
+    .content-card p,
+    .content-card li {
+        font-size: 16px;
+    }
+
+    table th,
+    table td {
+        padding: 10px 8px;
+        font-size: 14px;
+    }
+
+    .bottom-buttons {
+        flex-direction: column;
+    }
+
+    .bottom-btn {
+        text-align: center;
+        width: 100%;
+    }
+
+    .quick-buttons {
+        gap: 6px;
+    }
+
+    .quick-btn {
+        min-width: 75px;
+        font-size: 12px;
+        padding: 7px;
+    }
+}
+
+
+/* =========================================================
+   PRINT STYLES
+   When Print button is clicked
+   ========================================================= */
+
+@media print {
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    .site-header {
+        background: white;
+        color: black;
+        border-bottom: 2px solid #000;
+    }
+
+    .logo {
+        color: black;
+        box-shadow: none;
+        border: 1px solid #000;
+    }
+
+    .navbar,
+    .quick-buttons,
+    .lesson-navigation,
+    .bottom-buttons,
+    .site-footer {
+        display: none !important;
+    }
+
+    .container {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+    }
+
+    .lesson-header,
+    .lesson-card,
+    .content-card {
+        box-shadow: none;
+        break-inside: avoid;
+    }
+
+    .content-card {
+        border: 1px solid #ccc;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    table th {
+        background: #ddd !important;
+        color: black !important;
+    }
+}
+/* =========================================================
+   LEARN WITH POORNIMA
+   8th Class Hindi First Language Part 1
+   ========================================================= */
+
+
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Noto Sans Devanagari", "Mangal", Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+    line-height: 1.8;
+}
+
+
+/* ================= HEADER ================= */
+
+.site-header {
+    background: linear-gradient(135deg, #673ab7, #3f51b5);
+    color: white;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+
+/* ================= LOGO ================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: white;
+    color: #673ab7;
+    padding: 12px 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.logo-icon {
+    font-size: 35px;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* ================= HEADER TEXT ================= */
+
+.header-content h1 {
+    font-size: 34px;
+    margin-bottom: 5px;
+}
+
+.header-content p {
+    font-size: 17px;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    background: #222;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar > ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 22px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.navbar > ul > li > a:hover {
+    background: #673ab7;
+}
+
+
+/* ================= DROPDOWN ================= */
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 270px;
+    background: #333;
+    list-style: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    padding: 13px 18px;
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+    background: #673ab7;
+}
+
+
+/* ================= SUBMENU ================= */
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 290px;
+    background: #333;
+    list-style: none;
+}
+
+.dropdown-submenu:hover .submenu {
+    display: block;
+}
+
+
+/* =========================================================
+   QUICK BUTTONS
+   ========================================================= */
+
+.quick-buttons {
+    position: fixed;
+    right: 20px;
+    bottom: 25px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.quick-btn {
+    min-width: 100px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.quick-btn:hover {
+    transform: translateX(-4px);
+    opacity: 0.9;
+}
+
+.back-btn {
+    background: #607d8b;
+}
+
+.home-btn {
+    background: #009688;
+}
+
+.print-btn {
+    background: #ff9800;
+}
+
+.top-btn {
+    background: #673ab7;
+}
+
+
+/* ================= MAIN CONTAINER ================= */
+
+.container {
+    width: 92%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+
+/* ================= LESSON HEADER ================= */
+
+.lesson-header {
+    text-align: center;
+    background: white;
+    padding: 35px 20px;
+    border-radius: 18px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border-top: 6px solid #673ab7;
+}
+
+.class-name {
+    color: #673ab7;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.lesson-header h2 {
+    color: #555;
+    font-size: 25px;
+}
+
+.lesson-header h1 {
+    color: #3f51b5;
+    font-size: 36px;
+}
+
+.lesson-subtitle {
+    color: #777;
+    font-size: 16px;
+}
+
+
+/* ================= LESSON CARD ================= */
+
+.lesson-card {
+    background: linear-gradient(135deg, #ede7f6, #e8eaf6);
+    padding: 28px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    border-left: 6px solid #673ab7;
+}
+
+.lesson-card h2 {
+    color: #4527a0;
+    margin-bottom: 12px;
+}
+
+.lesson-card p {
+    font-size: 17px;
+}
+
+
+/* ================= CONTENT CARDS ================= */
+
+.content-card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    border-left: 5px solid #3f51b5;
+}
+
+.content-card h2 {
+    color: #3f51b5;
+    font-size: 25px;
+    margin-bottom: 18px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 8px;
+}
+
+.content-card p {
+    font-size: 17px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.content-card ul {
+    padding-left: 25px;
+}
+
+.content-card li {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+
+/* ================= TOPIC LIST ================= */
+
+.topic-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.topic-list a {
+    text-decoration: none;
+    color: #333;
+    background: #f3f0ff;
+    border: 1px solid #d8cff5;
+    padding: 15px 18px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.topic-list a:hover {
+    background: #673ab7;
+    color: white;
+    transform: translateY(-3px);
+}
+
+
+/* ================= QUESTIONS ================= */
+
+.question {
+    background: #f8f9ff;
+    border-left: 4px solid #673ab7;
+    padding: 20px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+}
+
+.question h3 {
+    color: #4527a0;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.question p {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   शब्दार्थ TABLE
+   ========================================================= */
+
+.word-meaning-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.word-meaning-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: white;
+}
+
+.word-meaning-table th {
+    background: #673ab7;
+    color: white;
+    padding: 14px 12px;
+    font-size: 17px;
+    text-align: center;
+    border: 1px solid #5e35b1;
+}
+
+.word-meaning-table td {
+    padding: 13px 12px;
+    border: 1px solid #ddd;
+    font-size: 17px;
+}
+
+.word-meaning-table td:first-child {
+    width: 80px;
+    text-align: center;
+}
+
+.word-meaning-table td:nth-child(2) {
+    width: 35%;
+    color: #4527a0;
+}
+
+.word-meaning-table td:nth-child(3) {
+    width: 50%;
+}
+
+.word-meaning-table tr:nth-child(even) {
+    background: #f7f4ff;
+}
+
+.word-meaning-table tr:hover {
+    background: #eee8ff;
+}
+
+
+/* ================= LESSON NAVIGATION ================= */
+
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 35px 0;
+}
+
+.nav-button {
+    display: inline-block;
+    background: #673ab7;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    background: #4527a0;
+    transform: translateY(-2px);
+}
+
+
+/* ================= BOTTOM BUTTONS ================= */
+
+.bottom-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.bottom-btn {
+    border: none;
+    background: #673ab7;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bottom-btn:hover {
+    background: #4527a0;
+}
+
+
+/* ================= FOOTER ================= */
+
+.site-footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: 40px;
+}
+
+.site-footer h3 {
+    color: #d1c4e9;
+    font-size: 24px;
+}
+
+.site-footer p {
+    font-size: 15px;
+    color: #ddd;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .site-header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 15px;
+    }
+
+    .header-content h1 {
+        font-size: 28px;
+    }
+
+    .navbar > ul {
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+
+    .lesson-header h1 {
+        font-size: 30px;
+    }
+
+    .topic-list {
+        grid-template-columns: 1fr;
+    }
+
+    .content-card {
+        padding: 22px;
+    }
+
+    .lesson-navigation {
+        flex-direction: column;
+    }
+
+    .nav-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .quick-buttons {
+        right: 10px;
+        bottom: 15px;
+    }
+
+    .quick-btn {
+        min-width: 85px;
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 500px) {
+
+    .logo {
+        padding: 10px 14px;
+    }
+
+    .logo-icon {
+        font-size: 28px;
+    }
+
+    .logo-text {
+        font-size: 17px;
+    }
+
+    .header-content h1 {
+        font-size: 24px;
+    }
+
+    .navbar > ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar a {
+        width: 100%;
+    }
+
+    .dropdown-menu,
+    .submenu {
+        position: static;
+        width: 100%;
+    }
+
+    .container {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .lesson-header {
+        padding: 25px 15px;
+    }
+
+    .lesson-header h2 {
+        font-size: 21px;
+    }
+
+    .lesson-header h1 {
+        font-size: 27px;
+    }
+
+    .content-card {
+        padding: 18px;
+    }
+
+    .content-card h2 {
+        font-size: 21px;
+    }
+
+    .content-card p,
+    .content-card li {
+        font-size: 16px;
+    }
+
+    .word-meaning-table th,
+    .word-meaning-table td {
+        padding: 10px 8px;
+        font-size: 15px;
+    }
+
+    .bottom-buttons {
+        flex-direction: column;
+    }
+
+    .bottom-btn {
+        text-align: center;
+        width: 100%;
+    }
+
+    .quick-buttons {
+        gap: 6px;
+    }
+
+    .quick-btn {
+        min-width: 75px;
+        font-size: 12px;
+        padding: 7px;
+    }
+}
+
+
+/* =========================================================
+   PRINT
+   ========================================================= */
+
+@media print {
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    .site-header {
+        background: white;
+        color: black;
+        border-bottom: 2px solid #000;
+    }
+
+    .logo {
+        color: black;
+        box-shadow: none;
+        border: 1px solid #000;
+    }
+
+    .navbar,
+    .quick-buttons,
+    .lesson-navigation,
+    .bottom-buttons,
+    .site-footer {
+        display: none !important;
+    }
+
+    .container {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+    }
+
+    .lesson-header,
+    .lesson-card,
+    .content-card {
+        box-shadow: none;
+        break-inside: avoid;
+    }
+
+    .content-card {
+        border: 1px solid #ccc;
+    }
+
+    .word-meaning-table th {
+        background: #ddd !important;
+        color: black !important;
+    }
+
+    .word-meaning-table tr:hover {
+        background: white;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}
+/* =========================================================
+   अभ्यास I - प्रश्न और उत्तर
+   ========================================================= */
+
+.qa-box {
+    background: #f8f9ff;
+    border: 1px solid #ddd;
+    border-left: 6px solid #673ab7;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.qa-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ---------- Question Number ---------- */
+
+.question-number {
+    display: inline-block;
+    background: #673ab7;
+    color: white;
+    padding: 5px 13px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+/* ---------- Question ---------- */
+
+.qa-box h3 {
+    color: #4527a0;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+
+/* ---------- Answer ---------- */
+
+.answer {
+    background: white;
+    border-left: 4px solid #009688;
+    border-radius: 8px;
+    padding: 15px 18px;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.answer strong {
+    color: #009688;
+}
+
+
+/* =========================================================
+   अभ्यास I Responsive Design
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .qa-box {
+        padding: 17px;
+    }
+
+    .qa-box h3 {
+        font-size: 17px;
+    }
+
+    .answer {
+        font-size: 16px;
+        padding: 13px 15px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .qa-box {
+        padding: 15px;
+        border-left-width: 4px;
+    }
+
+    .question-number {
+        font-size: 13px;
+        padding: 4px 10px;
+    }
+
+    .qa-box h3 {
+        font-size: 16px;
+    }
+
+    .answer {
+        font-size: 15px;
+        padding: 12px;
+        text-align: justify;
+    }
+}
+
+
+/* =========================================================
+   PRINT - अभ्यास I
+   ========================================================= */
+
+@media print {
+
+    .qa-box {
+        box-shadow: none;
+        border: 1px solid #999;
+        border-left: 4px solid #000;
+        break-inside: avoid;
+    }
+
+    .question-number {
+        background: white !important;
+        color: black !important;
+        border: 1px solid #000;
+    }
+
+    .answer {
+        border-left: 3px solid #000;
+        background: white;
+    }
+
+}
+/* =========================================================
+   अभ्यास II - तीन-चार वाक्यों में उत्तर
+   ========================================================= */
+
+.long-answer {
+    background: #faf9ff;
+    border-left: 6px solid #3f51b5;
+    border-radius: 12px;
+    padding: 22px;
+    margin-bottom: 22px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+.long-answer:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ---------- Question Number ---------- */
+
+.long-answer .question-number {
+    display: inline-block;
+    background: #3f51b5;
+    color: white;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+/* ---------- Question Heading ---------- */
+
+.long-answer h3 {
+    color: #303f9f;
+    font-size: 19px;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+
+/* ---------- Answer Box ---------- */
+
+.long-answer .answer {
+    background: white;
+    border-left: 4px solid #009688;
+    border-radius: 8px;
+    padding: 17px 20px;
+    font-size: 17px;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+.long-answer .answer strong {
+    color: #00897b;
+}
+
+
+/* =========================================================
+   अभ्यास II - Mobile Responsive
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .long-answer {
+        padding: 18px;
+    }
+
+    .long-answer h3 {
+        font-size: 17px;
+    }
+
+    .long-answer .answer {
+        font-size: 16px;
+        padding: 14px 16px;
+    }
+
+}
+
+
+/* =========================================================
+   अभ्यास II - Small Mobile
+   ========================================================= */
+
+@media (max-width: 500px) {
+
+    .long-answer {
+        padding: 15px;
+        border-left-width: 4px;
+    }
+
+    .long-answer .question-number {
+        font-size: 13px;
+        padding: 4px 11px;
+    }
+
+    .long-answer h3 {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .long-answer .answer {
+        font-size: 15px;
+        padding: 12px;
+        line-height: 1.8;
+    }
+
+}
+
+
+/* =========================================================
+   PRINT - अभ्यास II
+   ========================================================= */
+
+@media print {
+
+    .long-answer {
+        background: white;
+        box-shadow: none;
+        border: 1px solid #999;
+        border-left: 4px solid #000;
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .long-answer .question-number {
+        background: white !important;
+        color: black !important;
+        border: 1px solid #000;
+    }
+
+    .long-answer .answer {
+        background: white;
+        border-left: 3px solid #000;
+    }
+
+}
+/* =========================================================
+   अभ्यास III - रिक्त स्थानों की पूर्ति
+   ========================================================= */
+
+.fill-box {
+    background: #f8f9ff;
+    border: 1px solid #ddd;
+    border-left: 6px solid #ff9800;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.fill-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ---------- Question Number ---------- */
+
+.fill-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 35px;
+    height: 35px;
+
+    background: #ff9800;
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+
+/* ---------- Question Text ---------- */
+
+.fill-question {
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 14px;
+    color: #333;
+}
+
+
+/* ---------- Answer Highlight ---------- */
+
+.blank-answer {
+    display: inline-block;
+
+    color: #4527a0;
+    background: #ede7f6;
+
+    border-bottom: 3px solid #673ab7;
+
+    padding: 0 10px;
+
+    font-weight: bold;
+
+    border-radius: 4px;
+}
+
+
+/* ---------- Answer Box ---------- */
+
+.fill-answer {
+    background: white;
+    border-left: 4px solid #009688;
+
+    padding: 12px 16px;
+
+    border-radius: 7px;
+
+    font-size: 17px;
+
+    color: #333;
+}
+
+.fill-answer strong {
+    color: #00897b;
+}
+
+
+/* =========================================================
+   अभ्यास III - Responsive Design
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .fill-box {
+        padding: 17px;
+    }
+
+    .fill-question {
+        font-size: 17px;
+    }
+
+    .fill-answer {
+        font-size: 16px;
+    }
+
+}
+
+
+/* =========================================================
+   अभ्यास III - Mobile
+   ========================================================= */
+
+@media (max-width: 500px) {
+
+    .fill-box {
+        padding: 15px;
+        border-left-width: 4px;
+    }
+
+    .fill-number {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .fill-question {
+        font-size: 16px;
+        line-height: 1.9;
+    }
+
+    .blank-answer {
+        padding: 0 7px;
+    }
+
+    .fill-answer {
+        font-size: 15px;
+        padding: 10px 12px;
+    }
+
+}
+
+
+/* =========================================================
+   PRINT - अभ्यास III
+   ========================================================= */
+
+@media print {
+
+    .fill-box {
+        background: white;
+        box-shadow: none;
+
+        border: 1px solid #999;
+        border-left: 4px solid #000;
+
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .fill-number {
+        background: white !important;
+        color: black !important;
+        border: 1px solid #000;
+    }
+
+    .blank-answer {
+        color: black;
+        background: white;
+        border-bottom: 2px solid black;
+    }
+
+    .fill-answer {
+        background: white;
+        border-left: 3px solid #000;
+    }
+
+}
+/* =========================================================
+   अभ्यास IV - सही या गलत
+   ========================================================= */
+
+.true-false-box {
+    background: #f8f9ff;
+    border: 1px solid #ddd;
+    border-left: 6px solid #673ab7;
+
+    border-radius: 12px;
+
+    padding: 20px;
+    margin-bottom: 20px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+
+    transition: 0.3s;
+}
+
+.true-false-box:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ---------- Question Number ---------- */
+
+.tf-number {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 35px;
+    height: 35px;
+
+    background: #673ab7;
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+
+/* ---------- Question ---------- */
+
+.tf-question {
+    font-size: 18px;
+
+    line-height: 1.9;
+
+    color: #333;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   Answer
+   ========================================================= */
+
+.tf-answer {
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    padding: 13px 16px;
+
+    border-radius: 8px;
+
+    font-size: 17px;
+
+    background: white;
+}
+
+
+/* ---------- Answer Label ---------- */
+
+.tf-label {
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* ---------- Correct Answer ---------- */
+
+.tf-answer.correct {
+    border-left: 5px solid #2e7d32;
+
+    background: #e8f5e9;
+}
+
+.tf-answer.correct .tf-status {
+    color: #2e7d32;
+
+    font-weight: bold;
+}
+
+
+/* ---------- Wrong Answer ---------- */
+
+.tf-answer.wrong {
+    border-left: 5px solid #c62828;
+
+    background: #ffebee;
+}
+
+.tf-answer.wrong .tf-status {
+    color: #c62828;
+
+    font-weight: bold;
+}
+
+
+/* ---------- Correction ---------- */
+
+.tf-correction {
+    color: #555;
+
+    font-size: 16px;
+
+    font-style: italic;
+}
+
+
+/* =========================================================
+   अभ्यास IV - Tablet
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .true-false-box {
+        padding: 17px;
+    }
+
+    .tf-question {
+        font-size: 17px;
+    }
+
+    .tf-answer {
+        font-size: 16px;
+    }
+
+    .tf-correction {
+        font-size: 15px;
+    }
+
+}
+
+
+/* =========================================================
+   अभ्यास IV - Mobile
+   ========================================================= */
+
+@media (max-width: 500px) {
+
+    .true-false-box {
+        padding: 15px;
+
+        border-left-width: 4px;
+    }
+
+    .tf-number {
+        width: 30px;
+        height: 30px;
+
+        font-size: 14px;
+    }
+
+    .tf-question {
+        font-size: 16px;
+
+        line-height: 1.8;
+    }
+
+    .tf-answer {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 5px;
+
+        padding: 12px;
+
+        font-size: 15px;
+    }
+
+    .tf-correction {
+        font-size: 14px;
+    }
+
+}
+
+
+/* =========================================================
+   PRINT - अभ्यास IV
+   ========================================================= */
+
+@media print {
+
+    .true-false-box {
+        background: white;
+
+        box-shadow: none;
+
+        border: 1px solid #999;
+
+        border-left: 4px solid #000;
+
+        break-inside: avoid;
+
+        page-break-inside: avoid;
+    }
+
+    .tf-number {
+        background: white !important;
+
+        color: black !important;
+
+        border: 1px solid #000;
+    }
+
+    .tf-answer.correct,
+    .tf-answer.wrong {
+        background: white;
+    }
+
+    .tf-answer.correct .tf-status,
+    .tf-answer.wrong .tf-status {
+        color: black;
+    }
+
+}
+/* =========================================================
+   अभ्यास V - व्यक्तिगत अनुभव / उपलब्धियाँ
+   ========================================================= */
+
+.activity-intro {
+    background: #f3f0ff;
+    border-left: 5px solid #673ab7;
+    padding: 16px 18px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+
+/* ================= ACHIEVEMENT LIST ================= */
+
+.achievement-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+/* ================= ACHIEVEMENT ITEM ================= */
+
+.achievement-item {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    background: #faf9ff;
+
+    border: 1px solid #ddd;
+
+    border-left: 5px solid #673ab7;
+
+    border-radius: 10px;
+
+    padding: 15px 18px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Hover Effect */
+
+.achievement-item:hover {
+    background: #f0ebff;
+
+    transform: translateX(4px);
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ================= HIDE DEFAULT CHECKBOX ================= */
+
+.achievement-item input[type="checkbox"] {
+    position: absolute;
+
+    opacity: 0;
+
+    width: 0;
+    height: 0;
+}
+
+
+/* ================= CUSTOM CHECKBOX ================= */
+
+.custom-check {
+    width: 27px;
+    height: 27px;
+
+    min-width: 27px;
+
+    border: 2px solid #673ab7;
+
+    border-radius: 6px;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: 0.2s;
+}
+
+
+/* Checked State */
+
+.achievement-item input[type="checkbox"]:checked
+~ .custom-check {
+    background: #673ab7;
+
+    border-color: #673ab7;
+}
+
+
+/* Check Mark */
+
+.achievement-item input[type="checkbox"]:checked
+~ .custom-check::after {
+    content: "✓";
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    line-height: 1;
+}
+
+
+/* Highlight selected item */
+
+.achievement-item:has(input[type="checkbox"]:checked) {
+    background: #ede7f6;
+
+    border-left-color: #4527a0;
+}
+
+
+/* ================= NUMBER ================= */
+
+.achievement-number {
+    font-weight: bold;
+
+    color: #673ab7;
+
+    font-size: 17px;
+}
+
+
+/* ================= TEXT ================= */
+
+.achievement-text {
+    font-size: 17px;
+
+    color: #333;
+
+    line-height: 1.7;
+}
+
+
+/* ================= PERSONAL NOTE ================= */
+
+.personal-note {
+    margin-top: 25px;
+
+    padding: 17px 20px;
+
+    background: #fff8e1;
+
+    border-left: 5px solid #ff9800;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+.personal-note strong {
+    color: #e65100;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .activity-intro {
+        font-size: 16px;
+
+        padding: 14px 16px;
+    }
+
+    .achievement-item {
+        padding: 14px 15px;
+    }
+
+    .achievement-text {
+        font-size: 16px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 500px) {
+
+    .activity-intro {
+        font-size: 15px;
+
+        text-align: justify;
+
+        padding: 13px;
+    }
+
+    .achievement-item {
+        padding: 13px;
+
+        gap: 9px;
+    }
+
+    .custom-check {
+        width: 25px;
+        height: 25px;
+
+        min-width: 25px;
+    }
+
+    .achievement-number {
+        font-size: 15px;
+    }
+
+    .achievement-text {
+        font-size: 15px;
+
+        line-height: 1.6;
+    }
+
+    .personal-note {
+        padding: 14px;
+
+        font-size: 14px;
+
+        text-align: justify;
+    }
+
+}
+
+
+/* =========================================================
+   PRINT
+   ========================================================= */
+
+@media print {
+
+    .activity-intro {
+        background: white;
+
+        border: 1px solid #999;
+    }
+
+    .achievement-item {
+        background: white;
+
+        border: 1px solid #999;
+
+        border-left: 4px solid #000;
+
+        box-shadow: none;
+
+        break-inside: avoid;
+
+        page-break-inside: avoid;
+    }
+
+    .achievement-item:hover {
+        transform: none;
+
+        box-shadow: none;
+    }
+
+    .custom-check {
+        border: 2px solid #000;
+
+        background: white;
+    }
+
+    .achievement-item input[type="checkbox"]:checked
+    ~ .custom-check {
+        background: white;
+
+        border-color: #000;
+    }
+
+    .achievement-item input[type="checkbox"]:checked
+    ~ .custom-check::after {
+        color: black;
+    }
+
+    .personal-note {
+        background: white;
+
+        border: 1px solid #999;
+
+        border-left: 4px solid #000;
+    }
+
+}
+/* =========================================================
+   अभ्यास VI - वाक्य में प्रयोग
+   ========================================================= */
+
+.sentence-box {
+    display: flex;
+
+    align-items: stretch;
+
+    background: #f8f9ff;
+
+    border: 1px solid #ddd;
+
+    border-left: 6px solid #009688;
+
+    border-radius: 12px;
+
+    margin-bottom: 18px;
+
+    overflow: hidden;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+
+    transition: 0.3s;
+}
+
+
+/* ---------- Hover Effect ---------- */
+
+.sentence-box:hover {
+    transform: translateX(4px);
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ---------- Number ---------- */
+
+.sentence-number {
+    width: 55px;
+
+    min-width: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #009688;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+/* ---------- Content ---------- */
+
+.sentence-content {
+    flex: 1;
+
+    padding: 17px 20px;
+}
+
+
+/* ---------- Word ---------- */
+
+.sentence-word {
+    display: inline-block;
+
+    background: #e0f2f1;
+
+    color: #00695c;
+
+    border: 1px solid #80cbc4;
+
+    border-radius: 6px;
+
+    padding: 3px 12px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+/* ---------- Sentence ---------- */
+
+.sentence-text {
+    font-size: 17px;
+
+    color: #333;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   अभ्यास VI - Tablet
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .sentence-box {
+        border-left-width: 5px;
+    }
+
+    .sentence-number {
+        width: 48px;
+
+        min-width: 48px;
+
+        font-size: 17px;
+    }
+
+    .sentence-content {
+        padding: 15px 17px;
+    }
+
+    .sentence-word {
+        font-size: 17px;
+    }
+
+    .sentence-text {
+        font-size: 16px;
+    }
+
+}
+
+
+/* =========================================================
+   अभ्यास VI - Mobile
+   ========================================================= */
+
+@media (max-width: 500px) {
+
+    .sentence-box {
+        border-left-width: 4px;
+    }
+
+    .sentence-number {
+        width: 40px;
+
+        min-width: 40px;
+
+        font-size: 15px;
+    }
+
+    .sentence-content {
+        padding: 13px;
+    }
+
+    .sentence-word {
+        font-size: 16px;
+
+        padding: 2px 9px;
+    }
+
+    .sentence-text {
+        font-size: 15px;
+
+        line-height: 1.8;
+
+        text-align: justify;
+    }
+
+}
+
+
+/* =========================================================
+   PRINT - अभ्यास VI
+   ========================================================= */
+
+@media print {
+
+    .sentence-box {
+        background: white;
+
+        box-shadow: none;
+
+        border: 1px solid #999;
+
+        border-left: 4px solid #000;
+
+        break-inside: avoid;
+
+        page-break-inside: avoid;
+    }
+
+    .sentence-number {
+        background: white;
+
+        color: black;
+
+        border-right: 1px solid #999;
+    }
+
+    .sentence-word {
+        background: white;
+
+        color: black;
+
+        border: 1px solid #777;
+    }
+
+}
+/* =========================================================
+   अभ्यास VI - वाक्य में प्रयोग
+   ========================================================= */
+
+.sentence-box {
+    display: flex;
+
+    align-items: stretch;
+
+    background: #f8f9ff;
+
+    border: 1px solid #ddd;
+
+    border-left: 6px solid #009688;
+
+    border-radius: 12px;
+
+    margin-bottom: 18px;
+
+    overflow: hidden;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+
+    transition: 0.3s;
+}
+
+
+/* ---------- Hover Effect ---------- */
+
+.sentence-box:hover {
+    transform: translateX(4px);
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ---------- Number ---------- */
+
+.sentence-number {
+    width: 55px;
+
+    min-width: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #009688;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+/* ---------- Content ---------- */
+
+.sentence-content {
+    flex: 1;
+
+    padding: 17px 20px;
+}
+
+
+/* ---------- Word ---------- */
+
+.sentence-word {
+    display: inline-block;
+
+    background: #e0f2f1;
+
+    color: #00695c;
+
+    border: 1px solid #80cbc4;
+
+    border-radius: 6px;
+
+    padding: 3px 12px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+/* ---------- Sentence ---------- */
+
+.sentence-text {
+    font-size: 17px;
+
+    color: #333;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   अभ्यास VI - Tablet
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .sentence-box {
+        border-left-width: 5px;
+    }
+
+    .sentence-number {
+        width: 48px;
+
+        min-width: 48px;
+
+        font-size: 17px;
+    }
+
+    .sentence-content {
+        padding: 15px 17px;
+    }
+
+    .sentence-word {
+        font-size: 17px;
+    }
+
+    .sentence-text {
+        font-size: 16px;
+    }
+
+}
+
+
+/* =========================================================
+   अभ्यास VI - Mobile
+   ========================================================= */
+
+@media (max-width: 500px) {
+
+    .sentence-box {
+        border-left-width: 4px;
+    }
+
+    .sentence-number {
+        width: 40px;
+
+        min-width: 40px;
+
+        font-size: 15px;
+    }
+
+    .sentence-content {
+        padding: 13px;
+    }
+
+    .sentence-word {
+        font-size: 16px;
+
+        padding: 2px 9px;
+    }
+
+    .sentence-text {
+        font-size: 15px;
+
+        line-height: 1.8;
+
+        text-align: justify;
+    }
+
+}
+
+
+/* =========================================================
+   PRINT - अभ्यास VI
+   ========================================================= */
+
+@media print {
+
+    .sentence-box {
+        background: white;
+
+        box-shadow: none;
+
+        border: 1px solid #999;
+
+        border-left: 4px solid #000;
+
+        break-inside: avoid;
+
+        page-break-inside: avoid;
+    }
+
+    .sentence-number {
+        background: white;
+
+        color: black;
+
+        border-right: 1px solid #999;
+    }
+
+    .sentence-word {
+        background: white;
+
+        color: black;
+
+        border: 1px solid #777;
+    }
+
+}
+/* =========================================================
+   अभ्यास VII - वर्ष एवं घटनाएँ
+   ========================================================= */
+
+
+/* ================= EXAMPLE BOX ================= */
+
+.example-box {
+    background: #fff8e1;
+
+    border-left: 6px solid #ff9800;
+
+    border-radius: 10px;
+
+    padding: 16px 20px;
+
+    margin-bottom: 25px;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+}
+
+.example-label {
+    color: #e65100;
+
+    font-weight: bold;
+
+    margin-right: 8px;
+}
+
+.example-text strong {
+    color: #673ab7;
+
+    font-weight: bold;
+}
+
+
+/* ================= YEAR LIST ================= */
+
+.year-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+
+/* ================= YEAR ITEM ================= */
+
+.year-item {
+    display: flex;
+
+    align-items: stretch;
+
+    background: #f8f9ff;
+
+    border: 1px solid #ddd;
+
+    border-left: 6px solid #3f51b5;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+
+    transition: 0.3s;
+}
+
+
+/* Hover */
+
+.year-item:hover {
+    transform: translateX(4px);
+
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ================= NUMBER ================= */
+
+.year-number {
+    width: 55px;
+
+    min-width: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #3f51b5;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+/* ================= CONTENT ================= */
+
+.year-content {
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 14px 20px;
+}
+
+
+/* ================= EVENT ================= */
+
+.year-event {
+    font-size: 17px;
+
+    color: #333;
+
+    font-weight: 600;
+}
+
+
+/* ================= YEAR ================= */
+
+.year-value {
+    background: #e8eaf6;
+
+    color: #303f9f;
+
+    border: 1px solid #9fa8da;
+
+    border-radius: 20px;
+
+    padding: 5px 16px;
+
+    white-space: nowrap;
+
+    font-size: 17px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .example-box {
+        font-size: 16px;
+
+        padding: 14px 16px;
+    }
+
+    .year-item {
+        border-left-width: 5px;
+    }
+
+    .year-number {
+        width: 48px;
+
+        min-width: 48px;
+
+        font-size: 17px;
+    }
+
+    .year-content {
+        padding: 13px 16px;
+
+        gap: 12px;
+    }
+
+    .year-event {
+        font-size: 16px;
+    }
+
+    .year-value {
+        font-size: 15px;
+
+        padding: 4px 12px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 500px) {
+
+    .example-box {
+        font-size: 15px;
+
+        padding: 13px;
+
+        text-align: justify;
+    }
+
+    .year-item {
+        border-left-width: 4px;
+    }
+
+    .year-number {
+        width: 40px;
+
+        min-width: 40px;
+
+        font-size: 15px;
+    }
+
+    .year-content {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        justify-content: center;
+
+        gap: 7px;
+
+        padding: 12px;
+    }
+
+    .year-event {
+        font-size: 15px;
+
+        line-height: 1.6;
+    }
+
+    .year-value {
+        font-size: 14px;
+
+        padding: 3px 11px;
+    }
+
+}
+
+
+/* =========================================================
+   PRINT
+   ========================================================= */
+
+@media print {
+
+    .example-box {
+        background: white;
+
+        border: 1px solid #999;
+
+        border-left: 4px solid #000;
+    }
+
+    .example-text strong {
+        color: black;
+    }
+
+    .year-item {
+        background: white;
+
+        border: 1px solid #999;
+
+        border-left: 4px solid #000;
+
+        box-shadow: none;
+
+        break-inside: avoid;
+
+        page-break-inside: avoid;
+    }
+
+    .year-number {
+        background: white;
+
+        color: black;
+
+        border-right: 1px solid #999;
+    }
+
+    .year-value {
+        background: white;
+
+        color: black;
+
+        border: 1px solid #777;
+    }
+
+}
+/* =========================================================
+   अभ्यास VIII - यदि मैं शिक्षा-मंत्री होता/होती
+   ========================================================= */
+
+
+/* ================= QUESTION BOX ================= */
+
+.imagination-question {
+    background: #e8eaf6;
+
+    border-left: 6px solid #3f51b5;
+
+    border-radius: 10px;
+
+    padding: 18px 20px;
+
+    margin-bottom: 25px;
+}
+
+.imagination-question p {
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    margin: 0;
+
+    text-align: justify;
+}
+
+
+/* ================= ANSWER HEADING ================= */
+
+.answer-heading {
+    display: inline-block;
+
+    background: #673ab7;
+
+    color: white;
+
+    padding: 8px 18px;
+
+    border-radius: 20px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin-bottom: 18px;
+}
+
+
+/* ================= MINISTER ANSWER ================= */
+
+.minister-answer {
+    display: flex;
+
+    align-items: stretch;
+
+    background: #f8f9ff;
+
+    border: 1px solid #ddd;
+
+    border-left: 6px solid #009688;
+
+    border-radius: 12px;
+
+    margin-bottom: 18px;
+
+    overflow: hidden;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+
+    transition: 0.3s;
+}
+
+
+/* ---------- Hover ---------- */
+
+.minister-answer:hover {
+    transform: translateX(4px);
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ================= NUMBER ================= */
+
+.minister-number {
+    width: 55px;
+
+    min-width: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #009688;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+/* ================= ANSWER TEXT ================= */
+
+.minister-text {
+    flex: 1;
+
+    padding: 16px 20px;
+
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    color: #333;
+
+    text-align: justify;
+}
+
+
+/* ================= STUDENT ACTIVITY ================= */
+
+.student-activity {
+    margin-top: 25px;
+
+    padding: 17px 20px;
+
+    background: #fff8e1;
+
+    border-left: 5px solid #ff9800;
+
+    border-radius: 9px;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+.student-activity strong {
+    color: #e65100;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .imagination-question {
+        padding: 16px;
+    }
+
+    .imagination-question p {
+        font-size: 16px;
+    }
+
+    .minister-answer {
+        border-left-width: 5px;
+    }
+
+    .minister-number {
+        width: 48px;
+
+        min-width: 48px;
+
+        font-size: 17px;
+    }
+
+    .minister-text {
+        padding: 14px 16px;
+
+        font-size: 16px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 500px) {
+
+    .imagination-question {
+        padding: 13px;
+
+        border-left-width: 4px;
+    }
+
+    .imagination-question p {
+        font-size: 15px;
+
+        line-height: 1.8;
+    }
+
+    .answer-heading {
+        font-size: 16px;
+
+        padding: 6px 14px;
+    }
+
+    .minister-answer {
+        border-left-width: 4px;
+    }
+
+    .minister-number {
+        width: 40px;
+
+        min-width: 40px;
+
+        font-size: 15px;
+    }
+
+    .minister-text {
+        padding: 12px;
+
+        font-size: 15px;
+
+        line-height: 1.8;
+    }
+
+    .student-activity {
+        padding: 14px;
+
+        font-size: 14px;
+
+        text-align: justify;
+    }
+
+}
+
+
+/* =========================================================
+   PRINT
+   ========================================================= */
+
+@media print {
+
+    .imagination-question {
+        background: white;
+
+        border: 1px solid #999;
+
+        border-left: 4px solid #000;
+    }
+
+    .answer-heading {
+        background: white;
+
+        color: black;
+
+        border: 1px solid #777;
+    }
+
+    .minister-answer {
+        background: white;
+
+        box-shadow: none;
+
+        border: 1px solid #999;
+
+        border-left: 4px solid #000;
+
+        break-inside: avoid;
+
+        page-break-inside: avoid;
+    }
+
+    .minister-number {
+        background: white;
+
+        color: black;
+
+        border-right: 1px solid #999;
+    }
+
+    .student-activity {
+        background: white;
+
+        border: 1px solid #999;
+
+        border-left: 4px solid #000;
+    }
+
+}
