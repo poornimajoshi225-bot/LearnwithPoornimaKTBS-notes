@@ -1,0 +1,1381 @@
+/* =========================================
+   8thHindiFLP1L4.css
+   Learn With Poornima
+   8th Class Hindi First Language Part 1
+   ========================================= */
+
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+body {
+    font-family: "Noto Sans Devanagari", "Mangal", Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   Header
+   ========================================= */
+
+.header {
+    background: linear-gradient(135deg, #6a1b9a, #8e24aa);
+    color: white;
+    padding: 18px 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Logo Section */
+.logo-section {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+
+/* Logo */
+.logo {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    background: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+
+/* Site Title */
+.site-title h1 {
+    font-size: 30px;
+    margin-bottom: 3px;
+}
+
+
+.site-title p {
+    font-size: 16px;
+    opacity: 0.95;
+}
+
+
+/* =========================================
+   Main Container
+   ========================================= */
+
+.container {
+    width: 92%;
+    max-width: 1050px;
+    margin: 30px auto;
+}
+
+
+/* =========================================
+   Page Heading
+   ========================================= */
+
+.page-heading {
+    text-align: center;
+    background: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.page-heading h2 {
+    color: #6a1b9a;
+    font-size: 22px;
+}
+
+
+.page-heading h3 {
+    color: #e65100;
+    font-size: 25px;
+    margin-top: 8px;
+}
+
+
+.page-heading h1 {
+    color: #b71c1c;
+    font-size: 36px;
+    margin-top: 5px;
+}
+
+
+.author {
+    font-size: 20px;
+    font-weight: bold;
+    color: #444;
+    margin-top: 5px;
+}
+
+
+/* =========================================
+   Lesson Cards
+   ========================================= */
+
+.lesson-card,
+.content-card {
+    background: white;
+    padding: 28px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.lesson-card {
+    border-left: 6px solid #8e24aa;
+}
+
+
+.content-card {
+    border-left: 6px solid #fb8c00;
+}
+
+
+.lesson-card h2,
+.content-card h2 {
+    color: #6a1b9a;
+    margin-bottom: 12px;
+}
+
+
+.lesson-card h3 {
+    color: #e65100;
+    margin-bottom: 12px;
+}
+
+
+.lesson-card p,
+.content-card p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+/* =========================================
+   Bottom Buttons
+   ========================================= */
+
+.bottom-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 35px 0 20px;
+}
+
+
+/* Common Button */
+.btn {
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    color: white;
+    font-size: 17px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 120px;
+}
+
+
+/* Print Button */
+.print-btn {
+    background: #1565c0;
+}
+
+
+.print-btn:hover {
+    background: #0d47a1;
+    transform: translateY(-2px);
+}
+
+
+/* Back Button */
+.back-btn {
+    background: #ef6c00;
+}
+
+
+.back-btn:hover {
+    background: #e65100;
+    transform: translateY(-2px);
+}
+
+
+/* Home Button */
+.home-btn {
+    background: #2e7d32;
+}
+
+
+.home-btn:hover {
+    background: #1b5e20;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   Footer
+   ========================================= */
+
+.footer {
+    background: #4a148c;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+}
+
+
+.footer p {
+    font-size: 15px;
+}
+
+
+/* =========================================
+   Print Settings
+   ========================================= */
+
+@media print {
+
+    body {
+        background: white;
+    }
+
+    .header {
+        background: white;
+        color: black;
+        box-shadow: none;
+    }
+
+    .bottom-buttons {
+        display: none;
+    }
+
+    .footer {
+        background: white;
+        color: black;
+    }
+
+    .lesson-card,
+    .content-card,
+    .page-heading {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+
+}
+
+
+/* =========================================
+   Mobile Responsive Design
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 15px;
+    }
+
+    .logo-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        width: 65px;
+        height: 65px;
+    }
+
+    .site-title h1 {
+        font-size: 25px;
+    }
+
+    .site-title p {
+        font-size: 14px;
+    }
+
+    .page-heading h1 {
+        font-size: 30px;
+    }
+
+    .page-heading h2 {
+        font-size: 19px;
+    }
+
+    .page-heading h3 {
+        font-size: 22px;
+    }
+
+    .lesson-card,
+    .content-card {
+        padding: 20px;
+    }
+
+    .lesson-card p,
+    .content-card p {
+        font-size: 17px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+
+}
+/* =========================================
+   आशय Section
+   ========================================= */
+
+.meaning-card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    border-left: 6px solid #1565c0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.meaning-card h2 {
+    color: #1565c0;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+
+.meaning-card p {
+    font-size: 19px;
+    text-align: justify;
+}
+
+
+.meaning-card strong {
+    color: #b71c1c;
+}
+
+
+/* =========================================
+   कविता Section
+   ========================================= */
+
+.poem-card {
+    background: #fffdf5;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    border-left: 6px solid #f9a825;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.poem-card h2 {
+    text-align: center;
+    color: #e65100;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+
+.poet-name {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+
+/* ---------- Poem Text ---------- */
+
+.poem {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.poem p {
+    font-size: 21px;
+    font-weight: 500;
+    color: #333;
+    padding: 8px 10px;
+    margin: 5px 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+
+/* Highlight every second line */
+
+.poem p:nth-child(even) {
+    color: #6a1b9a;
+}
+
+
+/* =========================================
+   Bottom Buttons
+   ========================================= */
+
+.bottom-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 35px 0 20px;
+}
+
+
+.btn {
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    color: white;
+    font-size: 17px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 120px;
+}
+
+
+/* Print */
+
+.print-btn {
+    background: #1565c0;
+}
+
+
+.print-btn:hover {
+    background: #0d47a1;
+    transform: translateY(-2px);
+}
+
+
+/* Back */
+
+.back-btn {
+    background: #ef6c00;
+}
+
+
+.back-btn:hover {
+    background: #e65100;
+    transform: translateY(-2px);
+}
+
+
+/* Home */
+
+.home-btn {
+    background: #2e7d32;
+}
+
+
+.home-btn:hover {
+    background: #1b5e20;
+    transform: translateY(-2px);
+}
+
+/* =====================================================
+   आशय SECTION
+   ===================================================== */
+
+.meaning-card {
+
+    background: white;
+
+    padding: 30px;
+
+    margin-bottom: 25px;
+
+    border-radius: 15px;
+
+    border-left: 6px solid #1565c0;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.meaning-card h2 {
+
+    color: #1565c0;
+
+    font-size: 27px;
+
+    margin-bottom: 15px;
+}
+
+
+.meaning-card p {
+
+    font-size: 19px;
+
+    text-align: justify;
+}
+
+
+.meaning-card strong {
+
+    color: #b71c1c;
+}
+
+
+/* =====================================================
+   कविता SECTION
+   ===================================================== */
+
+.poem-card {
+
+    background: #fffdf5;
+
+    padding: 30px;
+
+    margin-bottom: 25px;
+
+    border-radius: 15px;
+
+    border-left: 6px solid #f9a825;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ================= SECTION TITLE ================= */
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+
+.section-title h2 {
+
+    color: #e65100;
+
+    font-size: 30px;
+}
+
+
+.section-title p {
+
+    color: #555;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+/* ================= POEM ================= */
+
+.poem {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+
+.poem p {
+
+    font-size: 21px;
+
+    font-weight: 500;
+
+    color: #333;
+
+    padding: 10px;
+
+    margin: 5px 0;
+
+    border-bottom: 1px dashed #ddd;
+
+    transition: 0.3s;
+}
+
+
+/* Hover effect */
+
+.poem p:hover {
+
+    background: #fff3cd;
+
+    border-radius: 8px;
+}
+
+
+/* Alternate poem lines */
+
+.poem p:nth-child(even) {
+
+    color: #6a1b9a;
+}
+
+
+/* =====================================================
+   कवि परिचय SECTION
+   ===================================================== */
+
+.poet-card {
+
+    background: white;
+
+    padding: 30px;
+
+    margin-bottom: 25px;
+
+    border-radius: 15px;
+
+    border-left: 6px solid #2e7d32;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.poet-card h2 {
+
+    text-align: center;
+
+    color: #2e7d32;
+
+    font-size: 28px;
+
+    margin-bottom: 5px;
+}
+
+
+.poet-card h3 {
+
+    text-align: center;
+
+    color: #e65100;
+
+    font-size: 25px;
+
+    margin-bottom: 20px;
+}
+
+
+.poet-content {
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+
+.poet-content p {
+
+    font-size: 18px;
+
+    text-align: justify;
+
+    margin-bottom: 15px;
+}
+
+
+.poet-content strong {
+
+    color: #6a1b9a;
+}
+
+/* =====================================================
+   शब्दार्थ
+   ===================================================== */
+
+.word-meaning-card {
+    background: white;
+
+    padding: 30px;
+
+    margin-bottom: 25px;
+
+    border-radius: 15px;
+
+    border-left: 6px solid #00838f;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.word-meaning-card .section-title h2 {
+    color: #00838f;
+
+    font-size: 30px;
+}
+
+
+.word-meaning-card .section-title p {
+    color: #555;
+
+    font-size: 17px;
+}
+
+
+/* ================= WORD LIST ================= */
+
+.word-meaning-list {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+
+/* ================= WORD ITEM ================= */
+
+.word-item {
+    display: grid;
+
+    grid-template-columns: 35% 65%;
+
+    align-items: center;
+
+    background: #f1f8f9;
+
+    border: 1px solid #cfdfe1;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    transition: all 0.3s ease;
+}
+
+
+.word-item:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ================= WORD ================= */
+
+.word {
+    background: #e0f2f1;
+
+    color: #00695c;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    padding: 10px 12px;
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+/* ================= MEANING ================= */
+
+.meaning {
+    color: #333;
+
+    font-size: 17px;
+
+    padding: 10px 12px;
+}
+/* =====================================================
+   अभ्यास SECTION
+   ===================================================== */
+
+.exercise-card {
+    background: white;
+
+    padding: 30px;
+
+    margin-bottom: 25px;
+
+    border-radius: 15px;
+
+    border-left: 6px solid #8e24aa;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ================= अभ्यास TITLE ================= */
+
+.exercise-title {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+.exercise-title h2 {
+    color: #6a1b9a;
+
+    font-size: 31px;
+
+    margin-bottom: 5px;
+}
+
+
+.exercise-title p {
+    color: #e65100;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+/* ================= EXERCISE SECTION ================= */
+
+.exercise-section {
+    margin-bottom: 30px;
+}
+
+
+.exercise-section:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ================= SECTION HEADING ================= */
+
+.exercise-heading {
+    background: #f3e5f5;
+
+    color: #6a1b9a;
+
+    padding: 12px 18px;
+
+    border-radius: 10px;
+
+    font-size: 24px;
+
+    margin-bottom: 18px;
+
+    border-left: 5px solid #8e24aa;
+}
+
+
+/* ================= SUB HEADING ================= */
+
+.sub-heading {
+    color: #e65100;
+
+    font-size: 20px;
+
+    margin: 15px 0;
+}
+
+
+/* ================= QUESTION CARD ================= */
+
+.question-card {
+    background: #fafafa;
+
+    border: 1px solid #e0e0e0;
+
+    border-radius: 10px;
+
+    padding: 18px 20px;
+
+    margin-bottom: 15px;
+
+    transition: all 0.3s ease;
+}
+
+
+.question-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ================= QUESTION ================= */
+
+.question-card h4 {
+    color: #333;
+
+    font-size: 18px;
+
+    margin-bottom: 10px;
+}
+
+
+/* ================= ANSWER ================= */
+
+.answer {
+    background: #f1f8e9;
+
+    border-left: 4px solid #43a047;
+
+    padding: 12px 15px;
+
+    border-radius: 7px;
+
+    font-size: 17px;
+
+    color: #333;
+
+    text-align: justify;
+}
+
+
+.answer strong {
+    color: #2e7d32;
+
+    margin-right: 5px;
+}
+
+
+/* ================= WRITTEN SECTION ================= */
+
+.written-section {
+    margin-top: 35px;
+
+    padding-top: 25px;
+
+    border-top: 2px dashed #ddd;
+}
+
+
+/* =====================================================
+   MOBILE – अभ्यास
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    .exercise-card {
+        padding: 20px;
+    }
+
+
+    .exercise-title h2 {
+        font-size: 27px;
+    }
+
+
+    .exercise-title p {
+        font-size: 16px;
+    }
+
+
+    .exercise-heading {
+        font-size: 21px;
+
+        padding: 10px 14px;
+    }
+
+
+    .sub-heading {
+        font-size: 18px;
+    }
+
+
+    .question-card {
+        padding: 15px;
+    }
+
+
+    .question-card h4 {
+        font-size: 17px;
+    }
+
+
+    .answer {
+        font-size: 16px;
+
+        text-align: left;
+
+        padding: 10px 12px;
+    }
+
+}
+
+
+/* =====================================================
+   PRINT – अभ्यास
+   ===================================================== */
+
+@media print {
+
+    .exercise-card {
+        box-shadow: none;
+
+        border: 1px solid #ddd;
+    }
+
+
+    .question-card {
+        break-inside: avoid;
+
+        box-shadow: none;
+    }
+
+
+    .answer {
+        background: white;
+    }
+
+}
+/* =====================================================
+   III. विस्तार से
+   ===================================================== */
+
+.detailed-exercise-card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    border-left: 6px solid #5e35b1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.long-question-card {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 22px;
+}
+
+
+.long-question-card h3 {
+    color: #6a1b9a;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+.long-answer {
+    background: #f3e5f5;
+    border-left: 5px solid #8e24aa;
+    padding: 18px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+
+.long-answer strong {
+    color: #6a1b9a;
+}
+
+
+/* =====================================================
+   IV. पंक्तियों का आशय
+   ===================================================== */
+
+.line-meaning-card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    border-left: 6px solid #00838f;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.line-question {
+    background: #f8ffff;
+    border: 1px solid #cfdfe1;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 18px;
+}
+
+
+.line-question:last-child {
+    margin-bottom: 0;
+}
+
+
+.line-question h3 {
+    color: #00695c;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+
+.line-answer {
+    background: #e0f2f1;
+    border-left: 4px solid #00897b;
+    padding: 14px 16px;
+    border-radius: 7px;
+    font-size: 17px;
+    text-align: justify;
+}
+
+
+.line-answer strong {
+    color: #00695c;
+}
+
+
+/* =====================================================
+   V. खाली जगह भरिए
+   ===================================================== */
+
+.fill-blanks-card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    border-left: 6px solid #fb8c00;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.fill-question {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background: #fff8e1;
+
+    border: 1px solid #ffe0b2;
+
+    border-radius: 9px;
+
+    padding: 14px 18px;
+
+    margin-bottom: 12px;
+
+    font-size: 19px;
+}
+
+
+.fill-question:last-child {
+    margin-bottom: 0;
+}
+
+
+.question-number {
+    font-weight: bold;
+    color: #e65100;
+}
+
+
+.blank-answer {
+    color: #b71c1c;
+
+    font-weight: bold;
+
+    padding: 2px 12px;
+
+    border-bottom: 2px solid #b71c1c;
+}
+
+
+/* =====================================================
+   VI. शब्दों का वाक्य प्रयोग
+   ===================================================== */
+
+.sentence-card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    border-left: 6px solid #43a047;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.sentence-list {
+    max-width: 900px;
+    margin: auto;
+}
+
+
+.sentence-item {
+    display: grid;
+
+    grid-template-columns: 25% 75%;
+
+    align-items: stretch;
+
+    margin-bottom: 12px;
+
+    border: 1px solid #d8e6d8;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+.sentence-item:last-child {
+    margin-bottom: 0;
+}
+
+
+.sentence-word {
+    background: #e8f5e9;
+
+    color: #2e7d32;
+
+    font-size: 19px;
+
+    font-weight: bold;
+
+    padding: 14px 16px;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+.sentence-answer {
+    background: #fafafa;
+
+    color: #333;
+
+    font-size: 18px;
+
+    padding: 14px 18px;
+}
+
+
+.sentence-answer strong {
+    color: #2e7d32;
+}
+
+
+/* =====================================================
+   MOBILE RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    .detailed-exercise-card,
+    .line-meaning-card,
+    .fill-blanks-card,
+    .sentence-card {
+        padding: 20px;
+    }
+
+
+    .long-question-card {
+        padding: 15px;
+    }
+
+
+    .long-question-card h3 {
+        font-size: 18px;
+    }
+
+
+    .long-answer {
+        font-size: 16px;
+        text-align: left;
+        padding: 13px;
+    }
+
+
+    .line-question {
+        padding: 15px;
+    }
+
+
+    .line-question h3 {
+        font-size: 17px;
+    }
+
+
+    .line-answer {
+        font-size: 16px;
+        text-align: left;
+        padding: 12px;
+    }
+
+
+    .fill-question {
+        font-size: 17px;
+        padding: 12px;
+    }
+
+
+    .sentence-item {
+        grid-template-columns: 1fr;
+    }
+
+
+    .sentence-word {
+        font-size: 18px;
+        padding: 10px 14px;
+    }
+
+
+    .sentence-answer {
+        font-size: 16px;
+        padding: 12px 14px;
+    }
+
+}
+
+
+/* =====================================================
+   PRINT SETTINGS
+   ===================================================== */
+
+@media print {
+
+    .detailed-exercise-card,
+    .line-meaning-card,
+    .fill-blanks-card,
+    .sentence-card {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+
+
+    .long-question-card,
+    .line-question,
+    .fill-question,
+    .sentence-item {
+        break-inside: avoid;
+    }
+
+
+    .long-answer,
+    .line-answer,
+    .fill-question,
+    .sentence-answer {
+        background: white;
+    }
+
+}
