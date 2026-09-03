@@ -1,0 +1,2257 @@
+/* ================================
+   Learn With Poornima
+   8th Hindi First Language Part 1
+   पाठ-५ न्याय
+================================ */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+body {
+    font-family: "Noto Sans Devanagari", "Mangal", Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+    line-height: 1.8;
+}
+
+
+/* ================================
+   Header
+================================ */
+
+.site-header {
+    background: linear-gradient(135deg, #673ab7, #3f51b5);
+    color: white;
+    padding: 18px 20px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.18);
+}
+
+
+.logo-section {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+
+.logo {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    background: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+
+.site-title h1 {
+    font-size: 30px;
+    margin-bottom: 3px;
+}
+
+
+.site-title p {
+    font-size: 17px;
+    opacity: 0.95;
+}
+
+
+/* ================================
+   Navigation
+================================ */
+
+.top-navigation {
+    max-width: 1100px;
+    margin: 20px auto 0;
+    padding: 0 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+
+.nav-btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 600;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease,
+                opacity 0.2s ease;
+}
+
+
+.nav-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+
+.print-btn {
+    background: #00897b;
+    color: white;
+}
+
+
+.home-btn {
+    background: #3949ab;
+    color: white;
+}
+
+
+.back-btn {
+    background: #ef6c00;
+    color: white;
+}
+
+
+.top-btn {
+    background: #6a1b9a;
+    color: white;
+}
+
+
+/* ================================
+   Main Container
+================================ */
+
+.container {
+    width: 92%;
+    max-width: 1000px;
+    margin: 25px auto 50px;
+}
+
+
+/* ================================
+   Lesson Header
+================================ */
+
+.lesson-header {
+    background: white;
+    text-align: center;
+
+    padding: 30px 20px;
+    margin-bottom: 25px;
+
+    border-radius: 14px;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+
+    border-top: 6px solid #673ab7;
+}
+
+
+.class-label {
+    display: inline-block;
+
+    background: #673ab7;
+    color: white;
+
+    padding: 5px 18px;
+
+    border-radius: 20px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+
+.lesson-header h2 {
+    font-size: 24px;
+    color: #3949ab;
+    margin-bottom: 8px;
+}
+
+
+.lesson-header h3 {
+    font-size: 22px;
+    color: #e65100;
+    margin-top: 5px;
+}
+
+
+.lesson-header h1 {
+    font-size: 42px;
+    color: #4527a0;
+    margin: 3px 0;
+}
+
+
+.author {
+    font-size: 19px;
+    color: #555;
+    font-weight: 600;
+}
+
+
+/* ================================
+   Content Card
+================================ */
+
+.content-card {
+    background: white;
+
+    padding: 28px;
+
+    border-radius: 14px;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+
+    margin-bottom: 30px;
+}
+
+
+.section-title {
+    font-size: 27px;
+    color: #4527a0;
+
+    border-bottom: 3px solid #673ab7;
+
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+
+/* ================================
+   Word Meanings
+================================ */
+
+.meaning-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.meaning-item {
+    display: grid;
+
+    grid-template-columns: 180px 30px 1fr;
+
+    align-items: start;
+
+    padding: 10px 14px;
+
+    border-radius: 8px;
+
+    background: #f8f6ff;
+
+    border-left: 4px solid #673ab7;
+
+    font-size: 18px;
+}
+
+
+.word {
+    font-weight: 700;
+    color: #4527a0;
+}
+
+
+.dash {
+    font-weight: bold;
+    text-align: center;
+    color: #555;
+}
+
+
+.meaning {
+    color: #333;
+}
+
+
+/* Alternate rows */
+.meaning-item:nth-child(even) {
+    background: #f2f8ff;
+    border-left-color: #3949ab;
+}
+
+
+.meaning-item:nth-child(even) .word {
+    color: #283593;
+}
+
+
+/* ================================
+   Bottom Navigation
+================================ */
+
+.bottom-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+    margin-top: 25px;
+}
+
+
+/* ================================
+   Footer
+================================ */
+
+.site-footer {
+    background: #292b45;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* ================================
+   Responsive Design
+================================ */
+
+@media (max-width: 700px) {
+
+    .site-header {
+        padding: 15px;
+    }
+
+
+    .logo-section {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+
+    .logo {
+        width: 65px;
+        height: 65px;
+    }
+
+
+    .site-title h1 {
+        font-size: 25px;
+    }
+
+
+    .site-title p {
+        font-size: 14px;
+    }
+
+
+    .top-navigation {
+        margin-top: 15px;
+        gap: 8px;
+    }
+
+
+    .nav-btn {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+
+
+    .container {
+        width: 94%;
+        margin-top: 18px;
+    }
+
+
+    .lesson-header {
+        padding: 22px 15px;
+    }
+
+
+    .lesson-header h2 {
+        font-size: 20px;
+    }
+
+
+    .lesson-header h3 {
+        font-size: 19px;
+    }
+
+
+    .lesson-header h1 {
+        font-size: 34px;
+    }
+
+
+    .content-card {
+        padding: 18px 12px;
+    }
+
+
+    .section-title {
+        font-size: 23px;
+    }
+
+
+    .meaning-item {
+        grid-template-columns: 115px 20px 1fr;
+        padding: 9px 8px;
+        font-size: 16px;
+    }
+
+}
+
+
+/* Small Mobile */
+@media (max-width: 420px) {
+
+    .meaning-item {
+        grid-template-columns: 95px 18px 1fr;
+        font-size: 15px;
+    }
+
+
+    .nav-btn {
+        padding: 7px 10px;
+        font-size: 13px;
+    }
+
+
+    .lesson-header h1 {
+        font-size: 30px;
+    }
+
+}
+
+
+/* ================================
+   Print Styling
+================================ */
+
+@media print {
+
+    body {
+        background: white;
+        color: black;
+    }
+
+
+    .site-header {
+        background: white;
+        color: black;
+        box-shadow: none;
+        border-bottom: 2px solid #333;
+    }
+
+
+    .top-navigation,
+    .bottom-navigation {
+        display: none;
+    }
+
+
+    .container {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+    }
+
+
+    .lesson-header,
+    .content-card {
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+
+    .content-card {
+        border: 1px solid #ddd;
+    }
+
+
+    .site-footer {
+        background: white;
+        color: black;
+        border-top: 1px solid #333;
+    }
+
+
+    .meaning-item {
+        background: white !important;
+        border-left: 2px solid #333;
+    }
+
+}
+/* ================================
+   मुहावरे Section
+================================ */
+
+.idiom-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.idiom-item {
+    display: grid;
+    grid-template-columns: 250px 30px 1fr;
+    align-items: start;
+
+    padding: 12px 15px;
+
+    background: #fff8f0;
+
+    border-radius: 8px;
+
+    border-left: 4px solid #ef6c00;
+
+    font-size: 18px;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+
+.idiom-item:hover {
+    transform: translateX(4px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.10);
+}
+
+
+.idiom {
+    font-weight: 700;
+    color: #e65100;
+}
+
+
+.idiom-dash {
+    font-weight: bold;
+    text-align: center;
+    color: #555;
+}
+
+
+.idiom-meaning {
+    color: #333;
+}
+
+
+/* Alternate rows */
+.idiom-item:nth-child(even) {
+    background: #fff4e6;
+    border-left-color: #d84315;
+}
+
+
+.idiom-item:nth-child(even) .idiom {
+    color: #d84315;
+}
+
+
+/* ================================
+   Responsive - मुहावरे
+================================ */
+
+@media (max-width: 700px) {
+
+    .idiom-item {
+        grid-template-columns: 150px 20px 1fr;
+        padding: 10px 8px;
+        font-size: 16px;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .idiom-item {
+        grid-template-columns: 115px 18px 1fr;
+        font-size: 15px;
+    }
+
+}
+/* ================================
+   I. मौखिक प्रश्न
+================================ */
+
+.oral-questions {
+    margin-top: 25px;
+}
+
+
+.question-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+.question-item {
+    background: #f8f6ff;
+    border-left: 5px solid #673ab7;
+    border-radius: 10px;
+
+    padding: 16px 18px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+
+.question-item:hover {
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+
+.question-item h3 {
+    font-size: 19px;
+    color: #4527a0;
+    margin-bottom: 8px;
+    line-height: 1.7;
+}
+
+
+.question-item p {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+    line-height: 1.8;
+}
+
+
+.answer-label {
+    font-weight: 700;
+    color: #e65100;
+}
+
+
+/* Alternate question cards */
+
+.question-item:nth-child(even) {
+    background: #f2f8ff;
+    border-left-color: #3949ab;
+}
+
+
+.question-item:nth-child(even) h3 {
+    color: #283593;
+}
+
+
+/* ================================
+   Responsive - मौखिक प्रश्न
+================================ */
+
+@media (max-width: 700px) {
+
+    .question-item {
+        padding: 13px 12px;
+    }
+
+
+    .question-item h3 {
+        font-size: 17px;
+    }
+
+
+    .question-item p {
+        font-size: 16px;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .question-item h3 {
+        font-size: 16px;
+    }
+
+
+    .question-item p {
+        font-size: 15px;
+    }
+
+}
+/* ================================
+   II. लिखित प्रश्न
+   एक वाक्य में उत्तर लिखिए
+================================ */
+
+.written-questions {
+    margin-top: 25px;
+}
+
+
+.written-questions .question-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+.written-questions .question-item {
+    background: #fff8f0;
+
+    border-left: 5px solid #ef6c00;
+
+    border-radius: 10px;
+
+    padding: 16px 18px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+
+.written-questions .question-item:hover {
+    transform: translateX(4px);
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+
+.written-questions .question-item h3 {
+    font-size: 19px;
+
+    color: #e65100;
+
+    margin-bottom: 8px;
+
+    line-height: 1.7;
+}
+
+
+.written-questions .question-item p {
+    font-size: 18px;
+
+    color: #333;
+
+    margin: 0;
+
+    line-height: 1.8;
+}
+
+
+.written-questions .answer-label {
+    font-weight: 700;
+
+    color: #00897b;
+}
+
+
+/* Alternate question cards */
+
+.written-questions .question-item:nth-child(even) {
+    background: #f2f8ff;
+
+    border-left-color: #3949ab;
+}
+
+
+.written-questions .question-item:nth-child(even) h3 {
+    color: #283593;
+}
+
+
+/* ================================
+   Responsive - लिखित प्रश्न
+================================ */
+
+@media (max-width: 700px) {
+
+    .written-questions .question-item {
+        padding: 13px 12px;
+    }
+
+
+    .written-questions .question-item h3 {
+        font-size: 17px;
+    }
+
+
+    .written-questions .question-item p {
+        font-size: 16px;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .written-questions .question-item h3 {
+        font-size: 16px;
+    }
+
+
+    .written-questions .question-item p {
+        font-size: 15px;
+    }
+
+}
+
+
+/* ================================
+   Print
+================================ */
+
+@media print {
+
+    .written-questions .question-item {
+        background: white !important;
+
+        box-shadow: none;
+
+        border-left: 2px solid #333;
+
+        break-inside: avoid;
+    }
+
+}
+/* ================================
+   III. दो - तीन वाक्यों में उत्तर
+================================ */
+
+.three-sentence-questions {
+    margin-top: 25px;
+}
+
+.three-sentence-questions .question-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.three-sentence-questions .question-item {
+    background: #f3f0ff;
+
+    border-left: 5px solid #673ab7;
+
+    border-radius: 10px;
+
+    padding: 16px 18px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.three-sentence-questions .question-item:hover {
+    transform: translateX(4px);
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+.three-sentence-questions .question-item h3 {
+    font-size: 19px;
+
+    color: #4527a0;
+
+    margin-bottom: 9px;
+
+    line-height: 1.7;
+}
+
+.three-sentence-questions .question-item p {
+    font-size: 18px;
+
+    color: #333;
+
+    margin: 0;
+
+    line-height: 1.9;
+}
+
+.three-sentence-questions .answer-label {
+    font-weight: 700;
+
+    color: #e65100;
+}
+
+
+/* Alternate cards */
+
+.three-sentence-questions .question-item:nth-child(even) {
+    background: #eef6ff;
+
+    border-left-color: #3949ab;
+}
+
+.three-sentence-questions .question-item:nth-child(even) h3 {
+    color: #283593;
+}
+
+
+/* ================================
+   Responsive Design
+================================ */
+
+@media (max-width: 700px) {
+
+    .three-sentence-questions .question-item {
+        padding: 13px 12px;
+    }
+
+    .three-sentence-questions .question-item h3 {
+        font-size: 17px;
+    }
+
+    .three-sentence-questions .question-item p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+}
+
+
+@media (max-width: 420px) {
+
+    .three-sentence-questions .question-item h3 {
+        font-size: 16px;
+    }
+
+    .three-sentence-questions .question-item p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+}
+
+
+/* ================================
+   Print Styling
+================================ */
+
+@media print {
+
+    .three-sentence-questions .question-item {
+        background: white !important;
+
+        box-shadow: none;
+
+        border-left: 2px solid #333;
+
+        break-inside: avoid;
+    }
+
+}
+/* ================================
+   IV. चार-पाँच वाक्यों में उत्तर
+================================ */
+
+.four-five-sentence-questions {
+    margin-top: 25px;
+}
+
+.four-five-sentence-questions .question-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.four-five-sentence-questions .question-item {
+    background: #fff7ed;
+    border-left: 5px solid #e65100;
+    border-radius: 10px;
+
+    padding: 18px 20px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.four-five-sentence-questions .question-item:hover {
+    transform: translateX(4px);
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+.four-five-sentence-questions .question-item h3 {
+    font-size: 20px;
+    color: #bf360c;
+
+    margin-bottom: 10px;
+
+    line-height: 1.7;
+}
+
+.four-five-sentence-questions .question-item p {
+    font-size: 18px;
+    color: #333;
+
+    margin: 0;
+
+    line-height: 1.95;
+    text-align: justify;
+}
+
+.four-five-sentence-questions .answer-label {
+    font-weight: 700;
+    color: #00897b;
+}
+
+
+/* Alternate cards */
+
+.four-five-sentence-questions .question-item:nth-child(even) {
+    background: #eef6ff;
+    border-left-color: #3949ab;
+}
+
+.four-five-sentence-questions .question-item:nth-child(even) h3 {
+    color: #283593;
+}
+
+
+/* ================================
+   Responsive Design
+================================ */
+
+@media (max-width: 700px) {
+
+    .four-five-sentence-questions .question-item {
+        padding: 14px 12px;
+    }
+
+    .four-five-sentence-questions .question-item h3 {
+        font-size: 18px;
+    }
+
+    .four-five-sentence-questions .question-item p {
+        font-size: 16px;
+        line-height: 1.85;
+        text-align: left;
+    }
+}
+
+
+@media (max-width: 420px) {
+
+    .four-five-sentence-questions .question-item h3 {
+        font-size: 16px;
+    }
+
+    .four-five-sentence-questions .question-item p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+}
+
+
+/* ================================
+   Print Styling
+================================ */
+
+@media print {
+
+    .four-five-sentence-questions .question-item {
+        background: white !important;
+        box-shadow: none;
+        border-left: 2px solid #333;
+        break-inside: avoid;
+    }
+
+}
+/* ================================
+   V. प्रेरणार्थक क्रिया रूप
+================================ */
+
+.causative-verbs {
+    margin-top: 25px;
+}
+
+
+.verb-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+
+/* Table */
+
+.verb-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    font-size: 18px;
+
+    background: white;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Table Header */
+
+.verb-table thead {
+    background: #673ab7;
+    color: white;
+}
+
+
+.verb-table th {
+    padding: 14px 12px;
+
+    text-align: center;
+
+    font-size: 19px;
+
+    border: 1px solid #ddd;
+}
+
+
+/* Table Cells */
+
+.verb-table td {
+    padding: 13px 12px;
+
+    text-align: center;
+
+    border: 1px solid #ddd;
+
+    color: #333;
+
+    font-weight: 600;
+}
+
+
+/* Alternating rows */
+
+.verb-table tbody tr:nth-child(even) {
+    background: #f3f0ff;
+}
+
+
+.verb-table tbody tr:nth-child(odd) {
+    background: #fff;
+}
+
+
+/* Highlight causative forms */
+
+.verb-table tbody td:nth-child(2) {
+    color: #e65100;
+}
+
+
+.verb-table tbody td:nth-child(3) {
+    color: #00897b;
+}
+
+
+/* Hover */
+
+.verb-table tbody tr:hover {
+    background: #fff3e0;
+}
+
+
+/* ================================
+   Responsive Design
+================================ */
+
+@media (max-width: 700px) {
+
+    .verb-table {
+        min-width: 600px;
+        font-size: 16px;
+    }
+
+    .verb-table th {
+        font-size: 17px;
+        padding: 11px 8px;
+    }
+
+    .verb-table td {
+        padding: 11px 8px;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .verb-table {
+        min-width: 560px;
+        font-size: 15px;
+    }
+
+    .verb-table th {
+        font-size: 16px;
+    }
+
+}
+
+
+/* ================================
+   Print Styling
+================================ */
+
+@media print {
+
+    .causative-verbs {
+        margin-top: 15px;
+    }
+
+    .verb-table {
+        box-shadow: none;
+    }
+
+    .verb-table thead {
+        background: #ddd !important;
+        color: black;
+    }
+
+    .verb-table tbody tr:hover {
+        background: white;
+    }
+
+    .verb-table {
+        page-break-inside: avoid;
+    }
+
+}
+/* ================================
+   VI. बहुवचन-रूप
+================================ */
+
+.plural-forms {
+    margin-top: 25px;
+}
+
+.plural-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+
+/* Table */
+
+.plural-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    font-size: 18px;
+
+    background: white;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Table Header */
+
+.plural-table thead {
+    background: #3949ab;
+    color: white;
+}
+
+.plural-table th {
+    padding: 14px 12px;
+
+    text-align: center;
+
+    font-size: 19px;
+
+    border: 1px solid #ddd;
+}
+
+
+/* Table Cells */
+
+.plural-table td {
+    padding: 12px;
+
+    text-align: center;
+
+    border: 1px solid #ddd;
+
+    color: #333;
+
+    font-weight: 600;
+}
+
+
+/* Alternating Rows */
+
+.plural-table tbody tr:nth-child(even) {
+    background: #f2f8ff;
+}
+
+.plural-table tbody tr:nth-child(odd) {
+    background: #ffffff;
+}
+
+
+/* Highlight plural forms */
+
+.plural-table tbody td:nth-child(2) {
+    color: #e65100;
+    font-weight: 700;
+}
+
+
+/* Hover Effect */
+
+.plural-table tbody tr:hover {
+    background: #fff3e0;
+}
+
+
+/* ================================
+   Responsive Design
+================================ */
+
+@media (max-width: 700px) {
+
+    .plural-table {
+        min-width: 420px;
+        font-size: 16px;
+    }
+
+    .plural-table th {
+        font-size: 17px;
+        padding: 11px 8px;
+    }
+
+    .plural-table td {
+        padding: 10px 8px;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .plural-table {
+        min-width: 380px;
+        font-size: 15px;
+    }
+
+    .plural-table th {
+        font-size: 16px;
+    }
+
+}
+
+
+/* ================================
+   Print Styling
+================================ */
+
+@media print {
+
+    .plural-forms {
+        margin-top: 15px;
+    }
+
+    .plural-table {
+        box-shadow: none;
+        page-break-inside: avoid;
+    }
+
+    .plural-table thead {
+        background: #ddd !important;
+        color: black;
+    }
+
+    .plural-table tbody tr:hover {
+        background: white;
+    }
+
+}
+/* ================================
+   VII. रिक्त स्थानों में सही परसर्ग
+================================ */
+
+.postposition-section {
+    margin-top: 25px;
+}
+
+.question-box {
+    background: #f8f6ff;
+    border-left: 5px solid #673ab7;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.fill-question {
+    font-size: 20px;
+    line-height: 2.2;
+    color: #333;
+    margin: 0;
+    text-align: justify;
+}
+
+.blank-answer {
+    display: inline-block;
+
+    min-width: 55px;
+
+    padding: 0 8px;
+
+    margin: 0 4px;
+
+    color: #e65100;
+
+    font-weight: 700;
+
+    border-bottom: 2px solid #e65100;
+
+    text-align: center;
+}
+
+
+/* ================================
+   सही उत्तर बॉक्स
+================================ */
+
+.correct-answer-box {
+    background: #eef8f1;
+
+    border-left: 5px solid #00897b;
+
+    border-radius: 10px;
+
+    padding: 18px 20px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.correct-answer-box h3 {
+    font-size: 21px;
+
+    color: #00796b;
+
+    margin-bottom: 8px;
+}
+
+.correct-answer-box p {
+    font-size: 18px;
+
+    color: #333;
+
+    line-height: 1.9;
+
+    margin: 0;
+
+    text-align: justify;
+}
+
+.correct-answer-box strong {
+    color: #e65100;
+}
+
+
+/* ================================
+   Responsive Design
+================================ */
+
+@media (max-width: 700px) {
+
+    .question-box,
+    .correct-answer-box {
+        padding: 14px 12px;
+    }
+
+    .fill-question {
+        font-size: 17px;
+        line-height: 2;
+        text-align: left;
+    }
+
+    .blank-answer {
+        min-width: 45px;
+        padding: 0 5px;
+    }
+
+    .correct-answer-box h3 {
+        font-size: 19px;
+    }
+
+    .correct-answer-box p {
+        font-size: 16px;
+        line-height: 1.8;
+        text-align: left;
+    }
+}
+
+
+@media (max-width: 420px) {
+
+    .fill-question {
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    .blank-answer {
+        min-width: 40px;
+        margin: 0 2px;
+    }
+
+    .correct-answer-box p {
+        font-size: 15px;
+    }
+
+}
+
+
+/* ================================
+   Print Styling
+================================ */
+
+@media print {
+
+    .postposition-section {
+        margin-top: 15px;
+    }
+
+    .question-box,
+    .correct-answer-box {
+        box-shadow: none;
+        background: white;
+        break-inside: avoid;
+    }
+
+    .blank-answer {
+        color: black;
+        border-bottom: 1px solid black;
+    }
+
+}
+/* ================================
+   VIII. विशेषण-विशेष्य मिलान
+================================ */
+
+.adjective-noun-section {
+    margin-top: 25px;
+}
+
+.matching-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+
+/* Matching Table */
+
+.matching-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+
+    border-collapse: collapse;
+
+    background: white;
+
+    font-size: 18px;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Table Header */
+
+.matching-table thead {
+    background: #6a1b9a;
+    color: white;
+}
+
+.matching-table th {
+    padding: 14px;
+
+    text-align: center;
+
+    font-size: 19px;
+
+    border: 1px solid #ddd;
+}
+
+
+/* Table Cells */
+
+.matching-table td {
+    padding: 13px 18px;
+
+    text-align: center;
+
+    border: 1px solid #ddd;
+
+    color: #333;
+
+    font-weight: 600;
+}
+
+
+/* विशेषण */
+
+.matching-table tbody td:first-child {
+    color: #4527a0;
+    font-weight: 700;
+}
+
+
+/* विशेष्य */
+
+.matching-table tbody td:last-child {
+    color: #00897b;
+    font-weight: 700;
+}
+
+
+/* Alternate Rows */
+
+.matching-table tbody tr:nth-child(even) {
+    background: #f7f0fb;
+}
+
+.matching-table tbody tr:nth-child(odd) {
+    background: #ffffff;
+}
+
+
+/* Hover */
+
+.matching-table tbody tr:hover {
+    background: #fff3e0;
+}
+
+
+/* ================================
+   Responsive Design
+================================ */
+
+@media (max-width: 700px) {
+
+    .matching-table {
+        min-width: 450px;
+        font-size: 16px;
+    }
+
+    .matching-table th {
+        font-size: 17px;
+        padding: 11px;
+    }
+
+    .matching-table td {
+        padding: 10px;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .matching-table {
+        min-width: 400px;
+        font-size: 15px;
+    }
+
+    .matching-table th {
+        font-size: 16px;
+    }
+
+}
+
+
+/* ================================
+   Print Styling
+================================ */
+
+@media print {
+
+    .matching-table {
+        box-shadow: none;
+        page-break-inside: avoid;
+    }
+
+    .matching-table thead {
+        background: #ddd !important;
+        color: black;
+    }
+
+    .matching-table tbody tr:hover {
+        background: white;
+    }
+
+/* ================================
+   IX. अर्थपूर्ण वाक्य बनाइए
+================================ */
+
+.meaningful-sentences-section {
+    margin-top: 25px;
+}
+
+.sentence-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.sentence-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+
+    padding: 17px 18px;
+
+    background: #f8f6ff;
+
+    border-left: 5px solid #673ab7;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.sentence-item:hover {
+    transform: translateX(4px);
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+.sentence-number {
+    min-width: 35px;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    color: #673ab7;
+}
+
+.sentence-content {
+    flex: 1;
+}
+
+.jumbled-sentence {
+    font-size: 18px;
+
+    color: #555;
+
+    margin: 0 0 8px 0;
+
+    line-height: 1.8;
+}
+
+.correct-sentence {
+    font-size: 18px;
+
+    color: #333;
+
+    margin: 0;
+
+    line-height: 1.8;
+}
+
+.correct-sentence .answer-label {
+    font-weight: 700;
+
+    color: #e65100;
+}
+
+
+/* Alternate cards */
+
+.sentence-item:nth-child(even) {
+    background: #f2f8ff;
+
+    border-left-color: #3949ab;
+}
+
+.sentence-item:nth-child(even) .sentence-number {
+    color: #3949ab;
+}
+
+
+/* ================================
+   Responsive Design
+================================ */
+
+@media (max-width: 700px) {
+
+    .sentence-item {
+        gap: 10px;
+
+        padding: 13px 12px;
+    }
+
+    .sentence-number {
+        min-width: 28px;
+
+        font-size: 17px;
+    }
+
+    .jumbled-sentence,
+    .correct-sentence {
+        font-size: 16px;
+
+        line-height: 1.75;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .sentence-item {
+        gap: 7px;
+
+        padding: 12px 9px;
+    }
+
+    .sentence-number {
+        min-width: 25px;
+
+        font-size: 16px;
+    }
+
+    .jumbled-sentence,
+    .correct-sentence {
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+}
+
+
+/* ================================
+   Print Styling
+================================ */
+
+@media print {
+
+    .sentence-item {
+        background: white !important;
+
+        box-shadow: none;
+
+        border-left: 2px solid #333;
+
+        break-inside: avoid;
+    }
+
+}
+/* ================================
+   X. उदाहरण के अनुसार वाक्यों को बदलिए
+================================ */
+
+.sentence-change-section {
+    margin-top: 25px;
+}
+
+.sentence-change-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.sentence-change-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+
+    padding: 17px 18px;
+
+    background: #fff8f0;
+
+    border-left: 5px solid #ef6c00;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.sentence-change-item:hover {
+    transform: translateX(4px);
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+.change-number {
+    min-width: 35px;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    color: #e65100;
+}
+
+.change-content {
+    flex: 1;
+}
+
+.original-sentence {
+    font-size: 19px;
+
+    font-weight: 700;
+
+    color: #4527a0;
+
+    margin: 0 0 8px 0;
+
+    line-height: 1.7;
+}
+
+.changed-sentence {
+    font-size: 18px;
+
+    color: #333;
+
+    margin: 0;
+
+    line-height: 1.85;
+}
+
+.changed-sentence .answer-label {
+    font-weight: 700;
+
+    color: #00897b;
+}
+
+.alternative {
+    color: #555;
+
+    font-size: 16px;
+}
+
+.alternative strong {
+    color: #d84315;
+}
+
+
+/* Alternate cards */
+
+.sentence-change-item:nth-child(even) {
+    background: #f2f8ff;
+
+    border-left-color: #3949ab;
+}
+
+.sentence-change-item:nth-child(even) .change-number {
+    color: #3949ab;
+}
+
+
+/* ================================
+   Responsive Design
+================================ */
+
+@media (max-width: 700px) {
+
+    .sentence-change-item {
+        gap: 10px;
+
+        padding: 13px 12px;
+    }
+
+    .change-number {
+        min-width: 28px;
+
+        font-size: 17px;
+    }
+
+    .original-sentence {
+        font-size: 17px;
+    }
+
+    .changed-sentence {
+        font-size: 16px;
+
+        line-height: 1.8;
+    }
+
+    .alternative {
+        font-size: 15px;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .sentence-change-item {
+        gap: 7px;
+
+        padding: 12px 9px;
+    }
+
+    .change-number {
+        min-width: 25px;
+
+        font-size: 16px;
+    }
+
+    .original-sentence {
+        font-size: 16px;
+    }
+
+    .changed-sentence {
+        font-size: 15px;
+
+        line-height: 1.75;
+    }
+
+    .alternative {
+        font-size: 14px;
+    }
+
+}
+
+
+/* ================================
+   Print Styling
+================================ */
+
+@media print {
+
+    .sentence-change-item {
+        background: white !important;
+
+        box-shadow: none;
+
+        border-left: 2px solid #333;
+
+        break-inside: avoid;
+    }
+
+    .original-sentence,
+    .changed-sentence,
+    .alternative {
+        color: black;
+    }
+
+}
+/* ================================
+   XI. अपने वाक्यों में प्रयोग कीजिए
+================================ */
+
+.sentence-usage-section {
+    margin-top: 25px;
+}
+
+.sentence-usage-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.usage-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+
+    padding: 17px 18px;
+
+    background: #f8f6ff;
+
+    border-left: 5px solid #673ab7;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.usage-item:hover {
+    transform: translateX(4px);
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+.usage-number {
+    min-width: 35px;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    color: #673ab7;
+}
+
+.usage-content {
+    flex: 1;
+}
+
+.usage-content h3 {
+    font-size: 19px;
+
+    color: #4527a0;
+
+    margin: 0 0 7px 0;
+
+    line-height: 1.6;
+}
+
+.usage-content p {
+    font-size: 18px;
+
+    color: #333;
+
+    margin: 0;
+
+    line-height: 1.85;
+}
+
+.usage-content .answer-label {
+    font-weight: 700;
+
+    color: #e65100;
+}
+
+.usage-content strong {
+    color: #00897b;
+
+    font-weight: 700;
+}
+
+
+/* Alternate cards */
+
+.usage-item:nth-child(even) {
+    background: #f2f8ff;
+
+    border-left-color: #3949ab;
+}
+
+.usage-item:nth-child(even) .usage-number {
+    color: #3949ab;
+}
+
+.usage-item:nth-child(even) .usage-content h3 {
+    color: #283593;
+}
+
+
+/* ================================
+   Responsive Design
+================================ */
+
+@media (max-width: 700px) {
+
+    .usage-item {
+        gap: 10px;
+
+        padding: 13px 12px;
+    }
+
+    .usage-number {
+        min-width: 28px;
+
+        font-size: 17px;
+    }
+
+    .usage-content h3 {
+        font-size: 17px;
+    }
+
+    .usage-content p {
+        font-size: 16px;
+
+        line-height: 1.8;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .usage-item {
+        gap: 7px;
+
+        padding: 12px 9px;
+    }
+
+    .usage-number {
+        min-width: 25px;
+
+        font-size: 16px;
+    }
+
+    .usage-content h3 {
+        font-size: 16px;
+    }
+
+    .usage-content p {
+        font-size: 15px;
+
+        line-height: 1.75;
+    }
+
+}
+
+
+/* ================================
+   Print Styling
+================================ */
+
+@media print {
+
+    .usage-item {
+        background: white !important;
+
+        box-shadow: none;
+
+        border-left: 2px solid #333;
+
+        break-inside: avoid;
+    }
+
+    .usage-content h3,
+    .usage-content p,
+    .usage-content strong {
+        color: black;
+    }
+
+}
