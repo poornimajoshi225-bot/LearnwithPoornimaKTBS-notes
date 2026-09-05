@@ -1,0 +1,1850 @@
+/* =========================================
+   8thHindiFLP1L7.css
+   Learn With Poornima
+   8th Class Hindi First Language Part 1
+   पाठ-७ — कर चले हम फ़िदा
+   ========================================= */
+
+/* Google-like system fonts with Hindi support */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Noto Sans Devanagari", "Mangal", Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+    line-height: 1.8;
+    min-height: 100vh;
+}
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.site-header {
+    width: 100%;
+    background: linear-gradient(135deg, #6a1b9a, #8e24aa);
+    color: white;
+    padding: 18px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+.logo-section {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+
+.logo {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    background: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+.class-info {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: right;
+}
+
+/* =========================================
+   NAVIGATION BUTTONS
+   ========================================= */
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    padding: 15px;
+    background: white;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-btn {
+    border: none;
+    border-radius: 8px;
+
+    padding: 10px 20px;
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease,
+                opacity 0.2s ease;
+}
+
+.nav-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.nav-btn:active {
+    transform: translateY(0);
+}
+
+.print-btn {
+    background: #1976d2;
+    color: white;
+}
+
+.back-btn {
+    background: #616161;
+    color: white;
+}
+
+.home-btn {
+    background: #2e7d32;
+    color: white;
+}
+
+/* =========================================
+   MAIN CONTAINER
+   ========================================= */
+
+.lesson-container {
+    width: 92%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+/* =========================================
+   LESSON HEADER
+   ========================================= */
+
+.lesson-header {
+    text-align: center;
+
+    background: white;
+    border-radius: 14px;
+
+    padding: 35px 25px;
+    margin-bottom: 25px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    border-top: 6px solid #8e24aa;
+}
+
+.lesson-number {
+    display: inline-block;
+
+    background: #f3e5f5;
+    color: #6a1b9a;
+
+    padding: 6px 18px;
+    border-radius: 20px;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    margin-bottom: 12px;
+}
+
+.lesson-header h1 {
+    font-size: 42px;
+    color: #6a1b9a;
+    margin-bottom: 8px;
+
+    line-height: 1.4;
+}
+
+.lesson-header h2 {
+    font-size: 23px;
+    color: #555;
+    font-weight: 600;
+}
+
+/* =========================================
+   CONTENT CARDS
+   ========================================= */
+
+.content-card {
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 28px 32px;
+    margin-bottom: 24px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+
+    border-left: 5px solid #8e24aa;
+}
+
+.section-title {
+    color: #6a1b9a;
+    font-size: 25px;
+
+    margin-bottom: 15px;
+
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+}
+
+.content-card p {
+    font-size: 19px;
+    color: #333;
+
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+.content-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* =========================================
+   INFORMATION BOX
+   ========================================= */
+
+.info-box {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+
+    border: 1px solid #ddd;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+.info-label {
+    width: 35%;
+
+    padding: 12px 16px;
+
+    background: #f3e5f5;
+    color: #6a1b9a;
+
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.info-value {
+    width: 65%;
+
+    padding: 12px 16px;
+
+    font-size: 17px;
+    color: #333;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.lesson-footer {
+    text-align: center;
+
+    background: #6a1b9a;
+    color: white;
+
+    padding: 20px;
+    margin-top: 30px;
+
+    border-radius: 10px;
+}
+
+.lesson-footer p {
+    margin: 3px 0;
+    font-size: 15px;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .site-header {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+        padding: 16px 15px;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .class-info {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .navigation {
+        flex-wrap: wrap;
+    }
+
+    .nav-btn {
+        padding: 9px 15px;
+        font-size: 14px;
+    }
+
+    .lesson-container {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .lesson-header {
+        padding: 25px 15px;
+    }
+
+    .lesson-header h1 {
+        font-size: 32px;
+    }
+
+    .lesson-header h2 {
+        font-size: 20px;
+    }
+
+    .content-card {
+        padding: 22px 18px;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .content-card p {
+        font-size: 17px;
+        text-align: left;
+    }
+
+    .info-label {
+        width: 40%;
+        font-size: 15px;
+    }
+
+    .info-value {
+        width: 60%;
+        font-size: 15px;
+    }
+}
+
+/* =========================================
+   SMALL MOBILE DEVICES
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .logo-icon {
+        font-size: 24px;
+    }
+
+    .navigation {
+        gap: 7px;
+    }
+
+    .nav-btn {
+        padding: 8px 11px;
+        font-size: 13px;
+    }
+
+    .lesson-header h1 {
+        font-size: 27px;
+    }
+
+    .lesson-header h2 {
+        font-size: 18px;
+    }
+
+    .lesson-number {
+        font-size: 16px;
+    }
+
+    .content-card {
+        padding: 18px 14px;
+    }
+
+    .content-card p {
+        font-size: 16px;
+    }
+
+    .info-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .info-label,
+    .info-value {
+        width: 100%;
+    }
+
+    .info-label {
+        padding-bottom: 5px;
+    }
+
+    .info-value {
+        padding-top: 5px;
+    }
+}
+
+/* =========================================
+   PRINT
+   ========================================= */
+
+@media print {
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    .site-header {
+        background: white;
+        color: black;
+        box-shadow: none;
+        border-bottom: 2px solid #333;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .lesson-container {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+    }
+
+    .lesson-header,
+    .content-card {
+        box-shadow: none;
+        break-inside: avoid;
+    }
+
+    .lesson-footer {
+        background: white;
+        color: black;
+        border-top: 1px solid #333;
+    }
+}
+/* =========================================
+   कवि परिचय
+   ========================================= */
+
+.poet-introduction {
+    background: white;
+
+    border-radius: 14px;
+
+    padding: 30px 35px;
+    margin-bottom: 25px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    border-left: 6px solid #1565c0;
+}
+
+.poet-introduction .section-title {
+    color: #1565c0;
+
+    font-size: 25px;
+
+    margin-bottom: 20px;
+
+    border-bottom: 2px solid #e3f2fd;
+
+    padding-bottom: 10px;
+}
+
+.poet-content {
+    background: #f5f9ff;
+
+    border: 1px solid #d6e8ff;
+
+    border-radius: 10px;
+
+    padding: 25px 30px;
+}
+
+.poet-content p {
+    font-size: 19px;
+
+    line-height: 1.9;
+
+    color: #333;
+
+    text-align: justify;
+
+    margin-bottom: 18px;
+}
+
+.poet-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   कवि परिचय - Tablet
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .poet-introduction {
+        padding: 22px 18px;
+    }
+
+    .poet-introduction .section-title {
+        font-size: 22px;
+    }
+
+    .poet-content {
+        padding: 20px 18px;
+    }
+
+    .poet-content p {
+        font-size: 17px;
+        line-height: 1.8;
+        text-align: left;
+    }
+}
+
+
+/* =========================================
+   कवि परिचय - Mobile
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .poet-introduction {
+        padding: 18px 12px;
+    }
+
+    .poet-introduction .section-title {
+        font-size: 20px;
+    }
+
+    .poet-content {
+        padding: 16px 12px;
+    }
+
+    .poet-content p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+}
+
+
+/* =========================================
+   कवि परिचय - Print
+   ========================================= */
+
+@media print {
+
+    .poet-introduction {
+        box-shadow: none;
+        break-inside: avoid;
+    }
+
+    .poet-content {
+        background: white;
+        border: 1px solid #999;
+    }
+}
+/* =========================================
+   शब्दार्थ
+   ========================================= */
+
+.word-meanings {
+    background: white;
+    border-radius: 14px;
+    padding: 30px 35px;
+    margin-bottom: 25px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    border-left: 6px solid #00838f;
+}
+
+.word-meanings .section-title {
+    color: #00838f;
+    font-size: 25px;
+
+    margin-bottom: 20px;
+
+    border-bottom: 2px solid #e0f2f1;
+    padding-bottom: 10px;
+}
+
+.meaning-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 0;
+
+    border: 1px solid #cfd8dc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.meaning-item {
+    display: flex;
+    align-items: flex-start;
+
+    padding: 13px 16px;
+
+    border-bottom: 1px solid #e0e0e0;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.meaning-item:nth-child(odd) {
+    border-right: 1px solid #e0e0e0;
+}
+
+.word {
+    min-width: 115px;
+
+    font-weight: 700;
+    color: #00695c;
+}
+
+.dash {
+    margin: 0 8px;
+    color: #777;
+    font-weight: 600;
+}
+
+.meaning {
+    color: #333;
+}
+
+
+/* =========================================
+   टिप्पणी
+   ========================================= */
+
+.comment-section {
+    background: white;
+
+    border-radius: 14px;
+
+    padding: 30px 35px;
+    margin-bottom: 25px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    border-left: 6px solid #ef6c00;
+}
+
+.comment-section .section-title {
+    color: #ef6c00;
+    font-size: 25px;
+
+    margin-bottom: 20px;
+
+    border-bottom: 2px solid #fff3e0;
+    padding-bottom: 10px;
+}
+
+.comment-box {
+    background: #fff8e1;
+
+    border: 1px solid #ffe0b2;
+
+    border-radius: 10px;
+
+    padding: 22px 25px;
+}
+
+.comment-box p {
+    font-size: 19px;
+    line-height: 1.9;
+
+    color: #333;
+
+    text-align: justify;
+
+    margin: 0;
+}
+
+
+/* =========================================
+   शब्दार्थ एवं टिप्पणी - Tablet
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .word-meanings,
+    .comment-section {
+        padding: 22px 18px;
+    }
+
+    .word-meanings .section-title,
+    .comment-section .section-title {
+        font-size: 22px;
+    }
+
+    .meaning-box {
+        grid-template-columns: 1fr;
+    }
+
+    .meaning-item {
+        font-size: 17px;
+    }
+
+    .meaning-item:nth-child(odd) {
+        border-right: none;
+    }
+
+    .word {
+        min-width: 105px;
+    }
+
+    .comment-box {
+        padding: 18px;
+    }
+
+    .comment-box p {
+        font-size: 17px;
+        text-align: left;
+    }
+}
+
+
+/* =========================================
+   शब्दार्थ एवं टिप्पणी - Mobile
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .word-meanings,
+    .comment-section {
+        padding: 18px 12px;
+    }
+
+    .word-meanings .section-title,
+    .comment-section .section-title {
+        font-size: 20px;
+    }
+
+    .meaning-item {
+        display: block;
+        padding: 11px 12px;
+        font-size: 16px;
+    }
+
+    .word {
+        display: inline;
+        min-width: auto;
+    }
+
+    .dash {
+        margin: 0 5px;
+    }
+
+    .meaning {
+        display: inline;
+    }
+
+    .comment-box {
+        padding: 15px 12px;
+    }
+
+    .comment-box p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+}
+
+
+/* =========================================
+   PRINT
+   ========================================= */
+
+@media print {
+
+    .word-meanings,
+    .comment-section {
+        box-shadow: none;
+        break-inside: avoid;
+    }
+
+    .meaning-box,
+    .comment-box {
+        background: white;
+        border: 1px solid #999;
+    }
+}
+/* =========================================
+   अभ्यास
+   ========================================= */
+
+.exercise-section {
+    background: white;
+
+    border-radius: 14px;
+
+    padding: 30px 35px;
+    margin-bottom: 25px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    border-left: 6px solid #3949ab;
+}
+
+.exercise-section .section-title {
+    color: #3949ab;
+
+    font-size: 28px;
+
+    margin-bottom: 20px;
+
+    border-bottom: 2px solid #e8eaf6;
+
+    padding-bottom: 10px;
+}
+
+.exercise-subtitle {
+    background: #e8eaf6;
+
+    color: #283593;
+
+    font-size: 21px;
+    font-weight: 700;
+
+    padding: 12px 18px;
+
+    border-radius: 8px;
+
+    margin-bottom: 22px;
+}
+
+
+/* =========================================
+   प्रश्न और उत्तर
+   ========================================= */
+
+.question-answer {
+    margin-bottom: 20px;
+
+    border: 1px solid #dfe2f2;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    background: #fafbff;
+}
+
+.question {
+    background: #f1f3ff;
+
+    color: #283593;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    padding: 15px 18px;
+
+    border-bottom: 1px solid #dfe2f2;
+}
+
+.answer {
+    color: #333;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    padding: 15px 18px;
+
+    background: white;
+}
+
+.answer strong {
+    color: #3949ab;
+}
+
+
+/* =========================================
+   अभ्यास - Tablet
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .exercise-section {
+        padding: 22px 18px;
+    }
+
+    .exercise-section .section-title {
+        font-size: 23px;
+    }
+
+    .exercise-subtitle {
+        font-size: 18px;
+        padding: 11px 14px;
+    }
+
+    .question {
+        font-size: 17px;
+        padding: 13px 14px;
+    }
+
+    .answer {
+        font-size: 17px;
+        padding: 13px 14px;
+    }
+}
+
+
+/* =========================================
+   अभ्यास - Mobile
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .exercise-section {
+        padding: 18px 12px;
+    }
+
+    .exercise-section .section-title {
+        font-size: 21px;
+    }
+
+    .exercise-subtitle {
+        font-size: 16px;
+        padding: 10px 12px;
+    }
+
+    .question {
+        font-size: 16px;
+        line-height: 1.7;
+        padding: 11px 12px;
+    }
+
+    .answer {
+        font-size: 16px;
+        line-height: 1.8;
+        padding: 11px 12px;
+    }
+
+    .question-answer {
+        margin-bottom: 15px;
+    }
+}
+
+
+/* =========================================
+   अभ्यास - Print
+   ========================================= */
+
+@media print {
+
+    .exercise-section {
+        box-shadow: none;
+        break-inside: avoid;
+    }
+
+    .question-answer {
+        break-inside: avoid;
+    }
+
+    .exercise-subtitle,
+    .question {
+        background: white;
+    }
+}
+/* =========================================
+   अभ्यास - भाग II
+   दो-तीन वाक्यों में उत्तर लिखिए
+   ========================================= */
+
+.exercise-section-2 {
+    border-left-color: #6a1b9a;
+}
+
+.exercise-section-2 .section-title {
+    color: #6a1b9a;
+}
+
+.exercise-section-2 .exercise-subtitle {
+    background: #f3e5f5;
+    color: #6a1b9a;
+}
+
+.exercise-section-2 .question-answer {
+    border: 1px solid #e1bee7;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 22px;
+    background: #ffffff;
+}
+
+.exercise-section-2 .question {
+    background: #f8f0fa;
+    color: #4a148c;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    line-height: 1.8;
+
+    padding: 16px 20px;
+
+    border-bottom: 1px solid #e1bee7;
+}
+
+.exercise-section-2 .answer {
+    background: #ffffff;
+    color: #333333;
+
+    font-size: 18px;
+    line-height: 1.9;
+
+    padding: 17px 20px;
+}
+
+.exercise-section-2 .answer strong {
+    color: #6a1b9a;
+}
+
+.answer-point {
+    margin-top: 12px;
+    margin-bottom: 0;
+    padding-left: 5px;
+}
+
+
+/* =========================================
+   Tablet
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .exercise-section-2 {
+        padding: 22px 18px;
+    }
+
+    .exercise-section-2 .question {
+        font-size: 17px;
+        padding: 14px 15px;
+    }
+
+    .exercise-section-2 .answer {
+        font-size: 17px;
+        padding: 14px 15px;
+    }
+
+    .answer-point {
+        margin-top: 10px;
+    }
+}
+
+
+/* =========================================
+   Mobile
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .exercise-section-2 {
+        padding: 18px 12px;
+    }
+
+    .exercise-section-2 .section-title {
+        font-size: 21px;
+    }
+
+    .exercise-section-2 .exercise-subtitle {
+        font-size: 16px;
+        padding: 10px 12px;
+    }
+
+    .exercise-section-2 .question {
+        font-size: 16px;
+        line-height: 1.7;
+        padding: 12px;
+    }
+
+    .exercise-section-2 .answer {
+        font-size: 16px;
+        line-height: 1.8;
+        padding: 12px;
+    }
+
+    .answer-point {
+        padding-left: 0;
+    }
+}
+
+
+/* =========================================
+   Print
+   ========================================= */
+
+@media print {
+
+    .exercise-section-2 {
+        box-shadow: none;
+        break-inside: avoid;
+    }
+
+    .exercise-section-2 .question-answer {
+        break-inside: avoid;
+    }
+
+    .exercise-section-2 .question {
+        background: white;
+    }
+}
+/* =========================================
+   अभ्यास - भाग III
+   भाव स्पष्ट कीजिए
+   ========================================= */
+
+.exercise-section-3 {
+    border-left-color: #ad1457;
+}
+
+.exercise-section-3 .section-title {
+    color: #ad1457;
+}
+
+.exercise-section-3 .exercise-subtitle {
+    background: #fce4ec;
+    color: #880e4f;
+}
+
+.exercise-section-3 .question-answer {
+    border: 1px solid #f8bbd0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 22px;
+    background: white;
+}
+
+.exercise-section-3 .question {
+    background: #fff1f5;
+    color: #880e4f;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    line-height: 1.9;
+    padding: 16px 20px;
+
+    border-bottom: 1px solid #f8bbd0;
+}
+
+.exercise-section-3 .answer {
+    background: white;
+    color: #333;
+
+    font-size: 18px;
+    line-height: 1.9;
+
+    padding: 17px 20px;
+}
+
+.exercise-section-3 .answer strong {
+    color: #ad1457;
+}
+
+
+/* =========================================
+   अभ्यास - भाग IV
+   विशिष्ट वाक्यांश
+   ========================================= */
+
+.exercise-section-4 {
+    border-left-color: #00897b;
+}
+
+.exercise-section-4 .section-title {
+    color: #00897b;
+}
+
+.exercise-section-4 .exercise-subtitle {
+    background: #e0f2f1;
+    color: #00695c;
+
+    line-height: 1.7;
+}
+
+.phrase-example {
+    background: #fff8e1;
+
+    border: 1px solid #ffe082;
+    border-radius: 9px;
+
+    padding: 15px 18px;
+    margin-bottom: 20px;
+
+    font-size: 18px;
+    line-height: 1.8;
+
+    color: #5d4037;
+}
+
+.phrase-item {
+    background: white;
+
+    border: 1px solid #b2dfdb;
+    border-radius: 10px;
+
+    margin-bottom: 18px;
+
+    overflow: hidden;
+}
+
+.phrase-question {
+    background: #e8f5e9;
+
+    color: #00695c;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    padding: 14px 18px;
+
+    border-bottom: 1px solid #b2dfdb;
+}
+
+.phrase-answer {
+    background: #ffffff;
+
+    color: #333;
+
+    font-size: 18px;
+    line-height: 1.9;
+
+    padding: 15px 18px;
+}
+
+.phrase-answer strong {
+    color: #00897b;
+}
+
+
+/* =========================================
+   Tablet - भाग III और IV
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .exercise-section-3,
+    .exercise-section-4 {
+        padding: 22px 18px;
+    }
+
+    .exercise-section-3 .section-title,
+    .exercise-section-4 .section-title {
+        font-size: 23px;
+    }
+
+    .exercise-section-3 .exercise-subtitle,
+    .exercise-section-4 .exercise-subtitle {
+        font-size: 18px;
+    }
+
+    .exercise-section-3 .question {
+        font-size: 17px;
+        padding: 14px 15px;
+    }
+
+    .exercise-section-3 .answer {
+        font-size: 17px;
+        padding: 14px 15px;
+    }
+
+    .phrase-example {
+        font-size: 17px;
+        padding: 13px 15px;
+    }
+
+    .phrase-question {
+        font-size: 17px;
+        padding: 13px 15px;
+    }
+
+    .phrase-answer {
+        font-size: 17px;
+        padding: 13px 15px;
+    }
+}
+
+
+/* =========================================
+   Mobile - भाग III और IV
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .exercise-section-3,
+    .exercise-section-4 {
+        padding: 18px 12px;
+    }
+
+    .exercise-section-3 .section-title,
+    .exercise-section-4 .section-title {
+        font-size: 21px;
+    }
+
+    .exercise-section-3 .exercise-subtitle,
+    .exercise-section-4 .exercise-subtitle {
+        font-size: 16px;
+        padding: 10px 12px;
+    }
+
+    .exercise-section-3 .question {
+        font-size: 16px;
+        line-height: 1.8;
+        padding: 11px 12px;
+    }
+
+    .exercise-section-3 .answer {
+        font-size: 16px;
+        line-height: 1.8;
+        padding: 11px 12px;
+    }
+
+    .phrase-example {
+        font-size: 16px;
+        line-height: 1.8;
+        padding: 11px 12px;
+    }
+
+    .phrase-question {
+        font-size: 16px;
+        padding: 11px 12px;
+    }
+
+    .phrase-answer {
+        font-size: 16px;
+        line-height: 1.8;
+        padding: 11px 12px;
+    }
+}
+
+
+/* =========================================
+   Print - भाग III और IV
+   ========================================= */
+
+@media print {
+
+    .exercise-section-3,
+    .exercise-section-4 {
+        box-shadow: none;
+        break-inside: avoid;
+    }
+
+    .exercise-section-3 .question-answer,
+    .phrase-item {
+        break-inside: avoid;
+    }
+
+    .exercise-section-3 .question,
+    .exercise-section-3 .exercise-subtitle,
+    .exercise-section-4 .exercise-subtitle,
+    .phrase-question {
+        background: white;
+    }
+
+    .phrase-example {
+        background: white;
+    }
+}
+/* =========================================
+   अभ्यास - भाग V
+   संबोधन में बहुवचन
+   ========================================= */
+
+.exercise-section-5 {
+    border-left-color: #00838f;
+}
+
+.exercise-section-5 .section-title {
+    color: #00838f;
+}
+
+.exercise-section-5 .exercise-subtitle {
+    background: #e0f7fa;
+    color: #006064;
+}
+
+.grammar-note {
+    background: #f1fbfc;
+
+    border: 1px solid #b2ebf2;
+    border-radius: 10px;
+
+    padding: 20px 22px;
+
+    margin-bottom: 20px;
+}
+
+.grammar-note p {
+    font-size: 18px;
+    line-height: 1.8;
+
+    color: #333;
+
+    margin-bottom: 10px;
+}
+
+.grammar-note p:last-child {
+    margin-bottom: 0;
+}
+
+.example-text {
+    color: #006064 !important;
+}
+
+.fill-questions {
+    background: white;
+
+    border: 1px solid #b2dfdb;
+    border-radius: 10px;
+
+    padding: 10px 20px;
+
+    margin-bottom: 22px;
+}
+
+.fill-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    min-height: 52px;
+
+    font-size: 19px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.fill-item:last-child {
+    border-bottom: none;
+}
+
+.blank-line {
+    flex: 1;
+
+    border-bottom: 1px solid #777;
+
+    height: 28px;
+}
+
+.answer-heading {
+    display: inline-block;
+
+    background: #00838f;
+    color: white;
+
+    padding: 6px 18px;
+
+    border-radius: 6px;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    margin-bottom: 12px;
+}
+
+.answer-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+}
+
+.answer-item {
+    background: #e8f5e9;
+
+    border: 1px solid #c8e6c9;
+    border-radius: 8px;
+
+    padding: 12px 15px;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    color: #333;
+}
+
+.answer-item strong {
+    color: #00695c;
+}
+
+
+/* =========================================
+   अभ्यास - भाग VI
+   पर्यायवाची उर्दू शब्द
+   ========================================= */
+
+.exercise-section-6 {
+    border-left-color: #7b1fa2;
+}
+
+.exercise-section-6 .section-title {
+    color: #7b1fa2;
+}
+
+.exercise-section-6 .exercise-subtitle {
+    background: #f3e5f5;
+    color: #6a1b9a;
+}
+
+.synonym-questions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+    margin-bottom: 22px;
+}
+
+.synonym-question {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background: #fafafa;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    padding: 13px 16px;
+
+    font-size: 18px;
+}
+
+.synonym-number {
+    color: #7b1fa2;
+    font-weight: 700;
+}
+
+.synonym-word {
+    color: #333;
+    font-weight: 600;
+}
+
+.synonym-answers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+}
+
+.synonym-answer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    background: #f5f0f8;
+
+    border: 1px solid #d1c4e9;
+    border-radius: 8px;
+
+    padding: 13px 16px;
+
+    font-size: 18px;
+}
+
+.synonym-answer strong {
+    color: #6a1b9a;
+}
+
+.synonym-answer span {
+    color: #333;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   Tablet - भाग V और VI
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .exercise-section-5,
+    .exercise-section-6 {
+        padding: 22px 18px;
+    }
+
+    .exercise-section-5 .section-title,
+    .exercise-section-6 .section-title {
+        font-size: 23px;
+    }
+
+    .grammar-note p {
+        font-size: 17px;
+    }
+
+    .fill-item {
+        font-size: 17px;
+    }
+
+    .answer-list,
+    .synonym-questions,
+    .synonym-answers {
+        grid-template-columns: 1fr;
+    }
+
+    .answer-item,
+    .synonym-question,
+    .synonym-answer {
+        font-size: 17px;
+    }
+}
+
+
+/* =========================================
+   Mobile - भाग V और VI
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .exercise-section-5,
+    .exercise-section-6 {
+        padding: 18px 12px;
+    }
+
+    .exercise-section-5 .section-title,
+    .exercise-section-6 .section-title {
+        font-size: 21px;
+    }
+
+    .exercise-section-5 .exercise-subtitle,
+    .exercise-section-6 .exercise-subtitle {
+        font-size: 16px;
+        padding: 10px 12px;
+    }
+
+    .grammar-note {
+        padding: 15px 12px;
+    }
+
+    .grammar-note p {
+        font-size: 16px;
+    }
+
+    .fill-questions {
+        padding: 8px 12px;
+    }
+
+    .fill-item {
+        font-size: 16px;
+        gap: 10px;
+    }
+
+    .answer-list {
+        gap: 8px;
+    }
+
+    .answer-item {
+        font-size: 16px;
+        padding: 10px 12px;
+    }
+
+    .synonym-questions {
+        gap: 8px;
+    }
+
+    .synonym-question {
+        font-size: 16px;
+        padding: 11px 12px;
+    }
+
+    .synonym-answers {
+        gap: 8px;
+    }
+
+    .synonym-answer {
+        font-size: 16px;
+        padding: 11px 12px;
+    }
+}
+
+
+/* =========================================
+   Print - भाग V और VI
+   ========================================= */
+
+@media print {
+
+    .exercise-section-5,
+    .exercise-section-6 {
+        box-shadow: none;
+        break-inside: avoid;
+    }
+
+    .question-answer,
+    .answer-item,
+    .synonym-question,
+    .synonym-answer {
+        break-inside: avoid;
+    }
+
+    .exercise-section-5 .exercise-subtitle,
+    .exercise-section-6 .exercise-subtitle,
+    .grammar-note,
+    .fill-questions,
+    .synonym-question,
+    .synonym-answer {
+        background: white;
+    }
+}
+/* =========================================
+   अभ्यास - भाग VII
+   ========================================= */
+
+.exercise-section-7 {
+    border-left-color: #d84315;
+}
+
+.exercise-section-7 .section-title {
+    color: #d84315;
+}
+
+.exercise-section-7 .exercise-subtitle {
+    background: #fbe9e7;
+    color: #bf360c;
+
+    line-height: 1.8;
+}
+
+
+/* उत्तर सूची */
+
+.answer-list-7 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.answer-list-7 .answer-item {
+    background: #fff3e0;
+
+    border: 1px solid #ffccbc;
+    border-radius: 9px;
+
+    padding: 14px 18px;
+
+    font-size: 18px;
+    line-height: 1.8;
+
+    color: #333;
+}
+
+.answer-list-7 .answer-item strong {
+    color: #d84315;
+}
+
+
+/* =========================================
+   Tablet
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .exercise-section-7 {
+        padding: 22px 18px;
+    }
+
+    .exercise-section-7 .section-title {
+        font-size: 23px;
+    }
+
+    .exercise-section-7 .exercise-subtitle {
+        font-size: 17px;
+    }
+
+    .answer-list-7 .answer-item {
+        font-size: 17px;
+        padding: 13px 15px;
+    }
+}
+
+
+/* =========================================
+   Mobile
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .exercise-section-7 {
+        padding: 18px 12px;
+    }
+
+    .exercise-section-7 .section-title {
+        font-size: 21px;
+    }
+
+    .exercise-section-7 .exercise-subtitle {
+        font-size: 16px;
+        line-height: 1.8;
+        padding: 10px 12px;
+    }
+
+    .answer-list-7 {
+        gap: 8px;
+    }
+
+    .answer-list-7 .answer-item {
+        font-size: 16px;
+        line-height: 1.8;
+        padding: 11px 12px;
+    }
+}
+
+
+/* =========================================
+   Print
+   ========================================= */
+
+@media print {
+
+    .exercise-section-7 {
+        box-shadow: none;
+        break-inside: avoid;
+    }
+
+    .answer-list-7 .answer-item {
+        break-inside: avoid;
+        background: white;
+    }
+}
