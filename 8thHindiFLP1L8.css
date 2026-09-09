@@ -1,0 +1,730 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans Devanagari", "Mangal", Arial, sans-serif;
+  background: linear-gradient(135deg, #fff3e0, #f3e5f5, #e0f7fa);
+  color: #303030;
+  line-height: 1.9;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.site-header {
+  background: linear-gradient(90deg, #ff6f61, #ff9a76, #7e57c2);
+  min-height: 90px;
+  padding: 12px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 4px solid #fff;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, .18);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo {
+  width: 62px;
+  height: 62px;
+  object-fit: contain;
+  background: #fff;
+  padding: 3px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .25);
+}
+
+.brand-text h1 {
+  color: #fff;
+  font-size: 1.55rem;
+  line-height: 1.2;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, .3);
+}
+
+.brand-text p {
+  color: #fff;
+  font-size: .95rem;
+  font-weight: 600;
+}
+
+
+/* =========================
+   NAVIGATION BUTTONS
+========================= */
+
+.top-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.top-actions button {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 9px 15px;
+  background: #fff;
+  color: #673ab7;
+  font-size: .92rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .15);
+  transition: .25s ease;
+}
+
+.top-actions button:hover {
+  background: #673ab7;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.lesson-container {
+  width: min(100% - 32px, 950px);
+  margin: 45px auto;
+}
+
+.lesson-card {
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, .96);
+  border-radius: 22px;
+  padding: clamp(28px, 5vw, 58px);
+  border: 2px solid #f3c4e8;
+  box-shadow: 0 12px 35px rgba(91, 65, 139, .18);
+}
+
+.lesson-card::before,
+.lesson-card::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.lesson-card::before {
+  width: 190px;
+  height: 190px;
+  right: -80px;
+  top: -80px;
+  background: #ffe082;
+  opacity: .35;
+}
+
+.lesson-card::after {
+  width: 160px;
+  height: 160px;
+  left: -70px;
+  bottom: -70px;
+  background: #80deea;
+  opacity: .3;
+}
+
+.lesson-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.lesson-label {
+  display: inline-block;
+  padding: 7px 16px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #ffcc80, #ffab91);
+  color: #6d3b20;
+  font-size: .9rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.lesson-card h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #7b1fa2;
+  margin-bottom: 5px;
+}
+
+.lesson-card h3 {
+  text-align: center;
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+  color: #e65100;
+  margin-bottom: 4px;
+}
+
+.author {
+  text-align: center;
+  color: #00838f;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.divider {
+  width: 115px;
+  height: 5px;
+  margin: 25px auto 32px;
+  background: linear-gradient(90deg, #ff6f61, #7b2cbf, #00acc1);
+  border-radius: 10px;
+}
+
+
+/* =========================
+   ASHAYA
+========================= */
+
+.ashaya {
+  background: linear-gradient(135deg, #fff8e1, #fce4ec, #e0f7fa);
+  border-left: 7px solid #ff7043;
+  padding: 24px 28px;
+  border-radius: 13px;
+  margin-bottom: 35px;
+  box-shadow: 0 5px 16px rgba(126, 87, 194, .12);
+}
+
+.ashaya h4 {
+  font-size: 1.35rem;
+  color: #c2185b;
+  margin-bottom: 8px;
+}
+
+.ashaya p {
+  font-size: 1.1rem;
+  color: #3f3d56;
+  text-align: justify;
+}
+
+
+/* =========================
+   LESSON CONTENT
+========================= */
+
+.lesson-content {
+  margin-top: 15px;
+}
+
+.lesson-content p {
+  font-size: 1.08rem;
+  text-align: justify;
+  margin-bottom: 25px;
+  padding: 18px 20px;
+  background: #fff;
+  border-radius: 12px;
+  border-left: 5px solid #9575cd;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, .07);
+}
+
+.lesson-content p:nth-child(3n) {
+  border-left-color: #26a69a;
+  background: #f1f8e9;
+}
+
+.lesson-content p:nth-child(3n + 1) {
+  border-left-color: #ff7043;
+  background: #fff8e1;
+}
+
+.lesson-content p:nth-child(3n + 2) {
+  border-left-color: #7e57c2;
+  background: #f3e5f5;
+}
+
+
+/* =========================
+   SECTION TITLES
+========================= */
+
+.section-title {
+  display: inline-block;
+  padding: 7px 18px;
+  border-radius: 20px;
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.purple-title {
+  background: linear-gradient(90deg, #7e57c2, #ec407a);
+  color: #fff;
+}
+
+
+/* =========================
+   WORD MEANINGS
+========================= */
+
+.word-meanings {
+  margin-bottom: 35px;
+  padding: 25px;
+  background: linear-gradient(135deg, #e8eaf6, #fff3e0);
+  border-radius: 15px;
+  border: 2px solid #c5cae9;
+}
+
+.meaning-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.meaning-grid div {
+  display: flex;
+  flex-direction: column;
+  padding: 13px 16px;
+  background: #fff;
+  border-radius: 10px;
+  border-left: 5px solid #42a5f5;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .07);
+}
+
+.meaning-grid strong {
+  color: #6a1b9a;
+  font-size: 1.05rem;
+}
+
+.meaning-grid span {
+  color: #455a64;
+}
+
+
+/* =========================
+   PRACTICE SECTIONS
+========================= */
+
+.practice-section {
+  padding: 28px;
+  margin-bottom: 35px;
+  border-radius: 16px;
+  border: 2px solid #ffd54f;
+  background: linear-gradient(135deg, #fffde7, #fce4ec, #e8f5e9);
+}
+
+.section-two {
+  border-color: #80cbc4;
+  background: linear-gradient(135deg, #e0f7fa, #f3e5f5);
+}
+
+.section-three {
+  border-color: #90caf9;
+  background: linear-gradient(135deg, #e3f2fd, #ede7f6);
+}
+
+.section-four {
+  border-color: #ffcc80;
+  background: linear-gradient(135deg, #fff8e1, #fbe9e7);
+}
+
+.section-five {
+  border-color: #ef9a9a;
+  background: linear-gradient(135deg, #ffebee, #fff3e0);
+}
+
+.section-six {
+  border-color: #a5d6a7;
+  background: linear-gradient(135deg, #e8f5e9, #e0f7fa);
+}
+
+.section-seven {
+  border-color: #ce93d8;
+  background: linear-gradient(135deg, #f3e5f5, #e8eaf6);
+}
+
+.section-eight {
+  border-color: #ffab91;
+  background: linear-gradient(135deg, #fff3e0, #fce4ec);
+}
+
+.section-nine {
+  border-color: #81d4fa;
+  background: linear-gradient(135deg, #e1f5fe, #e0f2f1);
+}
+
+.section-ten {
+  border-color: #b39ddb;
+  background: linear-gradient(135deg, #ede7f6, #fff8e1);
+}
+
+.practice-heading {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 8px 18px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #7e57c2, #ec407a);
+  color: #fff;
+  font-size: 1.18rem;
+  font-weight: 800;
+}
+
+.practice-section > h4 {
+  color: #6a1b9a;
+  margin-bottom: 20px;
+}
+
+.question-list {
+  display: grid;
+  gap: 18px;
+}
+
+.question-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 13px;
+  border-left: 6px solid #26a69a;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+}
+
+.question-card:nth-child(2n) {
+  border-left-color: #ff7043;
+}
+
+.question {
+  color: #1565c0;
+  font-weight: 800;
+  margin-bottom: 10px;
+  font-size: 1.06rem;
+}
+
+.answer {
+  background: #f1f8e9;
+  padding: 12px 15px;
+  border-radius: 8px;
+  color: #37474f;
+}
+
+.answer strong {
+  color: #2e7d32;
+}
+
+.answer b {
+  color: #c2185b;
+}
+
+
+/* =========================
+   LING / GENDER
+========================= */
+
+.gender-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.gender-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 18px 12px;
+  background: #fff;
+  border-radius: 12px;
+  border-top: 5px solid #26a69a;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .08);
+}
+
+.gender-card span {
+  color: #455a64;
+}
+
+.gender-card b {
+  color: #7b1fa2;
+  font-size: 1.15rem;
+}
+
+
+/* =========================
+   QUOTE
+========================= */
+
+.quote-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 13px;
+  border-left: 7px solid #8e24aa;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, .09);
+}
+
+.quote {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #6a1b9a;
+  margin-bottom: 15px;
+}
+
+
+/* =========================
+   समझिए
+========================= */
+
+.understanding-box {
+  margin-top: 25px;
+  padding: 22px;
+  background: #fff;
+  border-radius: 12px;
+  border-left: 6px solid #00acc1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .07);
+}
+
+.understanding-box h4 {
+  color: #00838f;
+  margin-bottom: 8px;
+}
+
+.understanding-box p {
+  color: #37474f;
+}
+
+
+/* =========================
+   SANCTUARY
+========================= */
+
+.sanctuary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.sanctuary-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 18px;
+  background: #fff;
+  border-radius: 12px;
+  border-left: 6px solid #43a047;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+}
+
+.sanctuary-card span {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #66bb6a;
+  color: #fff;
+  font-weight: 800;
+}
+
+.sanctuary-card strong {
+  color: #2e7d32;
+}
+
+
+/* =========================
+   THINKING SECTION
+========================= */
+
+.thinking-question {
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  border-left: 6px solid #7e57c2;
+  margin-bottom: 18px;
+}
+
+.thinking-question h4 {
+  color: #512da8;
+  font-size: 1.08rem;
+}
+
+.thinking-answer {
+  background: #fff;
+  border-left: 6px solid #ff7043;
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+.message-box {
+  padding: 25px 28px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #e8f5e9, #e0f2f1, #e3f2fd);
+  border: 2px solid #80cbc4;
+  box-shadow: 0 5px 16px rgba(0, 137, 123, .12);
+}
+
+.message-box h4 {
+  font-size: 1.35rem;
+  color: #00695c;
+  margin-bottom: 8px;
+}
+
+.message-box p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #37474f;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.site-footer {
+  margin-top: 50px;
+  padding: 24px 15px;
+  text-align: center;
+  background: linear-gradient(90deg, #512da8, #7b1fa2, #00838f);
+  color: #fff;
+  font-size: .92rem;
+  font-weight: 600;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+  .site-header {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .brand {
+    justify-content: center;
+  }
+
+  .top-actions {
+    justify-content: center;
+  }
+
+  .top-actions button {
+    flex: 1;
+    min-width: 85px;
+  }
+
+  .lesson-container {
+    width: min(100% - 20px, 950px);
+    margin: 25px auto;
+  }
+
+  .lesson-card {
+    padding: 24px 17px;
+    border-radius: 17px;
+  }
+
+  .lesson-card h2 {
+    font-size: 1.7rem;
+  }
+
+  .lesson-card h3 {
+    font-size: 1.65rem;
+  }
+
+  .ashaya {
+    padding: 18px;
+  }
+
+  .ashaya p,
+  .lesson-content p,
+  .message-box p {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .meaning-grid,
+  .sanctuary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gender-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .practice-section {
+    padding: 20px 16px;
+  }
+
+  .question-card {
+    padding: 16px;
+  }
+
+  .practice-heading {
+    font-size: 1rem;
+  }
+}
+
+
+/* =========================
+   PRINT
+========================= */
+
+@media print {
+
+  body {
+    background: #fff;
+  }
+
+  .site-header {
+    background: #fff;
+    box-shadow: none;
+    border-bottom: 1px solid #999;
+  }
+
+  .brand-text h1,
+  .brand-text p {
+    color: #000;
+    text-shadow: none;
+  }
+
+  .top-actions {
+    display: none;
+  }
+
+  .lesson-container {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .lesson-card {
+    box-shadow: none;
+    border: 0;
+  }
+
+  .lesson-card::before,
+  .lesson-card::after {
+    display: none;
+  }
+
+  .lesson-content p,
+  .question-card,
+  .meaning-grid div,
+  .gender-card,
+  .sanctuary-card,
+  .quote-card,
+  .thinking-question,
+  .understanding-box {
+    box-shadow: none;
+  }
+
+  .site-footer {
+    margin-top: 20px;
+    background: #fff;
+    color: #000;
+    border-top: 1px solid #999;
+    box-shadow: none;
+  }
+}
