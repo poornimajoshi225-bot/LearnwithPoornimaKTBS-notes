@@ -1,0 +1,747 @@
+/* =========================================================
+   Learn With Poornima
+   8th Class Hindi First Language Part 1
+   Lesson 9 - भोलाराम का जीव
+   ========================================================= */
+
+/* ---------- Basic Reset ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Noto Sans Devanagari", "Mangal", Arial, sans-serif;
+    background:
+        linear-gradient(
+            135deg,
+            #fff7ed 0%,
+            #eff6ff 50%,
+            #f5f3ff 100%
+        );
+    color: #24324a;
+    line-height: 1.8;
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+    padding: 12px 5%;
+
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 4px 20px rgba(50, 60, 90, 0.12);
+}
+
+
+/* ---------- Branding ---------- */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand img {
+    width: 60px;
+    height: 60px;
+
+    object-fit: contain;
+
+    border-radius: 14px;
+    background: #ffffff;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.brand-name {
+    font-size: 1.45rem;
+    font-weight: 800;
+    color: #7c3aed;
+}
+
+.brand-sub {
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+
+/* =========================================================
+   NAVIGATION BUTTONS
+   ========================================================= */
+
+.nav-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.nav-buttons button {
+    border: none;
+
+    padding: 9px 14px;
+
+    border-radius: 10px;
+
+    background: #7c3aed;
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 3px 8px rgba(124, 58, 237, 0.25);
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.nav-buttons button:hover {
+    transform: translateY(-2px);
+    background: #6d28d9;
+
+    box-shadow:
+        0 5px 12px rgba(124, 58, 237, 0.3);
+}
+
+.nav-buttons button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   MAIN LESSON CONTAINER
+   ========================================================= */
+
+.lesson-card {
+    width: 92%;
+    max-width: 1000px;
+
+    margin: 35px auto;
+
+    padding: 38px;
+
+    background: #ffffff;
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 10px 35px rgba(30, 41, 59, 0.12);
+}
+
+
+/* ---------- Chapter Tag ---------- */
+
+.chapter-tag {
+    display: inline-block;
+
+    padding: 6px 16px;
+
+    border-radius: 50px;
+
+    background: #ede9fe;
+    color: #6d28d9;
+
+    font-size: 0.95rem;
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   HEADINGS
+   ========================================================= */
+
+h1 {
+    text-align: center;
+
+    color: #be123c;
+
+    font-size: 2.4rem;
+    font-weight: 800;
+
+    margin: 8px 0;
+}
+
+h2 {
+    text-align: center;
+
+    color: #7c3aed;
+
+    font-size: 1.8rem;
+    font-weight: 800;
+
+    margin-top: 32px;
+    margin-bottom: 18px;
+}
+
+h3 {
+    color: #0369a1;
+
+    font-size: 1.35rem;
+
+    margin-top: 28px;
+    margin-bottom: 15px;
+
+    padding-left: 14px;
+
+    border-left: 5px solid #f59e0b;
+}
+
+
+/* =========================================================
+   PARAGRAPHS
+   ========================================================= */
+
+p {
+    font-size: 1.08rem;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+
+/* =========================================================
+   ASHAYA / IMPORTANT BOX
+   ========================================================= */
+
+.ashaya {
+    background:
+        linear-gradient(
+            135deg,
+            #fff7ed,
+            #fef3c7
+        );
+
+    border-left: 6px solid #f59e0b;
+
+    border-radius: 14px;
+
+    padding: 20px;
+
+    margin: 22px 0;
+
+    box-shadow:
+        0 4px 12px rgba(245, 158, 11, 0.12);
+}
+
+
+/* =========================================================
+   NOTICE BOX
+   ========================================================= */
+
+.notice {
+    background:
+        linear-gradient(
+            135deg,
+            #eff6ff,
+            #ede9fe
+        );
+
+    border-left: 6px solid #7c3aed;
+
+    border-radius: 14px;
+
+    padding: 22px;
+
+    margin: 25px 0;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   ANSWER BOX
+   ========================================================= */
+
+.answer {
+    background: #f0fdf4;
+
+    border-left: 5px solid #22c55e;
+
+    padding: 13px 17px;
+
+    margin: 9px 0 17px;
+
+    border-radius: 10px;
+
+    color: #14532d;
+
+    box-shadow:
+        0 3px 8px rgba(34, 197, 94, 0.08);
+}
+
+.answer b {
+    color: #15803d;
+}
+
+
+/* =========================================================
+   VOCABULARY
+   ========================================================= */
+
+.vocab {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+.vocab p {
+    margin: 0;
+
+    padding: 11px 15px;
+
+    background: #f8fafc;
+
+    border-radius: 10px;
+
+    border: 1px solid #e2e8f0;
+
+    text-align: left;
+}
+
+.vocab p:nth-child(odd) {
+    border-left: 4px solid #8b5cf6;
+}
+
+.vocab p:nth-child(even) {
+    border-left: 4px solid #0ea5e9;
+}
+
+
+/* =========================================================
+   TABLES
+   ========================================================= */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin: 18px 0 28px;
+
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 3px 12px rgba(30, 41, 59, 0.08);
+}
+
+th,
+td {
+    border: 1px solid #cbd5e1;
+
+    padding: 11px 14px;
+
+    text-align: left;
+
+    font-size: 1rem;
+}
+
+th {
+    background: #ede9fe;
+
+    color: #5b21b6;
+
+    font-weight: 800;
+}
+
+tr:nth-child(even) td {
+    background: #f8fafc;
+}
+
+tr:hover td {
+    background: #f0f9ff;
+}
+
+
+/* =========================================================
+   LISTS
+   ========================================================= */
+
+ol,
+ul {
+    padding-left: 28px;
+
+    margin-bottom: 20px;
+}
+
+li {
+    margin: 10px 0;
+
+    padding-left: 4px;
+}
+
+
+/* =========================================================
+   WORD GRID
+   ========================================================= */
+
+.word-grid {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin: 15px 0 25px;
+}
+
+.word-grid span {
+    display: inline-block;
+
+    padding: 8px 15px;
+
+    border-radius: 10px;
+
+    background: #dbeafe;
+
+    color: #1e40af;
+
+    font-weight: 700;
+
+    border: 1px solid #bfdbfe;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.word-grid span:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 4px 8px rgba(30, 64, 175, 0.15);
+}
+
+
+/* =========================================================
+   QUOTE BOX
+   ========================================================= */
+
+.quote {
+    background: #f8fafc;
+
+    border: 2px solid #e2e8f0;
+
+    border-left: 5px solid #8b5cf6;
+
+    border-radius: 12px;
+
+    padding: 17px 20px;
+
+    margin: 14px 0;
+
+    font-size: 1.06rem;
+}
+
+.quote b {
+    color: #7c3aed;
+}
+
+
+/* =========================================================
+   STRONG / BOLD TEXT
+   ========================================================= */
+
+strong,
+b {
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    text-align: center;
+
+    padding: 28px 15px;
+
+    margin-top: 40px;
+
+    background: #1e293b;
+
+    color: #e2e8f0;
+
+    font-size: 0.95rem;
+}
+
+footer div:first-child {
+    font-size: 1.15rem;
+
+    font-weight: 800;
+
+    color: #ffffff;
+
+    margin-bottom: 4px;
+}
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+a {
+    color: #2563eb;
+
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .site-header {
+        position: relative;
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .brand {
+        justify-content: center;
+    }
+
+    .nav-buttons {
+        width: 100%;
+    }
+
+    .nav-buttons button {
+        flex: 1;
+        min-width: 90px;
+    }
+
+    .lesson-card {
+        width: 94%;
+
+        padding: 25px;
+
+        margin: 20px auto;
+
+        border-radius: 18px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.55rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p,
+    li,
+    td,
+    th {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .brand img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .brand-name {
+        font-size: 1.2rem;
+    }
+
+    .brand-sub {
+        font-size: 0.78rem;
+    }
+
+    .nav-buttons {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 7px;
+    }
+
+    .nav-buttons button {
+        width: 100%;
+        padding: 9px 6px;
+        font-size: 0.85rem;
+    }
+
+    .lesson-card {
+        width: 96%;
+
+        padding: 18px;
+
+        margin: 12px auto;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 0.98rem;
+
+        text-align: left;
+    }
+
+    .vocab {
+        grid-template-columns: 1fr;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+
+    .quote {
+        padding: 13px;
+        font-size: 0.95rem;
+    }
+}
+
+
+/* =========================================================
+   PRINT STYLES
+   ========================================================= */
+
+@media print {
+
+    @page {
+        size: A4;
+        margin: 15mm;
+    }
+
+    body {
+        background: #ffffff;
+
+        color: #000000;
+    }
+
+    .site-header,
+    .nav-buttons,
+    footer {
+        display: none !important;
+    }
+
+    .lesson-card {
+        width: 100%;
+        max-width: none;
+
+        margin: 0;
+
+        padding: 0;
+
+        border-radius: 0;
+
+        box-shadow: none;
+    }
+
+    .chapter-tag {
+        border: 1px solid #999;
+
+        color: #000000;
+
+        background: #ffffff;
+    }
+
+    h1,
+    h2,
+    h3 {
+        color: #000000;
+    }
+
+    .ashaya,
+    .notice,
+    .answer,
+    .quote {
+        box-shadow: none;
+
+        break-inside: avoid;
+    }
+
+    table {
+        box-shadow: none;
+
+        break-inside: avoid;
+    }
+
+    tr {
+        break-inside: avoid;
+    }
+
+    p,
+    li {
+        orphans: 3;
+        widows: 3;
+    }
+}
+
+
+/* =========================================================
+   TOP SCROLL SPACING
+   ========================================================= */
+
+#top {
+    scroll-margin-top: 90px;
+}
