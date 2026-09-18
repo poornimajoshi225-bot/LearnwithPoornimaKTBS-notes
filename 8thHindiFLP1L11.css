@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans Devanagari", "Poppins", Arial, sans-serif;
+  color: #263238;
+  line-height: 1.85;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(255, 235, 59, .38), transparent 24%),
+    radial-gradient(circle at 90% 20%, rgba(225, 190, 231, .45), transparent 28%),
+    radial-gradient(circle at 20% 90%, rgba(128, 203, 196, .35), transparent 26%),
+    linear-gradient(135deg, #f4f9ff 0%, #fff8e8 48%, #f8f1ff 100%);
+  min-height: 100vh;
+}
+
+/* HEADER */
+.site-header {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(125deg, #0d47a1 0%, #1565c0 38%, #7b1fa2 100%);
+  color: white;
+  padding: 22px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  box-shadow: 0 8px 28px rgba(21, 101, 192, .30);
+}
+
+.site-header::before,
+.site-header::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,255,255,.10);
+  pointer-events: none;
+}
+
+.site-header::before {
+  width: 220px;
+  height: 220px;
+  right: 8%;
+  top: -130px;
+}
+
+.site-header::after {
+  width: 150px;
+  height: 150px;
+  left: 35%;
+  bottom: -110px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  width: 78px;
+  height: 78px;
+  object-fit: contain;
+  background: white;
+  border: 4px solid #ffd600;
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: 0 5px 18px rgba(0,0,0,.22);
+}
+
+.brand h1 {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(24px, 4vw, 34px);
+  font-weight: 800;
+  letter-spacing: .2px;
+}
+
+.brand p {
+  margin: 3px 0 0;
+  font-size: 14px;
+  color: #fff9c4;
+  font-weight: 600;
+}
+
+.lesson-badge {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(135deg, #ffeb3b, #ffc107);
+  color: #4a148c;
+  padding: 11px 20px;
+  border-radius: 30px;
+  font-weight: 800;
+  border: 2px solid rgba(255,255,255,.7);
+  box-shadow: 0 5px 15px rgba(0,0,0,.18);
+  white-space: nowrap;
+}
+
+/* NAVIGATION */
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 12px 15px;
+  background: rgba(255,255,255,.94);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(21,101,192,.12);
+  box-shadow: 0 4px 18px rgba(0,0,0,.10);
+}
+
+.top-nav button,
+.bottom-buttons button {
+  border: none;
+  border-radius: 28px;
+  padding: 10px 19px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all .25s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,.13);
+}
+
+.top-nav button:nth-child(1),
+.bottom-buttons button:nth-child(1) {
+  background: linear-gradient(135deg, #ef6c00, #ff9800);
+}
+
+.top-nav button:nth-child(2),
+.bottom-buttons button:nth-child(2) {
+  background: linear-gradient(135deg, #00897b, #26a69a);
+}
+
+.top-nav button:nth-child(3),
+.bottom-buttons button:nth-child(3) {
+  background: linear-gradient(135deg, #1565c0, #42a5f5);
+}
+
+.top-nav button:nth-child(4),
+.bottom-buttons button:nth-child(4) {
+  background: linear-gradient(135deg, #6a1b9a, #ab47bc);
+}
+
+button:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 18px rgba(0,0,0,.20);
+}
+
+/* MAIN */
+.container {
+  width: min(1120px, 94%);
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  overflow: hidden;
+  margin: 30px 0 25px;
+  padding: clamp(28px, 5vw, 50px);
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.80), rgba(255,255,255,.28)),
+    linear-gradient(135deg, #fff176 0%, #ffcc80 42%, #ce93d8 100%);
+  border: 2px solid rgba(255,255,255,.9);
+  box-shadow: 0 15px 35px rgba(74,20,140,.16);
+}
+
+.hero::before {
+  content: "✦";
+  position: absolute;
+  top: 15px;
+  right: 30%;
+  color: rgba(106,27,154,.28);
+  font-size: 40px;
+}
+
+.hero::after {
+  content: "✦";
+  position: absolute;
+  bottom: 10px;
+  right: 10%;
+  color: rgba(21,101,192,.25);
+  font-size: 55px;
+}
+
+.hero h1 {
+  margin: 12px 0 5px;
+  color: #4a148c;
+  font-size: clamp(29px, 5vw, 46px);
+  line-height: 1.3;
+  font-weight: 800;
+  text-shadow: 1px 2px 0 rgba(255,255,255,.55);
+}
+
+.hero p {
+  margin: 0;
+  color: #5d4037;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.eyebrow {
+  display: inline-block;
+  background: white;
+  color: #1565c0;
+  padding: 7px 15px;
+  border-radius: 22px;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  box-shadow: 0 4px 12px rgba(0,0,0,.12);
+}
+
+.hero-icon {
+  position: relative;
+  z-index: 1;
+  font-size: clamp(65px, 10vw, 105px);
+  filter: drop-shadow(0 10px 8px rgba(0,0,0,.16));
+  animation: floatRocket 3s ease-in-out infinite;
+}
+
+@keyframes floatRocket {
+  0%, 100% { transform: translateY(0) rotate(-3deg); }
+  50% { transform: translateY(-9px) rotate(3deg); }
+}
+
+/* CONTENT CARD */
+.lesson-card {
+  background: rgba(255,255,255,.93);
+  border: 1px solid rgba(255,255,255,.95);
+  border-radius: 28px;
+  padding: clamp(22px, 4vw, 48px);
+  box-shadow: 0 12px 34px rgba(38,50,56,.11);
+  margin-bottom: 25px;
+  backdrop-filter: blur(8px);
+}
+
+/* SECTION TITLES */
+.lesson-title {
+  background: linear-gradient(100deg, #0d47a1, #1565c0 45%, #8e24aa);
+  color: white;
+  padding: 16px 22px;
+  border-radius: 17px;
+  font-size: clamp(22px, 4vw, 31px);
+  font-weight: 800;
+  margin-bottom: 12px;
+  box-shadow: 0 7px 18px rgba(21,101,192,.22);
+}
+
+.author {
+  color: #7b1fa2;
+  font-weight: 800;
+  font-size: 18px;
+  background: #f8eafa;
+  display: inline-block;
+  padding: 4px 13px;
+  border-radius: 14px;
+}
+
+h2 {
+  margin-top: 38px;
+  margin-bottom: 16px;
+  padding: 13px 18px;
+  border-left: 8px solid #ffd600;
+  background: linear-gradient(90deg, #fff8e1, #fff);
+  color: #6a1b9a;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(255,193,7,.12);
+  font-size: 24px;
+}
+
+h3 {
+  margin-top: 25px;
+  margin-bottom: 12px;
+  padding: 12px 17px;
+  background: linear-gradient(90deg, #e3f2fd, #f3e5f5);
+  border-left: 7px solid #1565c0;
+  color: #0d47a1;
+  border-radius: 10px;
+  font-size: 19px;
+}
+
+p {
+  margin: 11px 0;
+  font-size: 17px;
+}
+
+/* ANSWERS */
+.answer {
+  background: linear-gradient(100deg, #f3e5f5, #fff);
+  border-left: 5px solid #8e24aa;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border-radius: 9px;
+  box-shadow: 0 3px 9px rgba(106,27,154,.07);
+}
+
+/* BOTTOM BUTTONS */
+.bottom-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 11px;
+  padding: 12px 0 30px;
+}
+
+/* FOOTER */
+footer {
+  position: relative;
+  overflow: hidden;
+  margin-top: 10px;
+  padding: 32px 15px;
+  text-align: center;
+  background: linear-gradient(125deg, #263238, #4527a0, #1565c0);
+  color: white;
+  box-shadow: 0 -8px 25px rgba(0,0,0,.10);
+}
+
+footer strong {
+  color: #ffeb3b;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+  .site-header,
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .brand {
+    flex-direction: column;
+  }
+
+  .lesson-badge {
+    align-self: center;
+  }
+
+  .hero-icon {
+    font-size: 70px;
+  }
+
+  .lesson-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-nav button,
+  .bottom-buttons button {
+    padding: 9px 13px;
+    font-size: 13px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 21px;
+  }
+
+  h3 {
+    font-size: 17px;
+  }
+}
+
+/* PRINT */
+@media print {
+  body {
+    background: white;
+    color: #000;
+  }
+
+  .top-nav,
+  .bottom-buttons {
+    display: none !important;
+  }
+
+  .site-header {
+    background: white !important;
+    color: black !important;
+    box-shadow: none;
+    border-bottom: 2px solid #1565c0;
+  }
+
+  .brand p,
+  .lesson-badge {
+    color: #000;
+    background: white;
+  }
+
+  .hero {
+    box-shadow: none;
+    border: 1px solid #aaa;
+  }
+
+  .lesson-card {
+    box-shadow: none;
+    border: none;
+  }
+
+  footer {
+    background: white !important;
+    color: black;
+    box-shadow: none;
+    border-top: 1px solid #aaa;
+  }
+}
