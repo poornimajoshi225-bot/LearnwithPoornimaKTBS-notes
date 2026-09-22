@@ -1,0 +1,640 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root{
+  --blue:#1565c0;
+  --blue2:#42a5f5;
+  --purple:#6a1b9a;
+  --pink:#ec407a;
+  --orange:#fb8c00;
+  --yellow:#ffca28;
+  --green:#00897b;
+  --dark:#263238;
+  --card:#ffffff;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+
+body{
+  margin:0;
+  font-family:"Noto Sans Devanagari","Poppins",sans-serif;
+  color:var(--dark);
+  line-height:1.85;
+  background:
+    radial-gradient(circle at 5% 5%,rgba(255,202,40,.35),transparent 20%),
+    radial-gradient(circle at 95% 12%,rgba(236,64,122,.20),transparent 23%),
+    radial-gradient(circle at 12% 90%,rgba(66,165,245,.20),transparent 25%),
+    linear-gradient(135deg,#eef7ff 0%,#fff8fc 48%,#fffbea 100%);
+  min-height:100vh;
+}
+
+/* Header */
+.site-header{
+  position:relative;
+  overflow:hidden;
+  padding:28px 7%;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:22px;
+  background:
+    radial-gradient(circle at 85% 15%,rgba(255,255,255,.22),transparent 18%),
+    linear-gradient(120deg,#0d47a1,#1565c0 42%,#7b1fa2 78%,#ad1457);
+  box-shadow:0 8px 28px rgba(49,27,146,.28);
+}
+
+.site-header:before,
+.site-header:after{
+  content:"";
+  position:absolute;
+  border-radius:50%;
+  background:rgba(255,255,255,.08);
+}
+
+.site-header:before{width:220px;height:220px;right:-55px;top:-120px}
+.site-header:after{width:150px;height:150px;left:35%;bottom:-110px}
+
+.brand{
+  position:relative;
+  z-index:1;
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+
+.logo{
+  width:82px;
+  height:82px;
+  object-fit:contain;
+  background:#fff;
+  border:4px solid rgba(255,255,255,.8);
+  border-radius:22px;
+  padding:6px;
+  box-shadow:0 10px 24px rgba(0,0,0,.25);
+}
+
+.brand h1{
+  margin:0;
+  font-family:"Poppins",sans-serif;
+  font-size:clamp(1.45rem,3.4vw,2.35rem);
+  font-weight:800;
+  letter-spacing:.2px;
+}
+
+.brand p{
+  margin:3px 0 0;
+  font-size:1rem;
+  opacity:.92;
+}
+
+.lesson-badge{
+  position:relative;
+  z-index:1;
+  padding:12px 20px;
+  border:2px solid rgba(255,255,255,.65);
+  border-radius:40px;
+  background:linear-gradient(135deg,#ffca28,#ff8f00);
+  color:#4e342e;
+  font-weight:800;
+  box-shadow:0 8px 18px rgba(0,0,0,.18);
+}
+
+/* Navigation */
+.top-nav{
+  position:sticky;
+  top:0;
+  z-index:50;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:10px;
+  padding:13px;
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(21,101,192,.12);
+  box-shadow:0 5px 18px rgba(0,0,0,.10);
+}
+
+.top-nav a,
+.top-nav button{
+  border:0;
+  text-decoration:none;
+  cursor:pointer;
+  color:#fff;
+  padding:10px 18px;
+  border-radius:28px;
+  font:700 14px "Poppins","Noto Sans Devanagari",sans-serif;
+  transition:all .22s ease;
+  box-shadow:0 4px 10px rgba(21,101,192,.20);
+}
+
+.top-nav a{background:linear-gradient(135deg,#1565c0,#42a5f5)}
+.top-nav button:nth-child(2){background:linear-gradient(135deg,#6a1b9a,#ab47bc)}
+.top-nav button:nth-child(3){background:linear-gradient(135deg,#ef6c00,#ffb300)}
+.top-nav button:nth-child(4){background:linear-gradient(135deg,#00897b,#26a69a)}
+
+.top-nav a:hover,
+.top-nav button:hover{
+  transform:translateY(-3px) scale(1.02);
+  box-shadow:0 9px 18px rgba(0,0,0,.18);
+}
+
+/* Main */
+.container{
+  width:min(1120px,92%);
+  margin:36px auto 55px;
+}
+
+.lesson-card{
+  position:relative;
+  overflow:hidden;
+  background:rgba(255,255,255,.96);
+  border-radius:30px;
+  padding:clamp(22px,4vw,52px);
+  border:1px solid rgba(255,255,255,.85);
+  box-shadow:
+    0 18px 55px rgba(63,81,181,.15),
+    0 4px 14px rgba(0,0,0,.06);
+}
+
+.lesson-card:before{
+  content:"";
+  position:absolute;
+  width:180px;
+  height:180px;
+  border-radius:50%;
+  right:-75px;
+  top:-80px;
+  background:linear-gradient(135deg,rgba(255,202,40,.30),rgba(236,64,122,.08));
+}
+
+.lesson-heading{
+  position:relative;
+  display:flex;
+  align-items:center;
+  gap:22px;
+  margin-bottom:25px;
+  padding:22px;
+  border-radius:24px;
+  background:
+    linear-gradient(135deg,#fff8e1,#e3f2fd 52%,#f3e5f5);
+  border:1px solid #e1e8ff;
+  border-left:8px solid #ffb300;
+  box-shadow:0 8px 22px rgba(63,81,181,.10);
+}
+
+.chapter-number{
+  flex:0 0 68px;
+  width:68px;
+  height:68px;
+  display:grid;
+  place-items:center;
+  border-radius:20px;
+  color:#fff;
+  font-size:1.8rem;
+  font-weight:800;
+  background:linear-gradient(135deg,#ffb300,#f57c00);
+  box-shadow:0 8px 18px rgba(245,124,0,.28);
+}
+
+.lesson-heading h2{
+  margin:0;
+  font-size:clamp(2rem,5vw,3.1rem);
+  line-height:1.25;
+  color:#283593;
+}
+
+.author{
+  margin:3px 0 0;
+  color:#8e24aa;
+  font-weight:800;
+  font-size:1.05rem;
+}
+
+.source-note{
+  display:inline-block;
+  margin:0 0 24px;
+  padding:9px 17px;
+  border-radius:30px;
+  color:#fff;
+  background:linear-gradient(135deg,#1565c0,#6a1b9a);
+  font-weight:800;
+  box-shadow:0 6px 14px rgba(63,81,181,.20);
+}
+
+/* Lesson text */
+.lesson-content{
+  font-size:1.02rem;
+}
+
+.lesson-content p{
+  margin:0 0 14px;
+  padding:9px 13px;
+  border-left:4px solid transparent;
+  border-radius:10px;
+  transition:all .18s ease;
+}
+
+.lesson-content p:hover{
+  background:linear-gradient(90deg,#e3f2fd,#fff);
+  border-left-color:#42a5f5;
+  transform:translateX(3px);
+}
+
+.lesson-content h2{
+  margin:25px 0 16px;
+  padding:12px 16px;
+  color:#1565c0;
+  background:linear-gradient(90deg,#e3f2fd,transparent);
+  border-left:6px solid #ffca28;
+  border-bottom:2px solid #90caf9;
+  border-radius:8px;
+}
+
+.lesson-content p:nth-of-type(4n+1){
+  background:linear-gradient(90deg,rgba(227,242,253,.45),transparent);
+}
+
+.lesson-content p:nth-of-type(4n+2){
+  background:linear-gradient(90deg,rgba(255,243,224,.45),transparent);
+}
+
+.lesson-content p:nth-of-type(4n+3){
+  background:linear-gradient(90deg,rgba(243,229,245,.38),transparent);
+}
+
+.lesson-content p:nth-of-type(4n){
+  background:linear-gradient(90deg,rgba(232,245,233,.38),transparent);
+}
+
+/* Tables if present */
+.table-wrap{
+  overflow-x:auto;
+  margin:20px 0;
+  border-radius:16px;
+  box-shadow:0 8px 22px rgba(0,0,0,.08);
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  background:#fff;
+  overflow:hidden;
+}
+
+th,td{
+  border:1px solid #d7def2;
+  padding:11px 13px;
+  text-align:left;
+}
+
+th{
+  color:#fff;
+  background:linear-gradient(135deg,#1565c0,#6a1b9a);
+  font-weight:800;
+}
+
+tr:nth-child(even) td{background:#f8fbff}
+tr:hover td{background:#fff8e1}
+/* =========================================
+   XI. प्रेरणार्थक क्रिया रूप
+   ========================================= */
+
+.grammar-section {
+    margin: 35px 0;
+    padding: 25px;
+    border-radius: 24px;
+    background: linear-gradient(
+        135deg,
+        #fff8e1,
+        #e3f2fd,
+        #f3e5f5
+    );
+    border: 2px solid #e1bee7;
+    box-shadow: 0 10px 30px rgba(63, 81, 181, 0.12);
+}
+
+/* Section heading */
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    padding: 15px 20px;
+    border-radius: 18px;
+    background: linear-gradient(
+        135deg,
+        #1565c0,
+        #6a1b9a
+    );
+    color: white;
+    box-shadow: 0 7px 18px rgba(63, 81, 181, 0.25);
+}
+
+.section-number {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #ffca28,
+        #ff8f00
+    );
+
+    color: #4e342e;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.18);
+}
+
+.section-title h2 {
+    margin: 0;
+    font-size: 1.55rem;
+    font-weight: 800;
+}
+
+/* Table container */
+
+.grammar-table-container {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+/* Table */
+
+.grammar-table {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+    overflow: hidden;
+    background: white;
+}
+
+/* Table heading */
+
+.grammar-table thead th {
+    padding: 15px;
+    color: white;
+    font-size: 1.05rem;
+    font-weight: 800;
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #1565c0,
+        #7b1fa2
+    );
+
+    border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+/* Table cells */
+
+.grammar-table td {
+    padding: 14px 16px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+
+    border: 1px solid #d6def0;
+    transition: all 0.2s ease;
+}
+
+/* First column */
+
+.grammar-table tbody td:first-child {
+    color: #1565c0;
+    font-weight: 800;
+    background: #e3f2fd;
+}
+
+/* Second column */
+
+.grammar-table tbody td:nth-child(2) {
+    color: #6a1b9a;
+    background: #f3e5f5;
+}
+
+/* Third column */
+
+.grammar-table tbody td:nth-child(3) {
+    color: #e65100;
+    background: #fff3e0;
+}
+
+/* Alternate rows */
+
+.grammar-table tbody tr:nth-child(even) td:first-child {
+    background: #e8f5e9;
+}
+
+.grammar-table tbody tr:nth-child(even) td:nth-child(2) {
+    background: #fce4ec;
+}
+
+.grammar-table tbody tr:nth-child(even) td:nth-child(3) {
+    background: #fff8e1;
+}
+
+/* Hover effect */
+
+.grammar-table tbody tr:hover td {
+    transform: scale(1.01);
+    box-shadow: inset 0 0 0 2px #ffca28;
+    cursor: default;
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+    .grammar-section {
+        padding: 15px;
+        margin: 25px 0;
+        border-radius: 18px;
+    }
+
+    .section-title {
+        padding: 12px 15px;
+    }
+
+    .section-title h2 {
+        font-size: 1.2rem;
+    }
+
+    .section-number {
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .grammar-table {
+        min-width: 520px;
+    }
+
+    .grammar-table thead th,
+    .grammar-table td {
+        padding: 11px 10px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Print */
+
+@media print {
+
+    .grammar-section {
+        background: white;
+        border: 1px solid #999;
+        box-shadow: none;
+        page-break-inside: avoid;
+    }
+
+    .section-title {
+        background: white;
+        color: black;
+        border: 1px solid #555;
+        box-shadow: none;
+    }
+
+    .section-number {
+        background: white;
+        color: black;
+        border: 1px solid #555;
+        box-shadow: none;
+    }
+
+    .grammar-table thead th {
+        background: #eee;
+        color: black;
+    }
+}
+
+/* Footer */
+.site-footer{
+  position:relative;
+  overflow:hidden;
+  margin-top:45px;
+  padding:27px 7%;
+  background:linear-gradient(120deg,#263238,#4527a0,#7b1fa2);
+  color:#fff;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:15px;
+  flex-wrap:wrap;
+  box-shadow:0 -8px 25px rgba(0,0,0,.10);
+}
+
+.views{
+  padding:9px 17px;
+  border:1px solid rgba(255,255,255,.25);
+  border-radius:30px;
+  background:rgba(255,255,255,.13);
+  font-weight:800;
+}
+
+/* Mobile */
+@media(max-width:650px){
+  .site-header{
+    padding:20px 4%;
+  }
+
+  .brand{gap:12px}
+  .logo{
+    width:62px;
+    height:62px;
+    border-radius:17px;
+  }
+
+  .brand h1{font-size:1.35rem}
+  .brand p{font-size:.84rem}
+  .lesson-badge{display:none}
+
+  .top-nav{
+    padding:10px 7px;
+    gap:7px;
+  }
+
+  .top-nav a,
+  .top-nav button{
+    padding:8px 11px;
+    font-size:12px;
+  }
+
+  .container{
+    width:94%;
+    margin:22px auto 38px;
+  }
+
+  .lesson-card{
+    padding:18px;
+    border-radius:22px;
+  }
+
+  .lesson-heading{
+    padding:16px;
+    gap:13px;
+  }
+
+  .chapter-number{
+    flex-basis:52px;
+    width:52px;
+    height:52px;
+    font-size:1.35rem;
+    border-radius:15px;
+  }
+
+  .lesson-heading h2{font-size:2rem}
+  .lesson-content{font-size:.97rem}
+
+  .site-footer{
+    padding:22px 5%;
+    font-size:.9rem;
+  }
+}
+
+/* Print */
+@media print{
+  body{
+    background:#fff;
+    color:#000;
+  }
+
+  .top-nav,
+  .site-footer .views{
+    display:none !important;
+  }
+
+  .site-header{
+    color:#000;
+    background:#fff;
+    box-shadow:none;
+  }
+
+  .lesson-card{
+    box-shadow:none;
+    border:0;
+  }
+
+  .container{
+    width:100%;
+    margin:0;
+  }
+
+  .lesson-content p:hover{
+    transform:none;
+    background:none;
+  }
+}
